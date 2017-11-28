@@ -1,0 +1,6 @@
+name: HyperSpot Core
+description: HyperSpot Core Custom Module.
+package: HyperSpot
+
+type: module
+core: 8.x
