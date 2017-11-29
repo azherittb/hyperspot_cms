@@ -11,7 +11,7 @@ and open the template in the editor.
 html body{
 	font-size: 14px;
 }
-.view-content .views-row .views-col {
+.path-frontpage .view-content .views-row .views-col {
     padding: 30px;
 }
 .path-splash .slick-list .slick-track .slick__slide h3 {
@@ -35,7 +35,29 @@ html body{
 	top: 100%;
 	margin-top: 3px;
 }
-.slick-arrow::before {
+.path-splash .slick-arrow::before {
     color: #333;
     font-size: 2.5rem;
+}
+.footer ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+.footer ul li {
+    width: 225px;
+    text-align: center;
+    height: 70px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.path-frontpage .contextual-region.view.view-restaurant .views-field.views-field-title span a {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #000;
+}
+.path-frontpage .contextual-region.view.view-restaurant .views-field.views-field-field-image {
+    margin-bottom: 20px;
+}
+.path-frontpage .contextual-region.view.view-restaurant .views-field.views-field-title{
+	margin-bottom: 20px;
 }
