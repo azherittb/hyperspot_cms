@@ -9,7 +9,6 @@ and open the template in the editor.
 */
 
 html body{
-
 	font-size: 14px;
 }
 .view-content .views-row .views-col {
@@ -31,4 +30,12 @@ html body{
 .path-splash .slick-dots {
     background-color: grey;
     padding: 10px;
+}
+.path-splash .slick__arrow{
+	top: 100%;
+	margin-top: 3px;
+}
+.slick-arrow::before {
+    color: #333;
+    font-size: 2.5rem;
 }
