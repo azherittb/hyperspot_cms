@@ -8,7 +8,11 @@ and open the template in the editor.
     Author     : azher
 */
 
-body{
+html body{
 
 	font-size: 12px;
+}
+.view-content .views-row .views-col {
+    padding: 30px;
+    marks: 0;
 }
