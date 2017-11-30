@@ -1,7 +1,30 @@
 <?php
+
 /**
  * @file
  * Bootstrap sub-theme.
  *
  * Place your custom PHP code in this file.
  */
+function hyperspot_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'user_login_form') {
+    $form['name']['#attributes']['placeholder'] = t('Email Address');
+    $form['pass']['#attributes']['placeholder'] = t('Password');
+    $form['actions']['submit']['#value'] = t('Sign In');
+  }
+  if ($form_id == 'user_register_form') {
+    $form['account']['mail']['#attributes']['placeholder'] = t('Email Address');
+    $form['account']['pass']['#process'][] = 'hyperspot_form_user_register_form_process_pass';
+    $form['actions']['submit']['#value'] = t('Sign Up');
+  }
+  if ($form_id == 'user_pass') {
+    $form['name']['#attributes']['placeholder'] = t('Email Address');
+  }
+}
+
+function hyperspot_form_user_register_form_process_pass(&$element, \Drupal\Core\Form\FormStateInterface $form_state, &$complete_form) {
+  $element = \Drupal\Core\Render\Element\PasswordConfirm::processPasswordConfirm($element, $form_state, $complete_form);
+  $element['pass1']['#placeholder'] = t('Password');
+  $element['pass2']['#placeholder'] = t('Repeat Password');
+  return $element;
+}
