@@ -1,63 +1,417 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 27 Nov, 2017, 12:40:35 PM
-    Author     : azher
-*/
-
-html body{
-	font-size: 14px;
-}
-.path-frontpage .view-content .views-row .views-col {
-    padding: 30px;
-}
-.path-splash .slick-list .slick-track .slick__slide h3 {
-    text-transform: uppercase;
-    text-align: center;
-}
-.path-splash .slick-list .slick-track .slick__slide p {
-     text-align: center;
-}
-.path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content {
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    min-height: 150px;
-}
-.path-splash .slick-dots {
-    background-color: grey;
-    padding: 10px;
-}
-.path-splash .slick__arrow{
-	top: 100%;
-	margin-top: 3px;
-}
-.path-splash .slick-arrow::before {
-    color: #333;
-    font-size: 2.5rem;
-}
-.footer ul{
-    list-style-type: none;
-    display: inline-flex;
-}
-.footer ul li {
-    width: 225px;
-    text-align: center;
-    height: 70px;
-    font-size: 18px;
-    font-weight: bold;
-}
-.path-frontpage .contextual-region.view.view-restaurant .views-field.views-field-title span a {
-    text-transform: uppercase;
-    font-size: 18px;
-    color: #000;
-}
-.path-frontpage .contextual-region.view.view-restaurant .views-field.views-field-field-image {
+  /*
+  To change this license header, choose License Headers in Project Properties.
+  To change this template file, choose Tools | Templates
+  and open the template in the editor.
+  */
+  /* 
+	  Created on : 27 Nov, 2017, 12:40:35 PM
+	  Author     : azher
+  */
+  
+  html body{
+	  font-size: 14px;
+  }
+  .navbar-default {
+	  background-color: #777;
+	  border-color: #777;
+	  border-radius: 0px;
+  }
+  .navbar-default .navbar-nav > li > a {
+	  color: #fff;
+	  text-transform: uppercase;
+  }
+  .navbar-default .navbar-nav > li > a:hover {
+	  background-color: grey;
+  }
+  .path-frontpage .view-content .views-row .views-col {
+	  padding: 30px;
+	  min-height: 512px;
+	 /* box-shadow: 5px 5px #f4f4f4, -5px -5px #f4f4f4, 0px 0px 5px 5px #777;*/
+  }
+  .path-frontpage .view-content .views-row .views-col:hover {
+	  background-color: #eee;
+  }
+  .path-splash .slick-list .slick-track .slick__slide h3 {
+	  text-transform: uppercase;
+	  text-align: center;
+  }
+  .path-splash .slick-list .slick-track .slick__slide p {
+	   text-align: center;
+  }
+  .path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content {
+	  background-color: #333;
+	  color: #fff;
+	  padding: 15px;
+	  min-height: 150px;
+  }
+  .path-splash .slick-dots {
+	  background-color: grey;
+	  padding: 10px;
+  }
+  .path-splash .slick__arrow{
+	  top: 100%;
+	  margin-top: 3px;
+  }
+  .path-splash .slick-arrow::before {
+	  color: #333;
+	  font-size: 2.5rem;
+  }
+  .footer ul {
+	  list-style-type: none;
+	  display: flex;
+	  color: grey;
+	  width: auto;
+  }
+  .footer ul li {
+	  width: 100%;
+	  text-align: center;
+	  font-size: 18px;
+	  font-weight: bold;
+	  display: block;
+	  margin: 0 auto;
+  }
+  .reservation, .call, .events, .location {
+	  border-right: 2px solid #ccc;
+  }
+  .path-frontpage .view.view-restaurant .views-field.views-field-title span a {
+	  text-transform: uppercase;
+	  font-size: 18px;
+	  color: #000;
+  }
+  .path-frontpage .view.view-restaurant .views-field.views-field-field-image {
+	 height: 265px;
+	 margin-bottom: 15px;
+  }
+  /*.path-frontpage .views-view-grid.horizontal.cols-2.clearfix .views-row {
+	  padding: 30px;
+  }*/
+  .path-frontpage .view.view-restaurant .views-field.views-field-title{
+	  margin-bottom: 10px;
+  }
+  form#user-login-form, form#user-register-form, form#user-pass {
+	  width: 27%;
+	  margin: 0 auto;
+  }
+  .path-user label.control-label.js-form-required.form-required {
+	  display: none;
+  }
+  .form-control{
+	  border-radius: 0;
+	  webkit-box-shadow: none;
+	  box-shadow: none;
+  }
+  .path-user button#edit-submit {
+	  width: 100%;
+	  border-radius: 0px;
+	  background-color: #777;
+	  border: 0px;
+	  font-size: 18px;
+	  text-transform: uppercase;
+	  text-align: center;
+		  color: #fff;
+  }
+  .path-user .footer h2.block-title, #block-welcomeappheader h2.block-title {
+	  display: none;
+  }
+  .footer{
+	  border-top: 0px solid #E5E5E5;
+	  padding-top: 0;
+  }
+  .footersignin, p.footerdesc {
+	  text-align: center;
+  }
+  section#block-userfooter .footersignin ul li {
+	  width: 305px;
+	  margin: 0px auto;
+	  text-align: center;
+	  border: 1px solid #ccc;
+	  height: auto;
+	  padding: 10px;
+	  margin-right: 37%;
+	  display: block;
+  }
+  section#block-userfooter .footersignin ul li:hover{
+	  background-color:#ccc;
+	  color:#777;
+  }
+  
+  .path-user .btn.icon-before .glyphicon, .path-user h1.page-header, .user-register-form.user-form .form-item.form-type-textfield label.control-label{
+		  display: none;
+  }
+  li.facebook::after {
+	  font-family: FontAwesome;
+	  content: "\f09a";
+	  position:absolute;
+	  color:#777;
+	  border:1px solid #777;
+	  padding:10px 15px;
+	  text-align:center;
+	  }
+	  li.facebook:hover::after {
+	  font-family: fontawesome;
+	  content: "\f09a";
+	  position: absolute;
+	  background-color: #777;
+	  color: #fff;
+	  border: 1px solid #fff;
+	  padding: 10px 15px;
+	  text-align: center;
+  }
+	  li.twitter::after {
+	  font-family: FontAwesome;
+	  content: "\f099";
+	  position:absolute;
+	  color:#777;
+	  border:1px solid #777;
+	  padding:10px 15px;
+	  text-align:center;
+	  }
+	  li.twitter:hover::after {
+	  font-family: fontawesome;
+	  content: "\f099";
+	  position: absolute;
+	  background-color: #777;
+	  color: #fff;
+	  border: 1px solid #fff;
+	  padding: 10px 15px;
+	  text-align: center;
+  }
+	  li.google::after {
+	  font-family: FontAwesome;
+	  content: "\f1a0";
+	  position:absolute;
+	  color:#777;
+	  border:1px solid #777;
+	  padding:10px 15px;
+	  text-align:center;
+	  }
+	  li.google:hover::after {
+	  font-family: fontawesome;
+	  content: "\f1a0";
+	  position: absolute;
+	  background-color: #777;
+	  color: #fff;
+	  border: 1px solid #fff;
+	  padding: 10px 15px;
+	  text-align: center;
+  }
+	  .path-user .footer ul li {
+	  width: auto;
+	  display: inline-flex;
+	  padding: 0px 25px;
+  }
+	.footersocial ul {
+		text-align: center;
+		display: block;
+		margin-right: 6%;
+	}
+	.footersocial {
+		margin: 25px auto;
+	}
+	p.footerdesc{
+		margin-bottom: 20px;
+	}
+	.path-user .logoheader {
+		margin: 15px;
+	}
+	#user-pass p, .forgotpwd p {
+		font-size: 10px;
+		text-align: center;
+	}
+	.path-user .forgotpwd h3 {
+		text-transform: uppercase;
+		font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	}
+	.path-user .forgotpwd {
+		text-align: center;
+		margin: 30px auto;
+	}
+	.reservation::before {
+		font-family: FontAwesome;
+		content: "\f0f5";
+		display: inherit;
+		position: relative;
+		font-size: 45px;
+		color:grey;
+	}
+	.call::before {
+		font-family: FontAwesome;
+		content: "\f095";
+		display: inherit;
+		position: relative;
+		font-size: 45px;
+		color:grey;
+	}
+	.events::before {
+		font-family: FontAwesome;
+		content: "\f19c";
+		display: inherit;
+		position: relative;
+		font-size: 45px;
+		color:grey;
+	}
+	.location::before {
+		font-family: FontAwesome;
+		content: "\f041";
+		display: inherit;
+		position: relative;
+		font-size: 45px;
+		color:grey;
+	}
+	.chat::before {
+		font-family: FontAwesome;
+		content: "\f0e5";
+		display: inherit;
+		position: relative;
+		font-size: 45px;
+		color:grey;
+	}
+	.title2 {
     margin-bottom: 20px;
+    }
+	.title {
+    margin-top: 20px;
+    }
+	.getstarted:hover {
+    background-color: #777;
+    color: #fff;
 }
-.path-frontpage .contextual-region.view.view-restaurant .views-field.views-field-title{
-	margin-bottom: 20px;
+	/***********************Media Queries**************************/
+	@media (max-width: 320px){
+		.logoheader img, .logos img{
+		width: 70%;
+	}
+	.welcomeapp li.getstarted {
+		width: 70% !important;
+	}
+	.title2 {
+    font-size: 18px !important;
+	}
+	.title {
+		font-size: 14px !important;
+	}
+	form#user-login-form, form#user-register-form, form#user-pass {
+		width: 55%;
+		margin: 0 auto;
+	}
+	section#block-userfooter .footersignin ul li{
+		width: auto;
+		margin-top: 20px;
+	}
+	.footersocial ul{
+		margin-right: 20%;
+	}
+	.tabs .nav > li > a{
+		padding: 3px;
+	    font-size: 12px;
+	    color: #000;
+	}
+	.path-user .forgotpwd h3, .path-frontpage .view.view-restaurant .views-field.views-field-title span a{
+	   font-size:14px;	
+	}
+	.path-frontpage .view.view-restaurant .views-field.views-field-field-image{
+		height: auto;
+	}
+	.path-frontpage .view.view-restaurant .views-field.views-field-body {
+        font-size: 10px;
+    }
+	.footer{
+		margin-top: 0px;
+        padding-bottom: 0px;
+	}
+	.reservation, .call, .events, .location, .chat {
+        font-size: 10px !important;
+} 
+.reservation::before, .call::before, .events::before, .location::before, .chat::before{
+	font-size: 20px;
+}
+	}
+	
+@media screen and (min-width:321px) and (max-width: 500px ){
+			.logoheader img, .logos img{
+		width: 95%;
+	}
+	.welcomeapp li.getstarted {
+		width: 90% !important;
+	}
+	form#user-login-form, form#user-register-form, form#user-pass {
+		width: 75%;
+		margin: 0 auto;
+	}
+	section#block-userfooter .footersignin ul li{
+		width: auto;
+		margin-top: 20px;
+	}
+	.footersocial ul{
+		margin-right: 20%;
+	}
+	.tabs .nav > li > a{
+		padding: 3px;
+	    font-size: 12px;
+	    color: #000;
+	}
+	.path-frontpage .view.view-restaurant .views-field.views-field-field-image{
+		height: auto;
+	}
+	.path-user .forgotpwd h3, .path-frontpage .view.view-restaurant .views-field.views-field-title span a{
+	   font-size:16px;	
+	}
+	.path-frontpage .view.view-restaurant .views-field.views-field-body {
+        font-size: 12px;
+    }
+		.footer{
+		margin-top: 0px;
+        padding-bottom: 0px;
+	}
+	.reservation, .call, .events, .location, .chat {
+        font-size: 10px !important;
+} 
+.reservation::before, .call::before, .events::before, .location::before, .chat::before{
+	font-size: 20px;
+}
+}
+@media screen and (min-width:501px) and (max-width: 767px ){
+	section#block-userfooter .footersignin ul li{
+		margin: 0 auto;
+	}
+	form#user-login-form, form#user-register-form, form#user-pass {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.path-frontpage .view.view-restaurant .views-field.views-field-field-image{
+		height: auto;
+	}
+	.path-user .forgotpwd h3, .path-frontpage .view.view-restaurant .views-field.views-field-title span a{
+	   font-size:16px;	
+	}
+	.path-frontpage .view.view-restaurant .views-field.views-field-body {
+        font-size: 12px;
+    }
+		.footer{
+		margin-top: 0px;
+        padding-bottom: 0px;
+	}
+	.reservation, .call, .events, .location, .chat {
+        font-size: 10px !important;
+} 
+.reservation::before, .call::before, .events::before, .location::before, .chat::before{
+	font-size: 20px;
+}
+.welcomeapp li.getstarted {
+		width: 70% !important;
+	}
+}
+@media screen and (min-width:768px){
+	section#block-userfooter .footersignin ul li{
+		margin: 0 auto;
+	}
+	form#user-login-form, form#user-register-form, form#user-pass {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.path-frontpage .view.view-restaurant .views-field.views-field-field-image{
+		height: auto;
+	}
 }
