@@ -3,7 +3,7 @@
 /*
   /**
  * @file
- * Contains \Drupal\custom_form\Form\CustomForm.
+ * Contains \Drupal\hyperspot_core\Form\MyProfileForm.
  */
 
 namespace Drupal\hyperspot_core\Form;
