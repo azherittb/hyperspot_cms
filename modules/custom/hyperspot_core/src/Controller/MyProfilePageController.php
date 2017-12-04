@@ -19,17 +19,22 @@ class MyProfilePageController extends ControllerBase {
     $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
 
     $name = $user->getUsername();
+    $roles = $user->getRoles();
     $first_name = $user->get('field_first_name')->value;
-    $lase_name = $user->get('field_last_name')->value;
+    $last_name = $user->get('field_last_name')->value;
     if (!$user->user_picture->isEmpty()) {
       $picture = $user->user_picture->entity->getFileUri();
     }
     else {
-      $picture = '';
+      $picture = 'public://default_images/profile-pictures.png';;
     }
 
-    $profile['test'] = array(
-      '#markup' => 'Hello, world! Settings.',
+    $profile['roles'] = $roles;
+    $profile['first_name'] = array(
+      '#markup' => $first_name,
+    );
+    $profile['last_name'] = array(
+      '#markup' => $last_name,
     );
     $profile['picture'] = array(
       '#theme' => 'image_style',
@@ -38,7 +43,7 @@ class MyProfilePageController extends ControllerBase {
       '#style_name' => 'thumbnail',
       '#uri' => $picture,
     );
-    
+
     $build = array(
       '#theme' => 'my_settings',
       '#items' => $profile,
