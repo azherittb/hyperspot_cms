@@ -17,6 +17,7 @@ class MyProfilePageController extends ControllerBase {
 
   public function mySettings() {
     $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+    //$user = \Drupal\user\Entity\User::load(2);
 
     $name = $user->getUsername();
     $roles = $user->getRoles();
@@ -30,12 +31,8 @@ class MyProfilePageController extends ControllerBase {
     }
 
     $profile['roles'] = $roles;
-    $profile['first_name'] = array(
-      '#markup' => $first_name,
-    );
-    $profile['last_name'] = array(
-      '#markup' => $last_name,
-    );
+    $profile['first_name'] = $first_name;
+    $profile['last_name'] = $last_name;
     $profile['picture'] = array(
       '#theme' => 'image_style',
       '#width' => NULL,

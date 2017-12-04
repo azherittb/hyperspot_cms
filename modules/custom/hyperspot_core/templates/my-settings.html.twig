@@ -1,16 +1,35 @@
-{# empty Twig template #}
-{{ items.picture }}
 <div class="profileblock">
-<img src="http://www.qygjxz.com/data/out/190/5691490-profile-pictures.png" alt="profile" />
-<h3>Amanda Peek</h3>
-<p class="customer">customer</p>
+    {{ items.picture }}
+    <h3>
+        {% if (items.first_name|length > 1 and items.first_name|length > 1) %}
+            {% set name = items.first_name ~ ' ' ~ items.last_name %}
+            {{ name }}
+        {% elseif items.last_name|length > 1%}
+            {% set name = items.last_name %}
+            {{ name }}
+        {% elseif items.first_name|length > 1%}
+            {% set name = items.first_name %}
+            {{ name }}
+        {% else %}
+            {% set name = 'Enter your name' %}
+            {{ name }}
+        {% endif %}
+    </h3>
+    <p class="customer">
+        {% if items.roles | length > 1 %}
+            {{items.roles[1]}}
+        {% else %}
+            {% set role = 'Customer' %}
+            {{role}}
+        {% endif %}
+    </p>
 </div>
 <div>
-<ul class="settingspage">
-<a href="#" target="_self"><li class="rest">Restaurant</li></a>
-<a href="#" target="_self"><li class="mybook">My Bookings</li></a>
-<a href="#" target="_self"><li class="myoffer">My Offers</li></a>
-<a href="#" target="_self"><li class="mymesg">My Messages</li></a>
-<a href="#" target="_self"><li class="setting">Settings</li></a>
-</ul>
+    <ul class="settingspage">
+        <a href="#" target="_self"><li class="rest">Restaurant</li></a>
+        <a href="#" target="_self"><li class="mybook">My Bookings</li></a>
+        <a href="#" target="_self"><li class="myoffer">My Offers</li></a>
+        <a href="#" target="_self"><li class="mymesg">My Messages</li></a>
+        <a href="#" target="_self"><li class="setting">Settings</li></a>
+    </ul>
 </div>
