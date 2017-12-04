@@ -15,7 +15,7 @@ use Drupal\Component\Utility\UrlHelper;
 /**
  * Contribute form.
  */
-class CustomForm extends FormBase {
+class MyProfileForm extends FormBase {
 
   /**
    * {@inheritdoc}
