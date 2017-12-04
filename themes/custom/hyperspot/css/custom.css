@@ -375,7 +375,10 @@
 	  border-right: 1em solid transparent;
 	  position: absolute;
 	  left: 3.8%;
-	  bottom: 83%;
+	  bottom: 33.5%;
+}
+.user-logged-in.path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
+	bottom: 83%;
 }
 .slick-dots li button::before {
     font-size: 1.5rem;
@@ -484,14 +487,19 @@ p.logout a{
 }
 .path-mysettings .profileblock img{
 	width:10%;
+	border-radius: 50%;
+    border: 10px double #777;
+}
+.path-mysettings .js-quickedit-page-title.page-header {
+    font-size: 0;
 }
 .profileblock h3{
     margin-left: 10%;
     font-weight: bold;
 	display: inline;
 	position: absolute;
-top: 6%;
-left: 12%;
+	top: 6%;
+	left: 12%;
 }
 .profileblock p {
 	display: inline;
