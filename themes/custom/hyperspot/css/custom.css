@@ -78,7 +78,7 @@
 		color: #333;
 		font-size: 2.5rem;
 	}
-	.footer ul {
+	.footer_block ul {
 		list-style-type: none;
 		display: flex;
 		color: grey;
@@ -86,7 +86,7 @@
 		margin: 0 auto;
         text-align: center;
 	}
-	.footer ul li {
+	.footer_block ul li {
 		width: 100%;
 		text-align: center;
 		font-size: 18px;
@@ -117,7 +117,7 @@
 		width: 27%;
 		margin: 0 auto;
 	}
-	.path-user label.control-label.js-form-required.form-required {
+	.path-user label.control-label.js-form-required.form-required, #block-logout h2.block-title {
 		display: none;
 	}
 	.form-control{
@@ -409,6 +409,110 @@
 }
 #user-pass #edit-actions {
     margin-bottom: 20px;
+}
+.path-mysettings .settingspage a, p.logout a{
+    text-decoration: none;
+}
+p.logout a{
+	color:#777;
+}
+.logout:hover, .logout:hover a, .logout:hover::before{
+	background-color: #777;
+	color: #fff;
+}
+.path-mysettings .settingspage li {
+    list-style-type: none;
+    text-transform: uppercase;
+	font-size: 21px;
+	color:grey;
+	border-bottom:1px solid #ccc;
+	padding: 20px;
+	position: relative;
+    padding-left: 13%;
+}
+.rest::before {
+    font-family: FontAwesome;
+    content: "\f19c";
+    position: absolute;
+    color: grey;
+    font-size: 30px;
+    left: 5%;
+}
+.mybook::before {
+    font-family: FontAwesome;
+    content: "\f0f5";
+    position: absolute;
+    color: grey;
+    font-size: 30px;
+    left: 5%;
+}
+.myoffer::before {
+    font-family: FontAwesome;
+    content: "\f295";
+    position: absolute;
+    color: grey;
+    font-size: 30px;
+    left: 5%;
+}
+.mymesg::before {
+    font-family: FontAwesome;
+    content: "\F0E0";
+    position: absolute;
+    color: grey;
+    font-size: 30px;
+    left: 5%;
+}
+.setting::before {
+    font-family: FontAwesome;
+    content: "\F013";
+    position: absolute;
+    color: grey;
+    font-size: 30px;
+    left: 5%;
+}
+.rest::after, .mybook::after, .myoffer::after, .mymesg::after, .setting::after {
+    font-family: FontAwesome;
+    content: "\f105";
+    position: absolute;
+    color: grey;
+    font-size: 30px;
+    right: 5%;
+}
+.path-mysettings .profileblock {
+    background-color: #ccc;
+	padding: 20px;
+}
+.path-mysettings .profileblock img{
+	width:10%;
+}
+.profileblock h3{
+    margin-left: 10%;
+    font-weight: bold;
+	display: inline;
+}
+.profileblock p {
+	display: inline;
+	position: absolute;
+	top: 18%;
+	left: 23%;
+	overflow: hidden;
+	z-index: 2;
+}
+.logout {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 15%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0px;
+	text-transform: uppercase;
+}
+.logout::before {
+    font-family: FontAwesome;
+    content: "\f08b";
+    position: absolute;
+    color: grey;
+    margin-left: -15px;
 }
 	  /***********************Media Queries**************************/
 	  @media (max-width: 320px){
