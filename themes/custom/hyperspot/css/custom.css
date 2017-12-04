@@ -489,6 +489,9 @@ p.logout a{
     margin-left: 10%;
     font-weight: bold;
 	display: inline;
+	position: absolute;
+top: 6%;
+left: 12%;
 }
 .profileblock p {
 	display: inline;
