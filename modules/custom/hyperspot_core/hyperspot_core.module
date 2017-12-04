@@ -1,7 +1,14 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Implements hook_theme().
  */
+function hyperspot_core_theme($existing, $type, $theme, $path) {
+  return array(
+    'my_settings' => array(
+      'variables' => array(
+        'items' => array(),
+      )
+    )
+  );
+}

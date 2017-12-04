@@ -1,3 +1,11 @@
+hyperspot_core.my_settings:
+  path: '/mysettings'
+  defaults:
+    _controller: '\Drupal\hyperspot_core\Controller\MyProfilePageController::mySettings'
+    _title: 'Settings'
+  requirements: 
+    _permission: 'access content'
+
 hyperspot_core.my_profile_view:
   path: '/myprofile'
   defaults:

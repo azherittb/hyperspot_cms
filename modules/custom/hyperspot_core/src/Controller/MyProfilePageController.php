@@ -8,11 +8,43 @@
 namespace Drupal\hyperspot_core\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\user\Entity\User;
 
 /**
  * Provides route responses for the Example module.
  */
 class MyProfilePageController extends ControllerBase {
+
+  public function mySettings() {
+    $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+
+    $name = $user->getUsername();
+    $first_name = $user->get('field_first_name')->value;
+    $lase_name = $user->get('field_last_name')->value;
+    if (!$user->user_picture->isEmpty()) {
+      $picture = $user->user_picture->entity->getFileUri();
+    }
+    else {
+      $picture = '';
+    }
+
+    $profile['test'] = array(
+      '#markup' => 'Hello, world! Settings.',
+    );
+    $profile['picture'] = array(
+      '#theme' => 'image_style',
+      '#width' => NULL,
+      '#height' => NULL,
+      '#style_name' => 'thumbnail',
+      '#uri' => $picture,
+    );
+    
+    $build = array(
+      '#theme' => 'my_settings',
+      '#items' => $profile,
+    );
+    return $build;
+  }
 
   public function myProfileView() {
     $profile = array(
@@ -27,4 +59,5 @@ class MyProfilePageController extends ControllerBase {
     );
     return $profile;
   }
+
 }
