@@ -17,7 +17,7 @@ hyperspot_core.my_profile_view:
 hyperspot_core.my_profile_edit:
   path: '/myprofile_edit'
   defaults:
-    _controller: '\Drupal\hyperspot_core\Controller\MyProfilePageController::myProfileEdit'
+    _form: '\Drupal\hyperspot_core\Form\MyProfileForm'
     _title: 'My Account'
   requirements: 
-    _permission: 'access content'
+    _permission: 'access content'    
