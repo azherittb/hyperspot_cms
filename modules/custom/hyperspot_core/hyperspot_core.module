@@ -9,6 +9,9 @@ function hyperspot_core_theme($existing, $type, $theme, $path) {
       'variables' => array(
         'items' => array(),
       )
-    )
+    ),
+    'my_profile_edit' => array(
+      'render element' => 'form',
+    ),
   );
 }

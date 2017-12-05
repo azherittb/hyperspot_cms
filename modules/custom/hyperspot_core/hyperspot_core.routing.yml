@@ -18,6 +18,6 @@ hyperspot_core.my_profile_edit:
   path: '/myprofile_edit'
   defaults:
     _form: '\Drupal\hyperspot_core\Form\MyProfileForm'
-    _title: 'My Account'
+    _title: 'Personal Details'
   requirements: 
     _permission: 'access content'    

@@ -1,0 +1,12 @@
+{{ form.frist_name }}
+{{ form.last_name }}
+{{ form.phone_number }}
+{{ form.e_mail }}
+{{ form.address }}
+{{ form.state }}
+{{ form.city }}
+{{ form.zipcode }}
+{{ form.country }}
+{{ form.picture }}
+
+{{ form|without('frist_name', 'last_name', 'phone_number', 'e_mail', 'address', 'state', 'city', 'zipcode', 'country', 'picture' ) }}
