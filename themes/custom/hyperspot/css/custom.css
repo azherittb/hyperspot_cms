@@ -9,17 +9,18 @@
 	*/
 	html body{
 		font-size: 14px;
+		background-image:url('https://wallpaperscraft.com/image/black_background_lines_scratches_69440_1920x1080.jpg');
 	}
 	.navbar-default {
-		background-color: #CCCCCC;
-        border-color: #CCCCCC;
-		border-radius: 0px;
-		border-bottom: 3px solid #93773a;
-		z-index: 40;
+		background: repeating-linear-gradient(
+    45deg, black, black 1px, transparent 1px, transparent 3px);
+        z-index: 40;
 		position: relative;
+		border-radius: 24px;
+		border-color: #a78b4d;
 	}
-	.navbar-default .navbar-nav > li > a {
-		color: #000;
+	.navbar-default .navbar-nav > li > a, .nav-tabs > li > a {
+		color: #fff;
 		text-transform: uppercase;
 		cursor: pointer;
 	}
@@ -43,15 +44,21 @@
 		padding: 30px;
 		min-height: 512px;
 		/*box-shadow: 0px 0px 0px 1px #a78b4d;*/
-	   /* box-shadow: 5px 5px #f4f4f4, -5px -5px #f4f4f4, 0px 0px 5px 5px #777;*/
 	   outline-offset: -15px;
        outline: 2px solid #a78d49;
+	   background-color: rgba(0,0,0,0.4);
 	}
+	.path-frontpage .view-content .views-field.views-field-body,  p{
+    color: #fff;
+   }
+   .path-frontpage .view-content .views-field.views-field-body:hover, .path-frontpage .view-content .views-row .views-col:hover .views-field.views-field-body {
+    color: #fff;
+   }
 	.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
 		background-color: #a78d49;
 	}
 	.path-frontpage .view-content .views-row .views-col:hover {
-		background-color: #eee;
+		background-color: rgba(0, 0, 0, 0.8);
 	}
 	.path-splash .slick-list .slick-track .slick__slide h3 {
 		text-transform: uppercase;
@@ -81,10 +88,14 @@
 	.footer_block ul {
 		list-style-type: none;
 		display: flex;
-		color: grey;
+		color: #fff;
 		width: auto;
 		margin: 0 auto;
         text-align: center;
+	}
+	.footer_block{
+		border: 1px solid #fff;
+		margin-top: 30px;
 	}
 	.footer_block ul li {
 		width: 100%;
@@ -95,7 +106,7 @@
 		margin: 0 auto;
 	}
 	.reservation, .call, .events, .location {
-		border-right: 2px solid #ccc;
+		border-right: 2px solid #fff;
 	}
 	.path-frontpage .view.view-restaurant .views-field.views-field-title span a {
 		text-transform: uppercase;
@@ -126,18 +137,20 @@
 		box-shadow: none;
 		width: 55%;
 		margin: 0 auto;
+		background-color: transparent;
+		color: #fff;
 	}
 	.path-user button#edit-submit {
 		width: 55%;
 		border-radius: 0px;
-		background-color: #777;
-		border: 0px;
+		background-color: transparent;
 		font-size: 18px;
 		text-transform: uppercase;
 		text-align: center;
 		color: #fff;
 		margin: 0 auto;
         display: block;
+		border: 1px solid #fff;
 	}
 	.path-user .footer h2.block-title, #block-welcomeappheader h2.block-title {
 		display: none;
@@ -158,14 +171,70 @@
 		padding: 10px;
 		margin-right: 37%;
 		display: block;
+		position: relative;
+		right: 1%;
+		color: #fff;
 	}
 	section#block-userfooter .footersignin ul li:hover{
-		background-color:#ccc;
+		background-color:#fff;
 		color:#777;
 	}
 	.path-user .btn.icon-before .glyphicon, .path-user h1.page-header, .user-register-form.user-form .form-item.form-type-textfield label.control-label, .path-node.page-node-type-restaurant .group-middle .field--type-text-with-summary p img{
 			display: none;
 	}
+	.page-header {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+   }
+   label{
+	    color: #fff; 
+		width:auto;
+		text-transform: uppercase;
+   }
+   .path-myprofile-edit .form-group{
+    display: inline-block;
+	margin-left: 10%;
+	margin-bottom: 3%;
+}
+.path-myprofile-edit .form-type-email{
+    position: relative;
+    left: 5%;
+}
+.path-myprofile-edit #edit-actions {
+    margin-bottom: 100px;
+}
+.path-myprofile-edit .form-type-textarea {
+    margin-left: 10%;
+    width: auto;
+    max-width: 82%;
+	margin-bottom: 3%;
+}
+.path-myprofile-edit .form-control{
+	width: 100%;
+	height: auto;
+}
+.path-myprofile-edit .btn-success {
+    color: #ffffff;
+    background-color: #777;
+    border-color: #ccc;
+    position: relative;
+    top: 50px;
+}
+.path-myprofile-edit .form-control{
+	color: #fff;
+background-color: transparent;
+}
+/*.path-myprofile-edit .form-type-textfield::after{
+	  font-family: FontAwesome;
+    content: "\f007"; 
+    font-size: 13px;
+    position: absolute;
+    pointer-events: none;
+	  color: #fff;
+	  font-size:20px;
+   font-size: 20px;	
+}*/
 	li.facebook::after {
 		font-family: FontAwesome;
 		content: "\f09a";
@@ -261,40 +330,40 @@
 		  content: "\f0f5";
 		  display: inherit;
 		  position: relative;
-		  font-size: 45px;
-		  color:grey;
+		  font-size: 35px;
+		  color:#fff;
 	  }
 	  .call::before {
 		  font-family: FontAwesome;
 		  content: "\f095";
 		  display: inherit;
 		  position: relative;
-		  font-size: 45px;
-		  color:grey;
+		  font-size: 35px;
+		  color:#fff;
 	  }
 	  .events::before {
 		  font-family: FontAwesome;
 		  content: "\f19c";
 		  display: inherit;
 		  position: relative;
-		  font-size: 45px;
-		  color:grey;
+		  font-size: 35px;
+		  color:#fff;
 	  }
 	  .location::before {
 		  font-family: FontAwesome;
 		  content: "\f041";
 		  display: inherit;
 		  position: relative;
-		  font-size: 45px;
-		  color:grey;
+		  font-size: 35px;
+		  color:#fff;
 	  }
 	  .chat::before {
 		  font-family: FontAwesome;
 		  content: "\f0e5";
 		  display: inherit;
 		  position: relative;
-		  font-size: 45px;
-		  color:grey;
+		  font-size: 35px;
+		  color:#fff;
 	  }
 	  .chat:hover::before, .location:hover::before, .events:hover::before, .call:hover::before, .reservation:hover::before, .chat:hover, .location:hover, .events:hover, .call:hover, .reservation:hover{
 		   color:#a78b4d;
@@ -320,7 +389,7 @@
   }
   .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
 	  position: relative;
-	  color: #000;
+	  color: #fff;
 	  top: -200px;
 	  font-weight:bold;
 	  font-size:36px;
@@ -354,7 +423,7 @@
 	  padding: 5px;
   }
    .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
-    background-color: #93773a;
+    background-color: transparent;
     width: 10%;
     text-align: center;
     font-size: 16px;
@@ -382,6 +451,7 @@
 }
 .slick-dots li button::before {
     font-size: 1.5rem;
+	color: #a78b4d;
 }
 .path-gallery .views-field-field-gallery-image img {
     display: inline;
@@ -405,10 +475,20 @@
 	 -webkit-transition: -webkit-transform .15s linear;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 5.25);
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
 }
-.path-gallery .js-quickedit-page-title.page-header {
+.path-gallery h1.page-header {
     text-transform: uppercase;
     text-align: center;
+	color: #fff;
 }
 #user-pass #edit-actions {
     margin-bottom: 20px;
@@ -417,7 +497,7 @@
     text-decoration: none;
 }
 p.logout a{
-	color:#777;
+	color:#fff;
 }
 .logout:hover, .logout:hover a, .logout:hover::before{
 	background-color: #777;
@@ -427,7 +507,7 @@ p.logout a{
     list-style-type: none;
     text-transform: uppercase;
 	font-size: 21px;
-	color:grey;
+	color:#fff;
 	border-bottom:1px solid #ccc;
 	padding: 20px;
 	position: relative;
@@ -437,7 +517,7 @@ p.logout a{
     font-family: FontAwesome;
     content: "\f19c";
     position: absolute;
-    color: grey;
+    color: #fff;
     font-size: 30px;
     left: 5%;
 }
@@ -445,7 +525,7 @@ p.logout a{
     font-family: FontAwesome;
     content: "\f0f5";
     position: absolute;
-    color: grey;
+    color: #fff;
     font-size: 30px;
     left: 5%;
 }
@@ -453,7 +533,7 @@ p.logout a{
     font-family: FontAwesome;
     content: "\f295";
     position: absolute;
-    color: grey;
+    color: #fff;
     font-size: 30px;
     left: 5%;
 }
@@ -461,7 +541,7 @@ p.logout a{
     font-family: FontAwesome;
     content: "\F0E0";
     position: absolute;
-    color: grey;
+    color: #fff;
     font-size: 30px;
     left: 5%;
 }
@@ -469,7 +549,7 @@ p.logout a{
     font-family: FontAwesome;
     content: "\F013";
     position: absolute;
-    color: grey;
+    color: #fff;
     font-size: 30px;
     left: 5%;
 }
@@ -477,7 +557,7 @@ p.logout a{
     font-family: FontAwesome;
     content: "\f105";
     position: absolute;
-    color: grey;
+    color: #fff;
     font-size: 30px;
     right: 5%;
 }
@@ -509,7 +589,7 @@ p.logout a{
 	overflow: hidden;
 	z-index: 2;
 }
-.logout {
+.footer .logout {
     padding: 10px;
     border: 1px solid #ccc;
     width: 15%;
@@ -517,21 +597,46 @@ p.logout a{
     margin: 0 auto;
     margin-bottom: 0px;
 	text-transform: uppercase;
+	color:#fff;
 }
-.logout::before {
+.footer .logout::before {
     font-family: FontAwesome;
     content: "\f08b";
     position: absolute;
     color: grey;
     margin-left: -15px;
 }
+.logo1.align-center {
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+.welcomeapp li.getstarted {
+    color: #fff;
+	cursor: pointer;
+}
 	  /***********************Media Queries**************************/
 	  @media (max-width: 320px){
-		  .logoheader img, .logos img{
-		  width: 70%;
-	  }
+		  .logoheader img.logo1 {
+    width: auto;
+}
+		  .path-user button#edit-submit {
+    width: 100%;
+  }
+  .path-myprofile-edit .form-type-email{
+	  left: 0;
+  }
+		.path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content{
+			min-height: 250px;
+		}
+		.slick-slider .slick-track, .slick-slider .slick-list{
+		   margin-bottom: 5px; 
+		}
+		.logoheader img, .logos img{
+		width: 70%;
+	}
 	  .welcomeapp li.getstarted {
 		  width: 70% !important;
+		  color:#fff;
 	  }
 	  .title2 {
 	  font-size: 18px !important;
@@ -591,16 +696,72 @@ p.logout a{
 	  width: 30%;
   }
   .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
-	  left: 9.5%;
-bottom: 95%;
+	display:none;
   }
+  .form-control{
+	  width: 100%;
+  }
+  section#block-userfooter .footersignin ul li {
+    width: 60%;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+    cursor: pointer;
+	position: relative;
+	right: 4%;
+}
 	  }
 	  
   @media screen and (min-width:321px) and (max-width: 500px ){
-			  .logoheader img, .logos img{
+	  .logoheader img.logo1 {
+    width: auto;
+}
+	  .form-control{
+	  width: 100%;
+  }
+  .path-myprofile-edit .form-type-email{
+	  left: 0;
+  }
+  .path-user button#edit-submit {
+    width: 100%;
+  }
+	  .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
+			display:none;
+	  }
+	  .page-node-type-restaurant .view-content .views-field-field-gallery-image img, .path-gallery .views-field-field-gallery-image img{
+		  display: block;
+		  margin: 10px auto;
+	  }
+	  .path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content{
+			min-height: 250px;
+		}
+	  .slick-slider .slick-track, .slick-slider .slick-list{
+			 margin-bottom: 5px; 
+		  }
+	  .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
+		  width: 30%;
+	  }
+	  .user-logged-in.path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after {
+         bottom: 95%;
+     }
+	  .logoheader img, .logos img{
 		  width: 95%;
 	  }
-	  .welcomeapp li.getstarted {
+	  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p {
+    top: 0px;
+    font-size: 10px;
+}
+.page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3 {
+    top: 0px;
+    font-size: 21px;
+    margin-top: -75px;
+}
+.more-link.form-group a {
+    margin-top: -30%;
+    right: 35%;
+}
+	   .welcomeapp li.getstarted {
 		  width: 90% !important;
 	  }
 	  form#user-login-form, form#user-register-form, form#user-pass {
@@ -608,8 +769,9 @@ bottom: 95%;
 		  margin: 0 auto;
 	  }
 	  section#block-userfooter .footersignin ul li{
-		  width: auto;
-		  margin-top: 20px;
+		 width: 80%;
+		margin-top: 20px;
+		left: 7%;
 	  }
 	  .footersocial ul{
 		  margin-right: 20%;
@@ -640,8 +802,51 @@ bottom: 95%;
   }
   }
   @media screen and (min-width:501px) and (max-width: 767px ){
+	  .form-control{
+		 width: 100%; 
+	  }
+	   .path-user button#edit-submit {
+    width: 100%;
+  }
+  .path-myprofile-edit .form-type-email{
+	  left: 0;
+  }
+	.page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p {
+		top: -30px;
+		font-size: 10px;
+	}
+	.page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3 {
+		top: -40px;
+		font-size: 21px;
+		margin-top: -75px;
+	}
+	.path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
+		width: 25%;
+	}
+	.user-logged-in.path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after {
+        bottom: 95%;
+	}
+	.path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
+		   display: none;
+	}
+	.page-node-type-restaurant .view-content .views-field-field-gallery-image img, .path-gallery .views-field-field-gallery-image img{
+		  display: block;
+		  margin: 10px auto;
+	}
+	.more-link.form-group a{
+		right: 35%;
+		margin-top: -15%;
+	}
+	  .path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content{
+			min-height: 250px;
+		}
+	  .slick-slider .slick-track, .slick-slider .slick-list{
+			 margin-bottom: 5px; 
+		  }
 	  section#block-userfooter .footersignin ul li{
-		  margin: 0 auto;
+		  margin: 15px auto;
+		  width: 52%;
+		  right: 2%;
 	  }
 	  form#user-login-form, form#user-register-form, form#user-pass {
 		  width: 50%;
@@ -671,6 +876,35 @@ bottom: 95%;
 	  }
   }
   @media screen and (min-width:768px){
+	  .path-myprofile-edit .form-type-email{
+	  left: 0;
+  }
+	  .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
+		 width: 15%; 
+	  }
+	  .path-gallery .views-field-field-gallery-image img{
+		   margin: 10px auto;
+	  }
+	  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
+		 top: 0;
+		 margin-top: -100px; 
+	  }
+	  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
+		  top: -115px;
+	  }
+	  .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
+		display:none;
+	  }
+	  .more-link.form-group a{
+		 right: 6%;
+		 color: #fff; 
+	  }
+	  .welcomeapp li.getstarted {
+		  width: 45% !important;
+	  }
+	  .slick-slider .slick-track, .slick-slider .slick-list{
+			 margin-bottom: 5px; 
+		  }
 	  section#block-userfooter .footersignin ul li{
 		  margin: 0 auto;
 	  }
@@ -691,5 +925,17 @@ bottom: 95%;
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #ccc;
     background-color: #93773a;
+  }
+  }
+  @media screen and (min-width:1200px){
+	  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
+		 top: 0;
+		 margin-top: -150px; 
+	  }
+	  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
+		  top: -165px;
+	  }
+	  .path-myprofile-edit .form-type-email{
+	  left: 5%;
   }
   }
