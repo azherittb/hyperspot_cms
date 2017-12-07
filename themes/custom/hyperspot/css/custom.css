@@ -9,23 +9,22 @@
 	*/
 	html body{
 		font-size: 14px;
-		background-image:url('https://wallpaperscraft.com/image/black_background_lines_scratches_69440_1920x1080.jpg');
-	}
+		overflow-x: hidden;
+			}
 	.navbar-default {
-		background: repeating-linear-gradient(
-    45deg, black, black 1px, transparent 1px, transparent 3px);
-        z-index: 40;
+		background-color: #336699;
+        border-color: #336699;
+		border-radius: 0px;
+		z-index: 40;
 		position: relative;
-		border-radius: 24px;
-		border-color: #a78b4d;
 	}
-	.navbar-default .navbar-nav > li > a, .nav-tabs > li > a {
+	.navbar-default .navbar-nav > li > a {
 		color: #fff;
 		text-transform: uppercase;
 		cursor: pointer;
 	}
 	.navbar-default .navbar-nav > li > a:hover {
-		background-color: grey;
+		background-color: #fff;
 	}
 	.menu.dropdown-menu {
     background-color: rgba(242,242,242,.9);
@@ -37,28 +36,19 @@
 	outline: 1px solid darkgray;
 }
 	.menu.dropdown-menu li a:hover {
-    background-color: #93773a;
-    color: #ccc;
+    background-color: #336699;
+    color: #fff;
 }
 	.path-frontpage .view-content .views-row .views-col {
 		padding: 30px;
 		min-height: 512px;
 		/*box-shadow: 0px 0px 0px 1px #a78b4d;*/
-	   outline-offset: -15px;
-       outline: 2px solid #a78d49;
-	   background-color: rgba(0,0,0,0.4);
+	   /* box-shadow: 5px 5px #f4f4f4, -5px -5px #f4f4f4, 0px 0px 5px 5px #777;*/
+	  /* outline-offset: -15px;
+       outline: 2px solid #a78d49;*/
 	}
-	.path-frontpage .view-content .views-field.views-field-body,  p{
-    color: #fff;
-   }
-   .path-frontpage .view-content .views-field.views-field-body:hover, .path-frontpage .view-content .views-row .views-col:hover .views-field.views-field-body {
-    color: #fff;
-   }
 	.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
 		background-color: #a78d49;
-	}
-	.path-frontpage .view-content .views-row .views-col:hover {
-		background-color: rgba(0, 0, 0, 0.8);
 	}
 	.path-splash .slick-list .slick-track .slick__slide h3 {
 		text-transform: uppercase;
@@ -66,15 +56,16 @@
 	}
 	.path-splash .slick-list .slick-track .slick__slide p {
 		 text-align: center;
+		 margin-top: 15px;
 	}
 	.path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content {
-		background-color: #333;
+		background-color: #336698;
 		color: #fff;
 		padding: 15px;
 		min-height: 150px;
 	}
 	.path-splash .slick-dots {
-		background-color: grey;
+		background-color: #fff;
 		padding: 10px;
 	}
 	.path-splash .slick__arrow{
@@ -88,14 +79,10 @@
 	.footer_block ul {
 		list-style-type: none;
 		display: flex;
-		color: #fff;
+		color: #336698;
 		width: auto;
 		margin: 0 auto;
         text-align: center;
-	}
-	.footer_block{
-		border: 1px solid #fff;
-		margin-top: 30px;
 	}
 	.footer_block ul li {
 		width: 100%;
@@ -106,13 +93,14 @@
 		margin: 0 auto;
 	}
 	.reservation, .call, .events, .location {
-		border-right: 2px solid #fff;
+		border-right: 2px solid #336698;
 	}
 	.path-frontpage .view.view-restaurant .views-field.views-field-title span a {
 		text-transform: uppercase;
 		font-size: 18px;
-		color: #a78b4d;
+		color: #336699;
 		font: 100%/1.6 Arial,Helvetica,sans-serif;
+		font-weight: bold;
 	}
 	.path-frontpage .view.view-restaurant .views-field.views-field-field-image {
 	   height: 265px;
@@ -135,22 +123,21 @@
 		border-radius: 0;
 		webkit-box-shadow: none;
 		box-shadow: none;
-		width: 55%;
+		width: 52%;
 		margin: 0 auto;
-		background-color: transparent;
-		color: #fff;
+		border: 2px solid #336699;
 	}
 	.path-user button#edit-submit {
-		width: 55%;
+		width: 52%;
 		border-radius: 0px;
-		background-color: transparent;
+		background-color: #336699;
+		border: 0px;
 		font-size: 18px;
 		text-transform: uppercase;
 		text-align: center;
 		color: #fff;
 		margin: 0 auto;
         display: block;
-		border: 1px solid #fff;
 	}
 	.path-user .footer h2.block-title, #block-welcomeappheader h2.block-title {
 		display: none;
@@ -163,84 +150,95 @@
 		text-align: center;
 	}
 	section#block-userfooter .footersignin ul li {
-		width: 28%;
+		width: 26%;
 		margin: 0px auto;
 		text-align: center;
-		border: 1px solid #ccc;
+		border: 2px solid #336699;
 		height: auto;
 		padding: 10px;
 		margin-right: 37%;
 		display: block;
 		position: relative;
 		right: 1%;
-		color: #fff;
+		color: #336699;
+		cursor: pointer;
 	}
 	section#block-userfooter .footersignin ul li:hover{
-		background-color:#fff;
-		color:#777;
+		background-color:#336699;
+		color:#fff;
 	}
 	.path-user .btn.icon-before .glyphicon, .path-user h1.page-header, .user-register-form.user-form .form-item.form-type-textfield label.control-label, .path-node.page-node-type-restaurant .group-middle .field--type-text-with-summary p img{
 			display: none;
 	}
+/***********************Form**********************/	
 	.page-header {
     text-transform: uppercase;
-    color: #fff;
+    color: #336699;
     font-size: 24px;
    }
    label{
-	    color: #fff; 
+	    color: #336699; 
 		width:auto;
 		text-transform: uppercase;
    }
+   #my-profile-form{
+	   margin: 0 auto;
+	  display: block;
+	  text-align: center;
+   }
    .path-myprofile-edit .form-group{
-    display: inline-block;
-	margin-left: 10%;
-	margin-bottom: 3%;
+	margin: 0 auto;
+	text-align: left;
+	display: inline-grid;
+	width: 40%;
 }
 .path-myprofile-edit .form-type-email{
     position: relative;
-    left: 5%;
-}
+	top: -6px;
+    }
 .path-myprofile-edit #edit-actions {
-    margin-bottom: 100px;
+    margin-bottom: 10%;
 }
 .path-myprofile-edit .form-type-textarea {
-    margin-left: 10%;
     width: auto;
-    max-width: 82%;
-	margin-bottom: 3%;
+    max-width: 80%;
+	margin: 0 auto;
+	display: block;
+	text-align: left;
 }
-.path-myprofile-edit .form-control{
-	width: 100%;
-	height: auto;
-}
-.path-myprofile-edit .btn-success {
-    color: #ffffff;
-    background-color: #777;
-    border-color: #ccc;
-    position: relative;
-    top: 50px;
-}
-.path-myprofile-edit .form-control{
-	color: #fff;
-background-color: transparent;
-}
-/*.path-myprofile-edit .form-type-textfield::after{
-	  font-family: FontAwesome;
-    content: "\f007"; 
-    font-size: 13px;
-    position: absolute;
-    pointer-events: none;
-	  color: #fff;
-	  font-size:20px;
-   font-size: 20px;	
-}*/
+	  .path-myprofile-edit .form-control{
+		  width: 100%;
+		  height: auto;
+	  }
+	  .path-myprofile-edit .btn-success {
+		  color: #ffffff;
+		  background-color: #336699;
+		  border-color: #ccc;
+		  position: relative;
+		  top: 100px;
+		  width: auto;
+		  margin: 0 auto;
+		  display: block;
+		  border-radius: 0px;
+	  }
+	  .path-myprofile-edit .form-control{
+	  color: #336699;
+	  background-color: transparent;
+	  float: right;
+	  margin-bottom: 20px;
+	  }
+	  .form-control:focus {
+		  border-color: #336699;
+		  outline: 0;
+		 box-shadow: unset;
+	  }
+/***********************Form**********************/	
 	li.facebook::after {
 		font-family: FontAwesome;
 		content: "\f09a";
 		position:absolute;
-		color:#777;
-		border:1px solid #777;
+		color:#336699;
+		border:1px solid #336699;
 		padding:10px 15px;
 		text-align:center;
 		}
@@ -248,7 +246,7 @@ background-color: transparent;
 		font-family: fontawesome;
 		content: "\f09a";
 		position: absolute;
-		background-color: #777;
+		background-color: #336699;
 		color: #fff;
 		border: 1px solid #fff;
 		padding: 10px 15px;
@@ -258,8 +256,8 @@ background-color: transparent;
 		font-family: FontAwesome;
 		content: "\f099";
 		position:absolute;
-		color:#777;
-		border:1px solid #777;
+		color:#336699;
+		border:1px solid #336699;
 		padding:10px 15px;
 		text-align:center;
 		}
@@ -267,7 +265,7 @@ background-color: transparent;
 		font-family: fontawesome;
 		content: "\f099";
 		position: absolute;
-		background-color: #777;
+		background-color: #336699;
 		color: #fff;
 		border: 1px solid #fff;
 		padding: 10px 15px;
@@ -277,8 +275,8 @@ background-color: transparent;
 		font-family: FontAwesome;
 		content: "\f1a0";
 		position:absolute;
-		color:#777;
-		border:1px solid #777;
+		color:#336699;
+		border:1px solid #336699;
 		padding:10px 15px;
 		text-align:center;
 		}
@@ -286,7 +284,7 @@ background-color: transparent;
 		font-family: fontawesome;
 		content: "\f1a0";
 		position: absolute;
-		background-color: #777;
+		background-color: #336699;
 		color: #fff;
 		border: 1px solid #fff;
 		padding: 10px 15px;
@@ -330,52 +328,60 @@ background-color: transparent;
 		  content: "\f0f5";
 		  display: inherit;
 		  position: relative;
-		  font-size: 35px;
-		  color:#fff;
+		  font-size: 45px;
+		  color:#336698;
 	  }
 	  .call::before {
 		  font-family: FontAwesome;
 		  content: "\f095";
 		  display: inherit;
 		  position: relative;
-		  font-size: 35px;
-		  color:#fff;
+		  font-size: 45px;
+		  color:#336698;
 	  }
 	  .events::before {
 		  font-family: FontAwesome;
 		  content: "\f19c";
 		  display: inherit;
 		  position: relative;
-		  font-size: 35px;
-		  color:#fff;
+		  font-size: 45px;
+		  color:#336698;
 	  }
 	  .location::before {
 		  font-family: FontAwesome;
 		  content: "\f041";
 		  display: inherit;
 		  position: relative;
-		  font-size: 35px;
-		  color:#fff;
+		  font-size: 45px;
+		  color:#336698;
 	  }
 	  .chat::before {
 		  font-family: FontAwesome;
 		  content: "\f0e5";
 		  display: inherit;
 		  position: relative;
-		  font-size: 35px;
-		  color:#fff;
+		  font-size: 45px;
+		  color:#336698;
 	  }
-	  .chat:hover::before, .location:hover::before, .events:hover::before, .call:hover::before, .reservation:hover::before, .chat:hover, .location:hover, .events:hover, .call:hover, .reservation:hover{
-		   color:#a78b4d;
+	  .chat:hover::before, .location:hover::before, .events:hover::before, .call:hover::before, .reservation:hover::before, .chat:hover, .location:hover,       .events:hover, .call:hover, .reservation:hover{
+		   color:#fff;
+		   background-color:#336698;
 	  }
 	  .title2 {
 	  margin-bottom: 20px;
+	  color: #336699;
 	  }
 	  .title {
 	  margin-top: 20px;
+	  color: #336699;
 	  }
-	  .getstarted:hover {
-	  background-color: #777;
+	  .welcomeapp ul li.getstarted {
+    border: 2px solid #336699 !important;
+    color: #336699;
+	cursor: pointer;
+}
+	  .welcomeapp ul li.getstarted:hover {
+	  background-color: #336699;
 	  color: #fff;
   }
   .page-node-type-restaurant .view-content .views-field-field-gallery-image img {
@@ -389,7 +395,7 @@ background-color: transparent;
   }
   .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
 	  position: relative;
-	  color: #fff;
+	  color: #000;
 	  top: -200px;
 	  font-weight:bold;
 	  font-size:36px;
@@ -406,6 +412,17 @@ background-color: transparent;
 	  margin: 0 auto;
 	  display: block;
   }
+/*.edge-edge {
+    width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}*/
+.group-header .slick-arrow{
+	width: 88px;
+}
   .group-header .slick-arrow::before {
 	  color: #fff;
 	  font-size: 3.25rem;
@@ -423,7 +440,7 @@ background-color: transparent;
 	  padding: 5px;
   }
    .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
-    background-color: transparent;
+    background-color: #93773a;
     width: 10%;
     text-align: center;
     font-size: 16px;
@@ -451,7 +468,13 @@ background-color: transparent;
 }
 .slick-dots li button::before {
     font-size: 1.5rem;
-	color: #a78b4d;
+	color: #336699;
+	opacity: unset;
+}
+.slick-dots li.slick-active button::before {
+    color: transparent;
+    border: 2px solid #336698;
+    border-radius: 50%;
 }
 .path-gallery .views-field-field-gallery-image img {
     display: inline;
@@ -462,33 +485,23 @@ background-color: transparent;
     margin-bottom: 10px;
     margin-right: 15px;
    	outline-style: none;
-	 -webkit-transition: -webkit-transform .15s linear;
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-webkit-transition: -webkit-transform .15s linear;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
 }
 .path-gallery .views-field-field-gallery-image img:hover{
 	 -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  position: relative;
-  z-index: 5;
+	-moz-transform: scale(1);
+	position: relative;
+	z-index: 5;
 	outline-style: none;
-	 -webkit-transition: -webkit-transform .15s linear;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 5.25);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  background:
-linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-background-color: #131313;
-background-size: 20px 20px;
+	-webkit-transition: -webkit-transform .15s linear;
+	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 5.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
 }
 .path-gallery h1.page-header {
     text-transform: uppercase;
     text-align: center;
-	color: #fff;
 }
 #user-pass #edit-actions {
     margin-bottom: 20px;
@@ -497,18 +510,18 @@ background-size: 20px 20px;
     text-decoration: none;
 }
 p.logout a{
-	color:#fff;
+	color: #336699;
 }
 .logout:hover, .logout:hover a, .logout:hover::before{
-	background-color: #777;
+	background-color: #336699;
 	color: #fff;
 }
 .path-mysettings .settingspage li {
     list-style-type: none;
     text-transform: uppercase;
 	font-size: 21px;
-	color:#fff;
-	border-bottom:1px solid #ccc;
+	color:#336699;
+	border-bottom:1px solid #336699;
 	padding: 20px;
 	position: relative;
     padding-left: 13%;
@@ -517,7 +530,7 @@ p.logout a{
     font-family: FontAwesome;
     content: "\f19c";
     position: absolute;
-    color: #fff;
+    color: #336699;
     font-size: 30px;
     left: 5%;
 }
@@ -525,7 +538,7 @@ p.logout a{
     font-family: FontAwesome;
     content: "\f0f5";
     position: absolute;
-    color: #fff;
+    color: #336699;
     font-size: 30px;
     left: 5%;
 }
@@ -533,7 +546,7 @@ p.logout a{
     font-family: FontAwesome;
     content: "\f295";
     position: absolute;
-    color: #fff;
+    color: #336699;
     font-size: 30px;
     left: 5%;
 }
@@ -541,7 +554,7 @@ p.logout a{
     font-family: FontAwesome;
     content: "\F0E0";
     position: absolute;
-    color: #fff;
+    color: #336699;
     font-size: 30px;
     left: 5%;
 }
@@ -549,7 +562,7 @@ p.logout a{
     font-family: FontAwesome;
     content: "\F013";
     position: absolute;
-    color: #fff;
+    color: #336699;
     font-size: 30px;
     left: 5%;
 }
@@ -557,18 +570,19 @@ p.logout a{
     font-family: FontAwesome;
     content: "\f105";
     position: absolute;
-    color: #fff;
+    color: #336699;
     font-size: 30px;
     right: 5%;
 }
-.path-mysettings .profileblock {
-    background-color: #ccc;
+.path-mysettings .profileblock, .path-myprofile-edit .profileblock {
+    background-color: #336699;
 	padding: 20px;
+	margin-bottom: 3%;
 }
-.path-mysettings .profileblock img{
+.path-mysettings .profileblock img, .path-myprofile-edit .profileblock img{
 	width:10%;
 	border-radius: 50%;
-    border: 10px double #777;
+    border: 10px double #fff;
 }
 .path-mysettings .js-quickedit-page-title.page-header {
     font-size: 0;
@@ -580,6 +594,7 @@ p.logout a{
 	position: absolute;
 	top: 6%;
 	left: 12%;
+	color: #fff;
 }
 .profileblock p {
 	display: inline;
@@ -588,16 +603,22 @@ p.logout a{
 	left: 23%;
 	overflow: hidden;
 	z-index: 2;
+	color: #fff;
+}
+.path-myprofile-edit .profileblock p{
+	top: 50%;
+}
+.path-myprofile-edit .profileblock h3{
+	top: 15%;
 }
 .footer .logout {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #336699;
     width: 15%;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 0px;
 	text-transform: uppercase;
-	color:#fff;
 }
 .footer .logout::before {
     font-family: FontAwesome;
@@ -606,14 +627,6 @@ p.logout a{
     color: grey;
     margin-left: -15px;
 }
-.logo1.align-center {
-    margin-bottom: 15px;
-    border-radius: 50%;
-}
-.welcomeapp li.getstarted {
-    color: #fff;
-	cursor: pointer;
-}
 	  /***********************Media Queries**************************/
 	  @media (max-width: 320px){
 		  .logoheader img.logo1 {
@@ -621,9 +634,6 @@ p.logout a{
 }
 		  .path-user button#edit-submit {
     width: 100%;
-  }
-  .path-myprofile-edit .form-type-email{
-	  left: 0;
   }
 		.path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content{
 			min-height: 250px;
@@ -636,7 +646,6 @@ p.logout a{
 	}
 	  .welcomeapp li.getstarted {
 		  width: 70% !important;
-		  color:#fff;
 	  }
 	  .title2 {
 	  font-size: 18px !important;
@@ -719,9 +728,6 @@ p.logout a{
 }
 	  .form-control{
 	  width: 100%;
-  }
-  .path-myprofile-edit .form-type-email{
-	  left: 0;
   }
   .path-user button#edit-submit {
     width: 100%;
@@ -808,9 +814,6 @@ p.logout a{
 	   .path-user button#edit-submit {
     width: 100%;
   }
-  .path-myprofile-edit .form-type-email{
-	  left: 0;
-  }
 	.page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p {
 		top: -30px;
 		font-size: 10px;
@@ -876,9 +879,6 @@ p.logout a{
 	  }
   }
   @media screen and (min-width:768px){
-	  .path-myprofile-edit .form-type-email{
-	  left: 0;
-  }
 	  .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
 		 width: 15%; 
 	  }
@@ -897,10 +897,10 @@ p.logout a{
 	  }
 	  .more-link.form-group a{
 		 right: 6%;
-		 color: #fff; 
+		 color: #000; 
 	  }
 	  .welcomeapp li.getstarted {
-		  width: 45% !important;
+		  width: 45%;
 	  }
 	  .slick-slider .slick-track, .slick-slider .slick-list{
 			 margin-bottom: 5px; 
@@ -926,6 +926,33 @@ p.logout a{
     color: #ccc;
     background-color: #93773a;
   }
+  .path-myprofile-edit .profileblock h3 {
+    top: 0;
+}
+.path-myprofile-edit .form-type-email {
+    position: relative;
+    top: 0;
+}
+  .profileblock h3{
+	  top: 0;
+	  left: 15%;
+	  font-size: 16px;
+  }
+  .profileblock p{
+	  top: 10%;
+	  left: 25%;
+	  font-size: 10px;
+  }
+.rest::before, .mybook::before, .myoffer::before, .mymesg::before, .setting::before{
+	font-size: 20px;
+    left: 0;
+}
+.footer .logout{
+	width: 35%;
+}
+#edit-picture {
+    width: auto;
+}
   }
   @media screen and (min-width:1200px){
 	  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
@@ -935,7 +962,4 @@ p.logout a{
 	  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
 		  top: -165px;
 	  }
-	  .path-myprofile-edit .form-type-email{
-	  left: 5%;
-  }
   }
