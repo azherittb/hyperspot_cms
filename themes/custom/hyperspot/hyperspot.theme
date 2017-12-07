@@ -6,6 +6,10 @@
  *
  * Place your custom PHP code in this file.
  */
+
+/**
+ * Implements hook_form_alter().
+ */
 function hyperspot_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   if ($form_id == 'user_login_form') {
     $form['name']['#attributes']['placeholder'] = t('Email Address');
@@ -20,11 +24,44 @@ function hyperspot_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form
   if ($form_id == 'user_pass') {
     $form['name']['#attributes']['placeholder'] = t('Email Address');
   }
+  if ($form_id == 'my_profile_edit') {
+    $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+    if (!$user->user_picture->isEmpty()) {
+      $fid = $user->user_picture->entity->id();
+      $form['picture']['#default_value'] = array($fid);
+    }
+  }
 }
 
+/**
+ * Implements hook_form_user_register_form_process_pass().
+ */
 function hyperspot_form_user_register_form_process_pass(&$element, \Drupal\Core\Form\FormStateInterface $form_state, &$complete_form) {
   $element = \Drupal\Core\Render\Element\PasswordConfirm::processPasswordConfirm($element, $form_state, $complete_form);
   $element['pass1']['#placeholder'] = t('Password');
   $element['pass2']['#placeholder'] = t('Repeat Password');
   return $element;
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function hyperspot_preprocess_my_profile_edit_user_picture(&$variables) {
+  if (empty($variables['element']['#value']['fids'][0])) {
+    $uri = 'public://default_images/profile-pictures.png';
+  }
+  else {
+    $fid = $variables['element']['#value']['fids'][0];
+    $file = file_load($fid);
+    $uri = $file->get('uri')->value;
+    ;
+  }
+  $picture = array(
+    '#theme' => 'image_style',
+    '#width' => NULL,
+    '#height' => NULL,
+    '#style_name' => 'thumbnail',
+    '#uri' => $uri,
+  );
+  $variables['picuture'] = $picture;
 }
