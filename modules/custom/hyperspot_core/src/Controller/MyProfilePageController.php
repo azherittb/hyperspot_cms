@@ -18,7 +18,6 @@ class MyProfilePageController extends ControllerBase {
   public function mySettings() {
     $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
     //$user = \Drupal\user\Entity\User::load(2);
-
     $name = $user->getUsername();
     $roles = $user->getRoles();
     $first_name = $user->get('field_first_name')->value;
@@ -27,7 +26,7 @@ class MyProfilePageController extends ControllerBase {
       $picture = $user->user_picture->entity->getFileUri();
     }
     else {
-      $picture = 'public://default_images/profile-pictures.png';;
+      $picture = 'public://default_images/profile-pictures.png';
     }
 
     $profile['roles'] = $roles;
@@ -40,6 +39,7 @@ class MyProfilePageController extends ControllerBase {
       '#style_name' => 'thumbnail',
       '#uri' => $picture,
     );
+    $profile['uid'] = 'myprofile_edit/'.$user->id();
 
     $build = array(
       '#theme' => 'my_settings',

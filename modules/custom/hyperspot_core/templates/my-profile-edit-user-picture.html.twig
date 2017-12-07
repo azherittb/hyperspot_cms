@@ -1,0 +1,16 @@
+{#
+kint(element['#default_value'])
+/**
+ *kint(element['#value']['fids']
+ */
+#}
+{%
+  set classes = [
+    'js-form-managed-file',
+    'form-managed-file',
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+    {{ picuture }}
+    {{ element }}
+</div>

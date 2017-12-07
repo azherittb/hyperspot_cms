@@ -15,9 +15,9 @@ hyperspot_core.my_profile_view:
     _permission: 'access content'
 
 hyperspot_core.my_profile_edit:
-  path: '/myprofile_edit'
+  path: '/myprofile_edit/{user}'
   defaults:
-    _form: '\Drupal\hyperspot_core\Form\MyProfileForm'
+    _form: '\Drupal\hyperspot_core\Form\MyProfileEdit'
     _title: 'Personal Details'
   requirements: 
-    _permission: 'access content'    
+    _permission: 'access content'   
