@@ -21,3 +21,23 @@ hyperspot_core.my_profile_edit:
     _title: 'Personal Details'
   requirements: 
     _permission: 'access content'   
+    
+hyperspot_core.my_reservation_form:
+  path: '/myreservation_form/{nid}'
+  defaults:
+    _form: '\Drupal\hyperspot_core\Form\MyReservationForm'
+    _title: 'Reservation'
+  requirements: 
+    _permission: 'access content'
+    
+hyperspot_core.my_reservation:
+  path: '/myreservation/{node}'
+  defaults:
+    _controller: '\Drupal\hyperspot_core\Controller\MyReservationController::myReservation'
+    _title: 'Reservation'
+  requirements: 
+    _permission: 'access content' 
+  options:
+    parameters:
+      node: 
+        type: entity:node

@@ -1,0 +1,8 @@
+{{ form.restaurant }}
+{{ form.date }}
+{{ form.arrival }}
+{{ form.person }}
+{{ form.actions }}
+
+
+{{ form|without('restaurant', 'date', 'arrival', 'person', 'actions') }}

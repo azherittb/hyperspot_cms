@@ -16,7 +16,7 @@ function hyperspot_core_theme($existing, $type, $theme, $path) {
     'my_profile_edit_user_picture' => array(
       'render element' => 'element',
     ),
-    'my_reservation_edit' => array(
+    'my_reservation_form' => array(
       'render element' => 'form',
     ),
   );

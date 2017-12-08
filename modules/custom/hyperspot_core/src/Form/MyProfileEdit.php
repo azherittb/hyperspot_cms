@@ -97,7 +97,7 @@ class MyProfileEdit extends FormBase {
   /**
    * {@inheritdoc}
    */
-  public function validateForm(array &$form, FormStateInterface $form_state, AccountInterface $user = NULL) {
+  public function validateForm(array &$form, FormStateInterface $form_state) {
     if (strlen($form_state->getValue('phone_number')) < 10) {
       //$form_state->setErrorByName('phone_number', $this->t('Mobile number is too short.'));
     }
@@ -106,8 +106,7 @@ class MyProfileEdit extends FormBase {
   /**
    * {@inheritdoc}
    */
-  public function submitForm(array &$form, FormStateInterface $form_state, AccountInterface $user = NULL) {
-    // drupal_set_message($this->t('@can_name ,Your application is being submitted!', array('@can_name' => $form_state->getValue('candidate_name'))));
+  public function submitForm(array &$form, FormStateInterface $form_state) {
     $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
     $first_name = $form_state->getValue('frist_name');
     $last_name = $form_state->getValue('last_name');
