@@ -152,7 +152,66 @@
 	.footersignin, p.footerdesc {
 		text-align: center;
 	}
-	section#block-userfooter .footersignin ul li {
+	.page-node-type-reservation .col-md-12 {
+    width: 100%;
+    display: block;
+    text-align: center;
+	
+}
+.page-node-type-reservation .profilereservation {
+    border-bottom: 1px solid #336699;
+    padding-bottom: 30px;
+	color:#336699;
+}
+.page-node-type-reservation .namedate, .page-node-type-reservation .namearrival, .page-node-type-reservation .nameperson {
+    padding: 20px;
+    font-size: 20px;
+}
+.page-node-type-reservation .namedate::before{
+	font-family: FontAwesome;
+		content: "\f073";
+		position:absolute;
+		color:#336699;
+   left: 40%;
+}
+.path-myreservation-form .namedate::before{
+	    font-family: FontAwesome;
+		content: "\f073";
+		position:absolute;
+		color:#336699;
+        left: 10%;
+}
+.page-node-type-reservation .namearrival::before{
+	font-family: FontAwesome;
+		content: "\f017";
+		position:absolute;
+		color:#336699;
+   left: 40%;
+}
+.path-myreservation-form .namearrival::before{
+	    font-family: FontAwesome;
+		content: "\f017";
+		position:absolute;
+		color:#336699;
+        left: 15%;
+}
+.page-node-type-reservation .nameperson::before{
+	font-family: FontAwesome;
+		content: "\f0c0";
+		position:absolute;
+		color:#336699;
+   left: 40%;
+}
+.page-node-type-reservation .nameperson{
+	    border-bottom: 1px solid #336699;
+}
+.page-node-type-reservation h2{
+	text-transform: uppercase;
+}
+.seeyou{
+	color:#336699;
+}
+section#block-userfooter .footersignin ul li {
 		width: 26%;
 		margin: 0px auto;
 		text-align: center;
@@ -173,6 +232,16 @@
 	.path-user .btn.icon-before .glyphicon, .path-user h1.page-header, .user-register-form.user-form .form-item.form-type-textfield label.control-label, .path-node.page-node-type-restaurant .group-middle .field--type-text-with-summary p img{
 			display: none;
 	}
+.path-myreservation-form .nameperson::before{
+	font-family: FontAwesome;
+		content: "\f0c0";
+		position:absolute;
+		color:#336699;
+   left: 8%;
+}
+.path-myreservation-form .form-required::after{
+	display:none;
+}
 /***********************Form**********************/	
 	.page-header {
     text-transform: uppercase;
@@ -506,7 +575,7 @@ width: 20%;
 	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 5.25);
 	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
 }
-.path-gallery h1.page-header {
+.path-gallery h1.page-header, .path-myreservation-form .profilereservation h1 {
     text-transform: uppercase;
     text-align: center;
 }
@@ -618,7 +687,7 @@ p.logout a{
     display: block;
     color: #fff;
 }
-.path-myreservation-form .profilereservation h3, .path-myreservation-form .profilereservation p {
+.path-myreservation-form .profilereservation h3, .path-myreservation-form .profilereservation p, .path-myreservation-form .profilereservation h1 {
     position: relative;
     display: block;
     color: #336699;
@@ -627,12 +696,6 @@ p.logout a{
 .path-myreservation-form .profilereservation {
     margin-bottom: 30px;
 }
-.path-myreservation-form .select-wrapper::after{
-	right: 25%;
-}
-/*.path-myreservation-form label{
-	width: 100%;
-}*/
 .profileblock p {
 	display: inline;
 	position: absolute;
@@ -663,6 +726,29 @@ p.logout a{
     position: absolute;
     color: grey;
     margin-left: -15px;
+}
+#my-reservation-form {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.nameaction {
+    margin-top: 3%;
+}
+#my-reservation-form .select-wrapper select{
+	padding-right: 7em;
+}
+#my-reservation-form .form-control, #my-reservation-form .form-group, #my-reservation-form .form-select{
+	margin-bottom: 15px;
+display: inline-block;
+float: unset;
+width: 100%;
+}
+#my-reservation-form label{
+	float: left;
+}
+#my-reservation-form .btn-primary{
+	border-radius: 0;
 }
 	  /***********************Media Queries**************************/
 	  @media (max-width: 320px){
@@ -757,6 +843,15 @@ p.logout a{
 	position: relative;
 	right: 4%;
 }
+.page-node-type-reservation .namedate::before, .page-node-type-reservation .namearrival::before, .page-node-type-reservation .nameperson::before{
+	left: 20%;
+}
+.path-myreservation-form .namedate::before, .path-myreservation-form .namearrival::before, .path-myreservation-form .nameperson::before{
+	left: 30%;
+}
+.path-myreservation-form .select-wrapper::after {
+    right: 0;
+}
 	  }
 	  
   @media screen and (min-width:321px) and (max-width: 500px ){
@@ -843,6 +938,15 @@ p.logout a{
   .reservation::before, .call::before, .events::before, .location::before, .chat::before{
 	  font-size: 20px;
   }
+  .page-node-type-reservation .namedate::before, .page-node-type-reservation .namearrival::before, .page-node-type-reservation .nameperson::before{
+	left: 20%;
+}
+.path-myreservation-form .namedate::before, .path-myreservation-form .namearrival::before, .path-myreservation-form .nameperson::before{
+	left: 30%;
+}
+.path-myreservation-form .select-wrapper::after {
+    right: 0;
+}
   }
   @media screen and (min-width:501px) and (max-width: 767px ){
 	  .form-control{
@@ -914,8 +1018,20 @@ p.logout a{
   .welcomeapp li.getstarted {
 		  width: 70% !important;
 	  }
+	  .page-node-type-reservation .namedate::before, .page-node-type-reservation .namearrival::before, .page-node-type-reservation .nameperson::before{
+	left: 30%;
+}
+.path-myreservation-form .namedate::before, .path-myreservation-form .namearrival::before, .path-myreservation-form .nameperson::before{
+	left: 20%;
+}
+.path-myreservation-form .select-wrapper::after {
+    right: 0;
+}
   }
   @media screen and (min-width:768px){
+	  .path-myreservation-form .nameperson::before{
+		  left: 10%;
+	  }
 	  .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
 		 width: 15%; 
 	  }
@@ -990,6 +1106,7 @@ p.logout a{
 #edit-picture {
     width: auto;
 }
+
   }
   @media screen and (min-width:1200px){
 	  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
