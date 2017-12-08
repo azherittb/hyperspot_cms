@@ -11,6 +11,9 @@
 		font-size: 14px;
 		overflow-x: hidden;
 			}
+			.path-frontpage #navbar, .path-user nav.tabs, .path-user #navbar {
+    display: none;
+}
 	.navbar-default {
 		background-color: #336699;
         border-color: #336699;
@@ -39,7 +42,7 @@
     background-color: #336699;
     color: #fff;
 }
-	.path-frontpage .view-content .views-row .views-col {
+	.path-home .view-content .views-row .views-col {
 		padding: 30px;
 		min-height: 512px;
 		/*box-shadow: 0px 0px 0px 1px #a78b4d;*/
@@ -73,7 +76,7 @@
 		margin-top: 3px;
 	}
 	.path-splash .slick-arrow::before {
-		color: #333;
+		color: #336699;
 		font-size: 2.5rem;
 	}
 	.footer_block {
@@ -98,21 +101,21 @@
 	.reservation, .call, .events, .location {
 		border-right: 2px solid #336698;
 	}
-	.path-frontpage .view.view-restaurant .views-field.views-field-title span a {
+	.path-home .view.view-restaurant .views-field.views-field-title span a {
 		text-transform: uppercase;
 		font-size: 18px;
 		color: #336699;
 		font: 100%/1.6 Arial,Helvetica,sans-serif;
 		font-weight: bold;
 	}
-	.path-frontpage .view.view-restaurant .views-field.views-field-field-image {
+	.path-home .view.view-restaurant .views-field.views-field-field-image {
 	   height: 265px;
 	   margin-bottom: 15px;
 	}
 	/*.path-frontpage .views-view-grid.horizontal.cols-2.clearfix .views-row {
 		padding: 30px;
 	}*/
-	.path-frontpage .view.view-restaurant .views-field.views-field-title{
+	.path-home .view.view-restaurant .views-field.views-field-title{
 		margin-bottom: 10px;
 	}
 	form#user-login-form, form#user-register-form, form#user-pass {
@@ -211,23 +214,24 @@
 .seeyou{
 	color:#336699;
 }
-section#block-userfooter .footersignin ul li {
-		width: 26%;
+ .footersignin ul li a {
+		width: 100%;
 		margin: 0px auto;
 		text-align: center;
 		border: 2px solid #336699;
 		height: auto;
-		padding: 10px;
-		margin-right: 37%;
+		padding: 5px 120px;
+		    right: 3%;
 		display: block;
 		position: relative;
-		right: 1%;
 		color: #336699;
 		cursor: pointer;
+		text-decoration:none;
 	}
-	section#block-userfooter .footersignin ul li:hover{
+	 .footersignin ul li a:hover{
 		background-color:#336699;
 		color:#fff;
+		text-decoration:none;
 	}
 	.path-user .btn.icon-before .glyphicon, .path-user h1.page-header, .user-register-form.user-form .form-item.form-type-textfield label.control-label, .path-node.page-node-type-restaurant .group-middle .field--type-text-with-summary p img{
 			display: none;
@@ -457,13 +461,32 @@ width: 20%;
 }
 	  .welcomeapp ul li.getstarted:hover {
 	  background-color: #336699;
+	  color: #fff; 
+  }
+  .forgot, p.need {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.forgot a, p.need a{
+	text-decoration: none;
+}
+span.or::after {
+    content: '';
+    font-family: fontawesome;
+    width: 20px;
+    height: 1px;
+    color: #000;
+    position: absolute;
+}
+  .welcomeapp ul li.getstarted a:hover, .footersignin ul li a:hover, .welcomeapp ul li.getstarted a:hover {
+	   text-decoration: none;
+	   background-color: #336699;
 	  color: #fff;
   }
   .page-node-type-restaurant .view-content .views-field-field-gallery-image img {
-		  display: inline;
-		padding: 5px;
-		border: 2px solid #336699;
-		margin-bottom: 10px;
+		display: inline;
+		margin-bottom: 5px;
   }
   .page-node-type-restaurant .view-content .views-field-field-gallery-image:hover img{
 	 /*   border-radius:30%;	*/
@@ -749,7 +772,93 @@ width: 100%;
 }
 #my-reservation-form .btn-primary{
 	border-radius: 0;
+	text-transform: uppercase;
 }
+
+
+  /****************************************/
+	  .vc_col-sm-6 {
+    width: 50%;
+	float: left;
+}
+.vc_custom_heading {
+    position: relative;
+    line-height: 30px;
+    font-size: 30px;
+    letter-spacing: 0em;
+}
+.vc_custom_heading.style-1::after {
+    width: 40px;
+    height: 2px;
+    background-color: #d6cfb2;
+    left: 0;
+}
+.vc_custom_heading::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+}
+wpb_wrapper h2 {
+    font-family: Oswald;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+	font-size: 30px;
+}
+.vc_custom_heading .sub-title {
+    color: #b2b2b2;
+    display: block;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+.coffee-store p {
+    float: left;
+    width: 50%;
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+.alfanar_wrapper p {
+    width: 50%;
+    text-align: justify;
+}
+.alfanar_wrapper img {
+    width: 50%;
+    float: right;
+}
+.sub-title {
+    color: #336699;
+    display: block;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+h2 .sub-title::after {
+    width: 40px;
+    height: 2px;
+    background-color: #d6cfb2;
+    left: 0;
+	position: absolute;
+    content: '';
+    bottom: 0;
+}
+.alfanar {
+    position: relative;
+    line-height: 30px;
+    font-size: 30px;
+    letter-spacing: 0em;
+}
+.border-box-shadow .vc_single_image-wrapper {
+    box-shadow: 0 0 0 10px #d1d3d4 !important;
+    width: auto !important;
+}
+	  /*********************************************/
+
 	  /***********************Media Queries**************************/
 	  @media (max-width: 320px){
 		  .logoheader img.logo1 {
@@ -780,7 +889,7 @@ width: 100%;
 		  width: 55%;
 		  margin: 0 auto;
 	  }
-	  section#block-userfooter .footersignin ul li{
+	  .footersignin ul li{
 		  width: auto;
 		  margin-top: 20px;
 	  }
@@ -833,7 +942,7 @@ width: 100%;
   .form-control{
 	  width: 100%;
   }
-  section#block-userfooter .footersignin ul li {
+  .footersignin ul li {
     width: 60%;
     margin-top: 20px;
     display: block;
@@ -906,7 +1015,7 @@ width: 100%;
 		  width: 75%;
 		  margin: 0 auto;
 	  }
-	  section#block-userfooter .footersignin ul li{
+	  .footersignin ul li{
 		 width: 80%;
 		margin-top: 20px;
 		left: 7%;
@@ -987,7 +1096,7 @@ width: 100%;
 	  .slick-slider .slick-track, .slick-slider .slick-list{
 			 margin-bottom: 5px; 
 		  }
-	  section#block-userfooter .footersignin ul li{
+	  .footersignin ul li{
 		  margin: 15px auto;
 		  width: 52%;
 		  right: 2%;
@@ -1058,7 +1167,7 @@ width: 100%;
 	  .slick-slider .slick-track, .slick-slider .slick-list{
 			 margin-bottom: 5px; 
 		  }
-	  section#block-userfooter .footersignin ul li{
+	  .footersignin ul li{
 		  margin: 0 auto;
 	  }
 	  form#user-login-form, form#user-register-form, form#user-pass {
@@ -1068,6 +1177,7 @@ width: 100%;
 	  .path-frontpage .view.view-restaurant .views-field.views-field-field-image{
 		  height: auto;
 	  }
+	
   }
   @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
