@@ -1,43 +1,55 @@
 <div class="container">
-	<div class="row">
-	   <div class="col-md-12 profileedit">
+    <div class="row">
+        <div class="col-md-12 profileedit">
             {{ form.picture }}
-			<h3>
-                                azher basha
+            <h3>
+                {% if ((form.frist_name['#default_value']|length > 1) or (form.last_name['#default_value']|length > 1)) %}
+                    {% set name = form.frist_name['#default_value'] ~ ' ' ~ form.last_name['#default_value'] %}
+                    {{ name }}
+                {% else %}
+                    {% set name = 'Enter your name' %}
+                    {{ name }}
+                {% endif %} 
             </h3>
             <p class="customer">
-                    administrator
+                {% if form.roles['#value'] | length > 1 %}
+                    {% set role = form.roles['#value'][1] %}
+                    {{role}}
+                {% else %}
+                    {% set role = 'Customer' %}
+                    {{role}}
+                {% endif %}
             </p>
         </div>
-	   <div class="col-md-6 nametext">          
-		{{ form.frist_name }}
-		</div>
-		<div class="col-md-6 nametext"> 
-		{{ form.last_name }}
+        <div class="col-md-6 nametext">          
+            {{ form.frist_name }}
+        </div>
+        <div class="col-md-6 nametext"> 
+            {{ form.last_name }}
         </div>
         <div class="col-md-6 nametext">          
-		{{ form.phone_number }}
-		</div>
-		<div class="col-md-6 nametext"> 
-		{{ form.e_mail }}
+            {{ form.phone_number }}
+        </div>
+        <div class="col-md-6 nametext"> 
+            {{ form.e_mail }}
         </div>
         <div class="col-md-12">
             {{ form.address }}
         </div>
         <div class="col-md-6 nametext">          
-		{{ form.state }}
-		</div>
-		<div class="col-md-6 nametext"> 
-        {{ form.city }}
+            {{ form.state }}
         </div>
-       <div class="col-md-6 nametext">          
-		{{ form.zipcode }}
-		</div>
-		<div class="col-md-6 nametext"> 
-		{{ form.country }}
+        <div class="col-md-6 nametext"> 
+            {{ form.city }}
+        </div>
+        <div class="col-md-6 nametext">          
+            {{ form.zipcode }}
+        </div>
+        <div class="col-md-6 nametext"> 
+            {{ form.country }}
         </div>
         <div class="clearfix"></div>
-	</div>
+    </div>
 </div>
 
-{{ form|without('frist_name', 'last_name', 'phone_number', 'e_mail', 'address', 'state', 'city', 'zipcode', 'country', 'picture' ) }}
+{{ form|without('frist_name', 'last_name', 'phone_number', 'e_mail', 'address', 'state', 'city', 'zipcode', 'country', 'picture', 'form.roles' ) }}

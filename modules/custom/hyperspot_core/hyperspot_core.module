@@ -19,5 +19,10 @@ function hyperspot_core_theme($existing, $type, $theme, $path) {
     'my_reservation_form' => array(
       'render element' => 'form',
     ),
+    'my_reservation_confirm' => array(
+      'variables' => array(
+        'items' => array(),
+      )
+    ),
   );
 }

@@ -17,11 +17,28 @@ use Drupal\node\NodeInterface;
 class MyReservationController extends ControllerBase {
 
   public function myReservation(NodeInterface $node) {
-    dsm($node->getTitle());
-    $profile = array(
-      '#markup' => 'Hello, world! Profile View.',
+    $tid = $node->get('field_restaurant')->getValue();
+
+    $term = \Drupal\taxonomy\Entity\Term::load($tid[0]['target_id']);
+    $restaurant = $term->getName();
+    $date = $node->get('field_date')->getString();
+    $arrival = $node->get('field_arrival')->getString();
+    $persons = $node->get('field_persons')->getString();
+
+    $reservation['date'] = array(
+      '#markup' => $this->t($date),
     );
-    return $profile;
+    $reservation['arrival'] = array(
+      '#markup' => $this->t($arrival),
+    );
+    $reservation['persons'] = array(
+      '#markup' => $this->t($persons),
+    );
+    $build = array(
+      '#theme' => 'my_reservation_confirm',
+      '#items' => $reservation,
+    );
+    return $build;
   }
 
 }

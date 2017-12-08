@@ -30,6 +30,7 @@ class MyProfileEdit extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state, AccountInterface $user = NULL) {
+    $form['roles'] = array('#type' => 'hidden', '#value' => $user->getRoles());
     $form['frist_name'] = array(
       '#type' => 'textfield',
       '#title' => $this->t('First Name'),

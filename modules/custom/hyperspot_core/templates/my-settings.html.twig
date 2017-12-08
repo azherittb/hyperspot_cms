@@ -1,14 +1,8 @@
 <div class="profileblock">
     <a href="{{ items.uid }}">{{ items.picture }}</a>
     <h3>
-        {% if (items.first_name|length > 1 and items.first_name|length > 1) %}
+        {% if ((items.first_name|length > 1) or (items.last_name|length > 1)) %}
             {% set name = items.first_name ~ ' ' ~ items.last_name %}
-            <a href="{{ items.uid }}">{{ name }}</a>
-        {% elseif items.last_name|length > 1%}
-            {% set name = items.last_name %}
-            <a href="{{ items.uid }}">{{ name }}</a>
-        {% elseif items.first_name|length > 1%}
-            {% set name = items.first_name %}
             <a href="{{ items.uid }}">{{ name }}</a>
         {% else %}
             {% set name = 'Enter your name' %}
