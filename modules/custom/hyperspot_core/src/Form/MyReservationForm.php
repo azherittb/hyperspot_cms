@@ -36,7 +36,7 @@ class MyReservationForm extends FormBase {
     $term = \Drupal\taxonomy\Entity\Term::load($tid[0]['target_id']);
     $restaurant = $term->getName();
     $rid = $term->id();
-
+ 
     $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
     $username = $user->getUsername();
     $uid = $user->id();
