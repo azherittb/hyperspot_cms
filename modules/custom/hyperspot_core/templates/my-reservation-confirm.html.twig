@@ -1,3 +1,26 @@
-{{ items.date }}
-{{ items.arrival }}
-{{ items.persons }}
+<div class="container">
+	<div class="row">
+	   <div class="col-md-12 profilereservation">
+	   <h3>Thank You For</h3>
+	   <h2>Reservation</h2>
+           <p>For just a kindly reminder, here is a short summary about your reservation</p>
+        </div>
+	   <div class="col-md-12 namedate">          
+		{{ items.date }}
+		</div>
+		<div class="col-md-12 namearrival"> 
+		{{ items.arrival }}
+        </div>
+        <div class="col-md-12 nameperson">          
+	    {{ items.persons }}
+		</div>
+		 
+		 <div class="col-md-12 seeyou">          
+	    <h3>See you at the</h3>
+	   <h2>Specified Time</h2>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+{{ form|without('restaurant', 'date', 'arrival', 'person', 'actions') }}
