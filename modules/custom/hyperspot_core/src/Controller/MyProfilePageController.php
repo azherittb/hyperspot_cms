@@ -39,27 +39,13 @@ class MyProfilePageController extends ControllerBase {
       '#style_name' => 'thumbnail',
       '#uri' => $picture,
     );
-    $profile['uid'] = 'myprofile_edit/'.$user->id();
+    $profile['uid'] = 'myprofile_edit/' . $user->id();
 
     $build = array(
       '#theme' => 'my_settings',
       '#items' => $profile,
     );
     return $build;
-  }
-
-  public function myProfileView() {
-    $profile = array(
-      '#markup' => 'Hello, world! Profile View.',
-    );
-    return $profile;
-  }
-
-  public function myProfileEdit() {
-    $profile = array(
-      '#markup' => 'Hello World! Profile Edit.',
-    );
-    return $profile;
   }
 
 }

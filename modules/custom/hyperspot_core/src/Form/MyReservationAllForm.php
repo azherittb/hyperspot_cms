@@ -3,7 +3,7 @@
 /*
   /**
  * @file
- * Contains \Drupal\hyperspot_core\Form\MyProfileForm.
+ * Contains \Drupal\hyperspot_core\Form\MyProfileAllForm.
  */
 
 namespace Drupal\hyperspot_core\Form;
@@ -17,29 +17,28 @@ use Drupal\taxonomy\Entity\Term;
 /**
  * Contribute form.
  */
-class MyReservationForm extends FormBase {
+class MyReservationAllForm extends FormBase {
 
   /**
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'my_reservation_form';
+    return 'my_reservation_all_form';
   }
 
   /**
    * {@inheritdoc}
    */
-  public function buildForm(array $form, FormStateInterface $form_state, $nid = NULL) {
-    $node = \Drupal\node\Entity\Node::load($nid);
-    $tid = $node->get('field_restaurant')->getValue();
-
-    $term = \Drupal\taxonomy\Entity\Term::load($tid[0]['target_id']);
-    $restaurant = $term->getName();
-    $rid = $term->id();
- 
+  public function buildForm(array $form, FormStateInterface $form_state) {
     $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
     $username = $user->getUsername();
     $uid = $user->id();
+
+    $vid = 'restaurant';
+    $terms = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree($vid);
+    foreach ($terms as $term) {
+      $term_data[$term->tid] = $term->name;
+    }
 
     $arrival = array(
       '12:00 AM' => '12:00 AM',
@@ -81,17 +80,11 @@ class MyReservationForm extends FormBase {
       '#type' => 'hidden',
       '#value' => $username,
     );
-    $form['nid'] = array(
-      '#type' => 'hidden',
-      '#value' => $nid,
-    );
-    $form['rid'] = array(
-      '#type' => 'hidden',
-      '#value' => $rid,
-    );
     $form['restaurant'] = array(
-      '#type' => 'hidden',
-      '#value' => $restaurant,
+      '#type' => 'select',
+      '#title' => $this->t('Restaurant'),
+      '#options' => $term_data,
+      '#required' => TRUE,
     );
     $form['date'] = array(
       '#type' => 'date',
@@ -118,7 +111,7 @@ class MyReservationForm extends FormBase {
       '#value' => $this->t('Confirm Booking'),
       '#button_type' => 'primary',
     );
-    $form['#theme'] = 'my_reservation_form';
+    $form['#theme'] = 'my_reservation_all_form';
     return $form;
   }
 
@@ -136,22 +129,18 @@ class MyReservationForm extends FormBase {
     $uid = $form_state->getValue('uid');
     $username = $form_state->getValue('username');
 
-    $nid = $form_state->getValue('nid');
-
-    $rid = $form_state->getValue('rid');
-    $restaurant = $form_state->getValue('restaurant');
-
     $reservationTitle = 'Reservation by ' . $username;
     $date = $form_state->getValue('date');
     $arrival = $form_state->getValue('arrival');
     $person = $form_state->getValue('person');
+    $restaurant = $form_state->getValue('restaurant');
 
     $my_reservation = Node::create(['type' => 'reservation']);
     $my_reservation->set('title', $reservationTitle);
     $my_reservation->set('field_date', $date);
     $my_reservation->set('field_arrival', $arrival);
     $my_reservation->set('field_persons', $person);
-    $my_reservation->set('field_restaurant', $rid);
+    $my_reservation->set('field_restaurant', $restaurant);
     $my_reservation->set('field_customer', $uid);
     $my_reservation->enforceIsNew();
     $my_reservation->save();

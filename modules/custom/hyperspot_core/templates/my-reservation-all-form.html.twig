@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 profilereservation">
+            <h3>Be Our Guest</h3>
+            <h1> </h1>
+            <p>Booking a table online is easy and takes just a couple of minutes.</p>
+        </div>
+        <div class="col-md-6 namedate">          
+            {{ form.restaurant }}
+        </div>
+        <div class="col-md-6 namedate">          
+            {{ form.date }}
+        </div>
+        <div class="col-md-6 namearrival"> 
+            {{ form.arrival }}
+        </div>
+        <div class="col-md-12 nameperson">          
+            {{ form.person }}
+        </div>
+        <div class="col-md-12 nameaction">          
+            {{ form.actions }}
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+{{ form|without('restaurant', 'date', 'arrival', 'person', 'actions') }}

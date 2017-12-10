@@ -6,14 +6,6 @@ hyperspot_core.my_settings:
   requirements: 
     _permission: 'access content'
 
-hyperspot_core.my_profile_view:
-  path: '/myprofile'
-  defaults:
-    _controller: '\Drupal\hyperspot_core\Controller\MyProfilePageController::myProfileView'
-    _title: 'My Account'
-  requirements: 
-    _permission: 'access content'
-
 hyperspot_core.my_profile_edit:
   path: '/myprofile_edit/{user}'
   defaults:
@@ -22,16 +14,24 @@ hyperspot_core.my_profile_edit:
   requirements: 
     _permission: 'access content'   
     
+hyperspot_core.my_reservation_all_form:
+  path: '/myreservation'
+  defaults:
+    _form: '\Drupal\hyperspot_core\Form\MyReservationAllForm'
+    _title: 'Reservation'
+  requirements: 
+    _permission: 'access content'
+    
 hyperspot_core.my_reservation_form:
-  path: '/myreservation_form/{nid}'
+  path: '/myreservation/{nid}'
   defaults:
     _form: '\Drupal\hyperspot_core\Form\MyReservationForm'
     _title: 'Reservation'
   requirements: 
     _permission: 'access content'
     
-hyperspot_core.my_reservation:
-  path: '/myreservation/{node}'
+hyperspot_core.my_reservation_confirm:
+  path: '/myreservation_confirm/{node}'
   defaults:
     _controller: '\Drupal\hyperspot_core\Controller\MyReservationController::myReservation'
     _title: 'Reservation'
