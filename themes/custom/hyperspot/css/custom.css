@@ -467,6 +467,28 @@ width: 20%;
 		  outline: 0;
 		 box-shadow: unset;
 	  }
+	  #my-reservation-form .form-group .form-control::before, #my-reservation-all-form .form-group .form-control::before{
+	   font-family: FontAwesome;
+		  content: "\f073";
+		  display: inherit;
+		  position:absolute;
+		  font-size: 15px;
+		  color:#336698;
+      left: 3%;
+	    top: 0%;
+	  
+}
+  #my-reservation-form .form-group .form-control::before, #my-reservation-all-form .form-group .form-control::before{
+	   font-family: FontAwesome;
+		  content: "\f017";
+		  display: inherit;
+		  position:absolute;
+		  font-size: 15px;
+		  color:#336698;
+      left: 3%;
+	    top: 0%;
+	  
+}
 /***********************Form**********************/	
 	li.facebook::after {
 		font-family: FontAwesome;
@@ -689,6 +711,28 @@ span.or::after {
   margin-left: -50vw;
   margin-right: -50vw;
 }*/
+.book_my_table {
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #336699;
+    color: #fff;
+    width: 20%;
+    font-size: 16px;
+	text-transform: uppercase;
+}
+.book_my_table a{
+	color:#fff;
+	text-decoration:none;
+}
+.book_my_table::before{
+	position: absolute;
+	font-family: FontAwesome;
+    content: "\f0f5";
+	left:43%;
+	color: #fff;
+}
 .group-header .slick-arrow{
 	width: 88px;
 }
@@ -705,7 +749,7 @@ span.or::after {
 	  color: #fff;
 	  font-weight: bold;
 	  font-size: 16px;
-	  border: 2px solid #000;
+	  border:2px solid #336699;
 	  padding: 5px;
   }
    .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
@@ -924,10 +968,14 @@ p.logout a{
     color: grey;
     margin-left: -15px;
 }
-#my-reservation-form {
+#my-reservation-form, #my-reservation-all-form {
     display: block;
     margin: 0 auto;
     text-align: center;
+}
+#my-reservation-form .col-md-6.namearrival {
+    position: relative;
+    top: -5px;
 }
 .nameaction {
     margin-top: 3%;
@@ -935,14 +983,18 @@ p.logout a{
 #my-reservation-form .select-wrapper select{
 	padding-right: 7em;
 }
-#my-reservation-form .form-control, #my-reservation-form .form-group, #my-reservation-form .form-select{
+#my-reservation-form .form-control, #my-reservation-form .form-group, #my-reservation-form .form-select, #my-reservation-all-form .form-control, #my-reservation-all-form .form-group, #my-reservation-all-form .form-select{
 	margin-bottom: 15px;
 display: inline-block;
 float: unset;
 width: 100%;
 }
-#my-reservation-form label{
+#my-reservation-form label, #my-reservation-all-form label{
 	float: left;
+	margin-left: 4%;
+}
+#my-reservation-form .form-required::after, #my-reservation-all-form .form-required::after{
+	display:none;
 }
 #my-reservation-form .btn-primary{
 	border-radius: 0;
@@ -990,7 +1042,6 @@ wpb_wrapper h2 {
 }
 .coffee-store p {
     float: left;
-    width: 50%;
     padding: 0px 15px 0px 15px;
     margin-bottom: 30px;
     line-height: 24px;
@@ -1026,10 +1077,18 @@ h2 .sub-title::after {
     line-height: 30px;
     font-size: 30px;
     letter-spacing: 0em;
+	color: #336699;
 }
 .border-box-shadow .vc_single_image-wrapper {
     box-shadow: 0 0 0 10px #d1d3d4 !important;
     width: auto !important;
+}
+#my-reservation-all-form .form-item-restaurant .control-label {
+    display: none;
+}
+.col-md-12.profilereservation {
+    color: #336699;
+    margin-bottom: 50px;
 }
 	  /*********************************************/
 
@@ -1050,6 +1109,12 @@ margin-top: 15px;
 	height: 40px;
 	padding: 5% 0 0;
 	margin-top: 40px;
+}
+.book_my_table{
+	width: auto;
+}
+.book_my_table::before{
+		left: 20%;
 }
 #user-login-form .form-item-name::after, #user-register-form .form-item::after, #user-login-form .form-item-pass::after, #user-pass .form-type-email::after{
 	left: 70% !important;
@@ -1196,6 +1261,12 @@ margin-top: 15px;
 	  .form-control{
 	  width: 85%;
   }
+  .book_my_table{
+	width: 60%;
+}
+.book_my_table::before{
+		left: 25%;
+}
   #user-login-form .form-item-name::after, #user-register-form .form-item::after, #user-login-form .form-item-pass::after, #user-pass .form-type-email::after{
 	  left: 70% !important;
   }
@@ -1339,6 +1410,12 @@ margin-top: 20px;
 	   .path-user button#edit-submit {
     width: 100%;
   }
+    .book_my_table{
+	width: 50%;
+}
+.book_my_table::before{
+		left: 30%;
+}
 	.page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p {
 		top: -30px;
 		font-size: 10px;
@@ -1454,7 +1531,7 @@ margin-top: 20px;
 	  }
 	  .more-link.form-group a{
 		 right: 6%;
-		 color: #000; 
+		 color: #fff; 
 	  }
 	  .welcomeapp li.getstarted {
 		  width: 45%;
@@ -1496,6 +1573,7 @@ margin-top: 20px;
     position: relative;
     top: 0;
 }
+
   .profileblock h3{
 	  top: 0;
 	  left: 15%;
@@ -1551,6 +1629,9 @@ margin-top: 20px;
 	  #user-register-form .form-control{
 	width: 80% !important;
 }
+.more-link.form-group a{
+	right: 30%;
+}
  #user-login-form .form-item-name::after, #user-register-form .form-item::after, .form-item-pass::after, #user-pass .form-type-email::after{
 		  left: 65% !important;
 	  }
@@ -1571,7 +1652,12 @@ margin-top: 20px;
 	  right:7%;
 	   top:110%;
  }
-	
+    .book_my_table{
+	width: 40%;
+}
+.book_my_table::before{
+		left: 38%;
+}	
 }
 @media screen and (min-width:992px) and (max-width: 1199px ){
 	.welcomeapp li.getstarted {
@@ -1599,4 +1685,14 @@ margin-top: 20px;
 	.path-myreservation-form .namedate::before{
 		  left: 14%;
 	  }
+	     .book_my_table{
+	width: 30%;
+}
+.book_my_table::before{
+		left: 40%;
+}	
+.more-link.form-group a {
+    right: 16%;
+    color: #336699;
+}
 }
