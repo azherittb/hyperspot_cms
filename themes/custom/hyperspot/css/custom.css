@@ -14,7 +14,26 @@
 			ol, ul {
     padding: 0;
 }
-			.path-frontpage #navbar, .path-user nav.tabs, .path-user #navbar {
+.page-node-type-restaurant h2.block-title {
+    color: #336699;
+}
+.page-node-type-restaurant .group-middle .form-group {
+    margin: 30px auto;
+}
+.page-node-type-restaurant .group-middle .views-field.views-field-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.page-node-type-restaurant .group-middle .views-field.views-field-title span a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    position: relative;
+}
+.page-node-type-restaurant .group-middle .views-field.views-field-body {
+    color: #777;
+}
+.path-frontpage #navbar, .path-user nav.tabs, .path-user #navbar {
     display: none;
 }
 	.navbar-default {
@@ -475,10 +494,9 @@ width: 20%;
 		  font-size: 15px;
 		  color:#336698;
       left: 3%;
-	    top: 0%;
-	  
+	    top: 0%;	  
 }
-  #my-reservation-form .form-group .form-control::before, #my-reservation-all-form .form-group .form-control::before{
+  #my-reservation-form .form-group.form-item-arrival::before, #my-reservation-all-form .form-group.form-item-arrival::before{
 	   font-family: FontAwesome;
 		  content: "\f017";
 		  display: inherit;
@@ -486,6 +504,17 @@ width: 20%;
 		  font-size: 15px;
 		  color:#336698;
       left: 3%;
+	    top: 0%;
+	  
+}
+#my-reservation-form .form-group.form-item-person::before, #my-reservation-all-form .form-group.form-item-person::before{
+	   font-family: FontAwesome;
+		  content: "\f007";
+		  display: inherit;
+		  position:absolute;
+		  font-size: 15px;
+		  color:#336698;
+      left: 2%;
 	    top: 0%;
 	  
 }
@@ -792,15 +821,15 @@ span.or::after {
 }
 .path-gallery .views-field-field-gallery-image img {
     display: inline;
-	text-align: center;
+	padding: 25px;
+	/*text-align: center;
     position: relative;
-    padding: 25px;
     margin-bottom: 10px;
     margin-right: 15px;
    	outline-style: none;
 	-webkit-transition: -webkit-transform .15s linear;
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);*/
 }
 .path-gallery .views-field-field-gallery-image img:hover{
 	 -webkit-transform: scale(1);
@@ -993,6 +1022,9 @@ width: 100%;
 	float: left;
 	margin-left: 4%;
 }
+#my-reservation-form .form-item-person label, #my-reservation-all-form .form-item-person label{
+	margin-left: 2%;
+}
 #my-reservation-form .form-required::after, #my-reservation-all-form .form-required::after{
 	display:none;
 }
@@ -1000,7 +1032,9 @@ width: 100%;
 	border-radius: 0;
 	text-transform: uppercase;
 }
-
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #dddddd;
+}
 
   /****************************************/
 	  .vc_col-sm-6 {
