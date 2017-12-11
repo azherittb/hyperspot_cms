@@ -33,7 +33,7 @@
 .page-node-type-restaurant .group-middle .views-field.views-field-body {
     color: #777;
 }
-.path-frontpage #navbar, .path-user nav.tabs, .path-user #navbar {
+.path-frontpage #navbar, .path-user nav.tabs, .path-user #navbar, .path-splash .navbar-default {
     display: none;
 }
 	.navbar-default {
@@ -54,10 +54,13 @@
 	.menu.dropdown-menu {
     background-color: rgba(242,242,242,.9);
     text-align: center;
-    border: 2px solid #93773a;
+    border: 2px solid #336699;
 }
-	.menu.dropdown-menu li, .dropdown-menu > li > a {
+	.menu.dropdown-menu li{
     padding: 5px;
+}
+.dropdown-menu > li > a {
+	  padding: 5px;
 	outline: 1px solid darkgray;
 }
 	.menu.dropdown-menu li a:hover {
@@ -73,8 +76,17 @@
        outline: 2px solid #a78d49;*/
 	}
 	.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
-		background-color: #a78d49;
+		background-color: #336699;
 	}
+	.br-theme-css-stars .br-widget a.br-active::after, .br-theme-css-stars .br-widget a.br-selected::after {
+    color: #336699;
+}
+.path-home .view.view-restaurant .views-field.views-field-view-node span a::after {
+    font-family: fontawesome;
+    content: '\f061';
+    position: relative;
+    left: 3%;
+}
 	.path-splash .slick-list .slick-track .slick__slide h3 {
 		text-transform: uppercase;
 		text-align: center;
@@ -128,8 +140,22 @@
 		font-size: 18px;
 		color: #336699;
 		font: 100%/1.6 Arial,Helvetica,sans-serif;
-		font-weight: bold;
+		font-size: 18px;
+		text-decoration: none;
 	}
+	.path-home .view.view-restaurant .views-field.views-field-field-restaurant-slogan {
+    text-transform: uppercase;
+}
+    .path-home .view.view-restaurant .views-field-field-located-at .field-content {
+    color: #777;
+    margin: 10px auto;
+}
+	.path-home .view.view-restaurant .views-field.views-field-view-node span a {
+    text-decoration: none;
+}
+.path-home .view.view-restaurant .has-glyphicons .select-wrapper::after{
+	font-size: 0;
+}
 	.path-home .view.view-restaurant .views-field.views-field-field-image {
 	   height: 265px;
 	   margin-bottom: 15px;
@@ -792,8 +818,7 @@ span.or::after {
     border: 2px double #ccc;
     font-weight: bold;
     color: #fff;
-	box-shadow: 0px 0px 0px 5px #2051a3;
-}
+	}
 .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
 	  width: 0;
 	  height: 0;
