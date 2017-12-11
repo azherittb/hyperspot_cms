@@ -39,6 +39,7 @@ class MyReservationAllForm extends FormBase {
     foreach ($terms as $term) {
       $term_data[$term->tid] = $term->name;
     }
+    $term_data[0] = 'Select Restaurant';
 
     $arrival = array(
       '12:00 AM' => '12:00 AM',
@@ -85,6 +86,7 @@ class MyReservationAllForm extends FormBase {
       '#title' => $this->t('Restaurant'),
       '#options' => $term_data,
       '#required' => TRUE,
+      '#default_value' => '0',
     );
     $form['date'] = array(
       '#type' => 'date',
@@ -135,17 +137,19 @@ class MyReservationAllForm extends FormBase {
     $person = $form_state->getValue('person');
     $restaurant = $form_state->getValue('restaurant');
 
-    $my_reservation = Node::create(['type' => 'reservation']);
-    $my_reservation->set('title', $reservationTitle);
-    $my_reservation->set('field_date', $date);
-    $my_reservation->set('field_arrival', $arrival);
-    $my_reservation->set('field_persons', $person);
-    $my_reservation->set('field_restaurant', $restaurant);
-    $my_reservation->set('field_customer', $uid);
-    $my_reservation->enforceIsNew();
-    $my_reservation->save();
+    if ($restaurant != 0) {
+      $my_reservation = Node::create(['type' => 'reservation']);
+      $my_reservation->set('title', $reservationTitle);
+      $my_reservation->set('field_date', $date);
+      $my_reservation->set('field_arrival', $arrival);
+      $my_reservation->set('field_persons', $person);
+      $my_reservation->set('field_restaurant', $restaurant);
+      $my_reservation->set('field_customer', $uid);
+      $my_reservation->enforceIsNew();
+      $my_reservation->save();
 
-    $form_state->setRedirect('hyperspot_core.my_reservation_confirm', array('node' => $my_reservation->id()));
+      $form_state->setRedirect('hyperspot_core.my_reservation_confirm', array('node' => $my_reservation->id()));
+    }
   }
 
 }
