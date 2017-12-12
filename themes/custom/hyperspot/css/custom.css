@@ -10,6 +10,7 @@
 	html body{
 		font-size: 14px;
 		overflow-x: hidden;
+		background-color: #f6f6f6;
 			}
 			ol, ul {
     padding: 0;
@@ -71,13 +72,19 @@
     color: #fff;
 }
 	.path-home .view-content .views-row .views-col {
-		padding: 30px;
+		padding: 15px;
 		min-height: 512px;
 		/*box-shadow: 0px 0px 0px 1px #a78b4d;*/
 	   /* box-shadow: 5px 5px #f4f4f4, -5px -5px #f4f4f4, 0px 0px 5px 5px #777;*/
 	  /* outline-offset: -15px;
        outline: 2px solid #a78d49;*/
+	   background-color: #fff;
+	   width: 49% !important;
+		margin-bottom: 20px;
 	}
+	.path-home .view-content .views-row .views-col.col-2 {
+    float: right;
+}
 	.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
 		background-color: #336699;
 	}
@@ -1287,6 +1294,10 @@ margin-top: 15px;
   .reservation::before, .call::before, .events::before, .location::before, .chat::before{
 	  font-size: 20px;
   }
+  .reservation:hover a, .call:hover a, .events:hover a, .location:hover a, .chat:hover a{
+	color: #fff;
+	text-decoration: none;
+}
   .more-link.form-group a{
 	  margin-top: -40%;
 	  right: 30%;
