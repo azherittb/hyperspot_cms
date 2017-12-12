@@ -14,23 +14,26 @@
 			ol, ul {
     padding: 0;
 }
+.slick .slick-list .slick-track img{
+	width:100%;
+}
 .page-node-type-restaurant h2.block-title {
     color: #336699;
 }
-.page-node-type-restaurant .group-middle .form-group {
+.page-node-type-restaurant .form-group {
     margin: 30px auto;
 }
-.page-node-type-restaurant .group-middle .views-field.views-field-title {
+.page-node-type-restaurant .views-field.views-field-title {
     margin-top: 30px;
     margin-bottom: 10px;
 }
-.page-node-type-restaurant .group-middle .views-field.views-field-title span a {
+.page-node-type-restaurant .views-field.views-field-title span a {
     text-decoration: none;
     color: #000;
     font-size: 18px;
     position: relative;
 }
-.page-node-type-restaurant .group-middle .views-field.views-field-body {
+.page-node-type-restaurant .views-field.views-field-body {
     color: #777;
 }
 .path-frontpage #navbar, .path-user nav.tabs, .path-user #navbar, .path-splash .navbar-default {
@@ -132,7 +135,7 @@
 		display: block;
 		margin: 0 auto;
 	}
-	.reservation, .call, .events, .location {
+	.reservation, .call, .chat, .location {
 		border-right: 1px solid #336698;
 	}
 	.path-home .view.view-restaurant .views-field.views-field-title span a {
@@ -153,8 +156,8 @@
 	.path-home .view.view-restaurant .views-field.views-field-view-node span a {
     text-decoration: none;
 }
-.path-home .view.view-restaurant .has-glyphicons .select-wrapper::after{
-	font-size:0;
+.path-home.has-glyphicons .select-wrapper::after{
+	display:none;
 }
 	.path-home .view.view-restaurant .views-field.views-field-field-image {
 	   height: 265px;
@@ -344,7 +347,7 @@
 		color:#fff;
 		text-decoration:none;
 	}
-	.path-user .btn.icon-before .glyphicon, .path-user h1.page-header, .user-register-form.user-form .form-item.form-type-textfield label.control-label, .path-node.page-node-type-restaurant .group-middle .field--type-text-with-summary p img{
+	.path-user .btn.icon-before .glyphicon, .path-user h1.page-header, .user-register-form.user-form .form-item.form-type-textfield label.control-label, .path-node.page-node-type-restaurant .field--type-text-with-summary p img{
 			display: none;
 	}
 .path-myreservation-form .nameperson::before{
@@ -678,7 +681,23 @@ width: 20%;
 		  font-size: 45px;
 		  color:#336698;
 	  }
-	  .chat:hover::before, .location:hover::before, .events:hover::before, .call:hover::before, .reservation:hover::before, .chat:hover, .location:hover,       .events:hover, .call:hover, .reservation:hover{
+	  .share::before {
+		  font-family: FontAwesome;
+		  content: "\f1e0";
+		  display: inherit;
+		  position: relative;
+		  font-size: 45px;
+		  color:#336698;
+	  }
+	   .feedback::before {
+		  font-family: FontAwesome;
+		  content: "\f118";
+		  display: inherit;
+		  position: relative;
+		  font-size: 45px;
+		  color:#336698;
+	  }
+	  .chat:hover::before, .location:hover::before, .events:hover::before, .call:hover::before, .reservation:hover::before, .share:hover::before, .feedback:hover::before, .chat:hover, .location:hover, .events:hover, .call:hover, .reservation:hover, .share:hover, .feedback:hover{
 		   color:#fff;
 		   background-color:#336698;
 	  }
@@ -771,7 +790,7 @@ span.or::after {
     display: block;
     margin: 30px auto;
     text-align: center;
-    padding: 20px;
+    padding:0px;
     background-color: #336699;
     color: #fff;
     width: 20%;
@@ -781,6 +800,8 @@ span.or::after {
 .book_my_table a{
 	color:#fff;
 	text-decoration:none;
+	padding: 20px;
+display: block;
 }
 .book_my_table::before{
 	position: absolute;
@@ -788,6 +809,7 @@ span.or::after {
     content: "\f0f5";
 	left:43%;
 	color: #fff;
+	margin-top: 20px;
 }
 .group-header .slick-arrow{
 	width: 88px;
@@ -809,32 +831,12 @@ span.or::after {
 	  padding: 5px;
   }
    .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
-    background-color: #336699;
-    width: 10%;
-    text-align: center;
     font-size: 16px;
     text-transform: uppercase;
-    padding: 8px;
-	  margin-bottom: 30px;
-    border: 2px double #ccc;
+    margin-bottom: 30px;
     font-weight: bold;
-    color: #fff;
+    color: #336699;
 	}
-.path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
-	  width: 0;
-	  height: 0;
-	  content: '';
-	  z-index: 2;
-	  border-top: 1.5em solid #93773a;
-	  border-left: 1em solid transparent;
-	  border-right: 1em solid transparent;
-	  position: absolute;
-	  left: 3.8%;
-	  bottom: 33.5%;
-}
-.user-logged-in.path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
-	bottom: 83%;
-}
 .slick-dots li button::before {
     font-size: 1.5rem;
 	color: #336699;
@@ -1197,9 +1199,9 @@ margin-top: 15px;
 .path-home .view.view-restaurant .views-field.views-field-field-restaurant-slogan, .path-home .view.view-restaurant .views-label.views-label-field-located-at, .path-home .view.view-restaurant .views-field.views-field-view-node {
     font-size: 11px;
 }
-.path-home .view.view-restaurant .path-home .view-content .views-row .views-col {
+.path-home .view.view-restaurant .view-content .views-row .views-col {
     padding: 30px;
-    min-height: 400px;
+    min-height: auto;
 }
 .path-home .view.view-restaurant .br-theme-css-stars .br-widget a{
 	width: 8px;
@@ -1209,7 +1211,7 @@ margin-top: 15px;
     font-size: 10px;
 }
 .path-home .view.view-restaurant .has-glyphicons .select-wrapper::after{
-	font-size:0;
+	display:none;
 }
 #user-login-form .form-item-name::after, #user-register-form .form-item::after, #user-login-form .form-item-pass::after, #user-pass .form-type-email::after{
 	left: 70% !important;
@@ -1298,10 +1300,7 @@ margin-top: 15px;
 	  font-size: 21px;
 	  margin-top: -75px;
   }
-  .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
-	  width: 30%;
-  }
-  .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
+   .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
 	display:none;
   }
   .form-control{
@@ -1358,9 +1357,9 @@ margin-top: 15px;
 .path-home .view.view-restaurant .views-field.views-field-field-restaurant-slogan, .path-home .view.view-restaurant .views-label.views-label-field-located-at, .path-home .view.view-restaurant .views-field.views-field-view-node {
     font-size: 11px;
 }
-.path-home .view.view-restaurant .path-home .view-content .views-row .views-col {
+.path-home .view.view-restaurant .view-content .views-row .views-col {
     padding: 30px;
-    min-height: 400px;
+    min-height: auto;
 }
 .path-home .view.view-restaurant .br-theme-css-stars .br-widget a{
 	width: 8px;
@@ -1373,9 +1372,9 @@ margin-top: 15px;
 	display:none;
   }
 .path-home .view.view-restaurant .has-glyphicons .select-wrapper::after{
-	font-size:0;
+	display:none;
 }
-.path-home .view-content .views-row .views-col {
+.path-home .view.view-restaurant .view-content .views-row .views-col {
     min-height: 300px;
 }
 
@@ -1447,13 +1446,7 @@ margin-top: 15px;
 	  .slick-slider .slick-track, .slick-slider .slick-list{
 			 margin-bottom: 5px; 
 		  }
-	  .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
-		  width: 30%;
-	  }
-	  .user-logged-in.path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after {
-         bottom: 95%;
-     }
-	  .logoheader img, .logos img{
+		  .logoheader img, .logos img{
 		  width: 70%;
 	  }
 	  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p {
@@ -1575,13 +1568,7 @@ margin-top: 20px;
 		font-size: 21px;
 		margin-top: -75px;
 	}
-	.path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
-		width: 25%;
-	}
-	.user-logged-in.path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after {
-        bottom: 95%;
-	}
-	.path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
+		.path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
 		   display: none;
 	}
 	.page-node-type-restaurant .view-content .views-field-field-gallery-image img, .path-gallery .views-field-field-gallery-image img{
@@ -1666,10 +1653,7 @@ margin-top: 20px;
 	  .footer .logout::before {
     left:44%;
 }
-	  	  .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
-		 width: 15%; 
-	  }
-	  .path-gallery .views-field-field-gallery-image img{
+	  	  .path-gallery .views-field-field-gallery-image img{
 		   margin: 10px auto;
 	  }
 	  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
