@@ -10,7 +10,10 @@
 	html body{
 		font-size: 14px;
 		overflow-x: hidden;
-		background-color: #f6f6f6;
+	
+			}
+			.path-home{
+				background-color: #f6f6f6;	
 			}
 			ol, ul {
     padding: 0;
@@ -21,9 +24,9 @@
 .page-node-type-restaurant h2.block-title {
     color: #336699;
 }
-.page-node-type-restaurant .form-group {
+/*.page-node-type-restaurant .form-group {
     margin: 30px auto;
-}
+}*/
 .page-node-type-restaurant .views-field.views-field-title {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -36,6 +39,7 @@
 }
 .page-node-type-restaurant .views-field.views-field-body {
     color: #777;
+	margin-bottom: 15px;
 }
 .path-frontpage #navbar, .path-user nav.tabs, .path-user #navbar, .path-splash .navbar-default {
     display: none;
