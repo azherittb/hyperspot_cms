@@ -18,6 +18,8 @@ regions:
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+  banner: 'Banner'
+  footer_e2e: 'Footer Edge 2 Edge'
 
 libraries:
   - 'hyperspot/global-styling'
