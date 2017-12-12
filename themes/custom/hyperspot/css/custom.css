@@ -154,7 +154,7 @@
     text-decoration: none;
 }
 .path-home .view.view-restaurant .has-glyphicons .select-wrapper::after{
-	font-size: 0;
+	font-size:0;
 }
 	.path-home .view.view-restaurant .views-field.views-field-field-image {
 	   height: 265px;
@@ -703,6 +703,7 @@ width: 20%;
    color: #336699;
 	cursor: pointer;
 		display: block;
+		padding: 20px;
 		}
 	  .welcomeapp ul li.getstarted a:hover {
 	  background-color: #336699;
@@ -876,6 +877,10 @@ span.or::after {
 .path-mysettings .settingspage a, p.logout a{
     text-decoration: none;
 }
+p.logout a{
+	padding: 10px;
+	display: block; 
+}
 #my-profile-edit {
     display: block;
     text-align: center;
@@ -1007,7 +1012,6 @@ p.logout a{
 	top: 15%;
 }
 .footer .logout {
-    padding: 10px;
     border: 2px solid #336699;
     width: 15%;
     text-align: center;
@@ -1020,7 +1024,8 @@ p.logout a{
     content: "\f08b";
     position: absolute;
     color: grey;
-    margin-left: -15px;
+    left: 45%;
+    margin-top: 10px;
 }
 #my-reservation-form, #my-reservation-all-form {
     display: block;
@@ -1164,16 +1169,47 @@ h2 .sub-title::after {
 	top: 0px;
 margin-top: 15px;
 }
+.footer .logout::before {
+    left:35%;
+}
 .footersignin ul li a{
 	height: 40px;
 	padding: 5% 0 0;
 	margin-top: 40px;
+}
+.path-mysettings .page-header {
+    position: absolute;
+    top: -55px;
+    z-index: 999;
+    color: #fff;
+    overflow: hidden;
+    left: 25%;
 }
 .book_my_table{
 	width: auto;
 }
 .book_my_table::before{
 		left: 20%;
+}
+.path-home .view.view-restaurant .views-field.views-field-title span a{
+	font-size: 12px;
+}
+.path-home .view.view-restaurant .views-field.views-field-field-restaurant-slogan, .path-home .view.view-restaurant .views-label.views-label-field-located-at, .path-home .view.view-restaurant .views-field.views-field-view-node {
+    font-size: 11px;
+}
+.path-home .view.view-restaurant .path-home .view-content .views-row .views-col {
+    padding: 30px;
+    min-height: 400px;
+}
+.path-home .view.view-restaurant .br-theme-css-stars .br-widget a{
+	width: 8px;
+   font-size: 12px;
+}
+.path-home .view.view-restaurant .views-field.views-field-field-located-at p {
+    font-size: 10px;
+}
+.path-home .view.view-restaurant .has-glyphicons .select-wrapper::after{
+	font-size:0;
 }
 #user-login-form .form-item-name::after, #user-register-form .form-item::after, #user-login-form .form-item-pass::after, #user-pass .form-type-email::after{
 	left: 70% !important;
@@ -1304,6 +1340,46 @@ margin-top: 15px;
 	  }
 	  
   @media screen and (min-width:321px) and (max-width: 500px ){
+	  .path-mysettings .page-header {
+    position: absolute;
+    top: -60px;
+    z-index: 999;
+    color: #fff;
+    overflow: hidden;
+    left: 25%;
+	border: none;
+}
+	  .path-home .view.view-restaurant .views-field.views-field-title span a{
+	font-size: 12px;
+}
+.footer .logout::before {
+    left:36%;
+}
+.path-home .view.view-restaurant .views-field.views-field-field-restaurant-slogan, .path-home .view.view-restaurant .views-label.views-label-field-located-at, .path-home .view.view-restaurant .views-field.views-field-view-node {
+    font-size: 11px;
+}
+.path-home .view.view-restaurant .path-home .view-content .views-row .views-col {
+    padding: 30px;
+    min-height: 400px;
+}
+.path-home .view.view-restaurant .br-theme-css-stars .br-widget a{
+	width: 8px;
+   font-size: 12px;
+}
+.path-home .view.view-restaurant .views-field.views-field-field-located-at p {
+    font-size: 10px;
+}
+ .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
+	display:none;
+  }
+.path-home .view.view-restaurant .has-glyphicons .select-wrapper::after{
+	font-size:0;
+}
+.path-home .view-content .views-row .views-col {
+    min-height: 300px;
+}
+
+
 	  .title2{
 		  font-size: 24px !important;
 	  }
@@ -1450,6 +1526,21 @@ margin-top: 15px;
  }
   }
   @media screen and (min-width:501px) and (max-width: 767px ){
+	  	  .path-mysettings .page-header {
+    position: absolute;
+    top: -60px;
+    z-index: 999;
+    color: #fff;
+    overflow: hidden;
+    left: 35%;
+	border: none;
+}
+.footer .logout::before {
+    left:41%;
+}
+	  .path-home .view.view-restaurant .views-field.views-field-title span a{
+		  font-size: 16px;
+	  }
 	 .logoheader img.logo1.align-center {
     width: auto;
 }
@@ -1572,6 +1663,9 @@ margin-top: 20px;
 	  .forgot, p.need{
 		  top: -15px;
 	  }
+	  .footer .logout::before {
+    left:44%;
+}
 	  	  .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
 		 width: 15%; 
 	  }
@@ -1628,6 +1722,7 @@ margin-top: 20px;
   .path-myprofile-edit .profileblock h3 {
     top: 0;
 }
+
 .path-myprofile-edit .form-type-email {
     position: relative;
     top: 0;
