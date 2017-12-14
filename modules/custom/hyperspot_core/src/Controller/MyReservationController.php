@@ -17,6 +17,7 @@ use Drupal\node\NodeInterface;
 class MyReservationController extends ControllerBase {
 
   public function myReservation(NodeInterface $node) {
+    $home_path = '/home';
     $tid = $node->get('field_restaurant')->getValue();
 
     $term = \Drupal\taxonomy\Entity\Term::load($tid[0]['target_id']);
@@ -33,6 +34,10 @@ class MyReservationController extends ControllerBase {
     );
     $reservation['persons'] = array(
       '#markup' => $this->t($persons),
+    );
+    $reservation['done'] = array(
+      '#type' => 'markup',
+      '#markup' => '<div class=done><a href="' . $home_path . '">Done</a></div>',
     );
     $build = array(
       '#theme' => 'my_reservation_confirm',
