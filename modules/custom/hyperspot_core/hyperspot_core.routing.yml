@@ -41,3 +41,24 @@ hyperspot_core.my_reservation_confirm:
     parameters:
       node: 
         type: entity:node
+
+hyperspot_core.my_event_booking_form:
+  path: '/myeventbooking/{nid}'
+  defaults:
+    _form: '\Drupal\hyperspot_core\Form\MyEventBookingForm'
+    _title: 'Reservation'
+  requirements: 
+    _permission: 'access content'
+    
+    
+hyperspot_core.my_event_booking_confirm:
+  path: '/myeventbooking_confirm/{node}'
+  defaults:
+    _controller: '\Drupal\hyperspot_core\Controller\MyEventBookingController::myEventBook'
+    _title: 'Reservation'
+  requirements: 
+    _permission: 'access content' 
+  options:
+    parameters:
+      node: 
+        type: entity:node    
