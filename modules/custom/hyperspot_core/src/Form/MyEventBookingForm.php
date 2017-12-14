@@ -37,32 +37,6 @@ class MyEventBookingForm extends FormBase {
     $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
     $username = $user->getUsername();
     $uid = $user->id();
-    dsm($event_date . $event_time);
-    $arrival = array(
-      '12:00 AM' => '12:00 AM',
-      '01:00 AM' => '01:00 AM',
-      '02:00 AM' => '02:00 AM',
-      '03:00 AM' => '03:00 AM',
-      '04:00 AM' => '04:00 AM',
-      '05:00 AM' => '05:00 AM',
-      '06:00 AM' => '06:00 AM',
-      '07:00 AM' => '07:00 AM',
-      '08:00 AM' => '08:00 AM',
-      '09:00 AM' => '09:00 AM',
-      '10:00 AM' => '10:00 AM',
-      '11:00 AM' => '11:00 AM',
-      '12:00 PM' => '12:00 PM',
-      '01:00 PM' => '01:00 AM',
-      '02:00 PM' => '02:00 PM',
-      '03:00 PM' => '03:00 PM',
-      '04:00 PM' => '04:00 PM',
-      '05:00 PM' => '05:00 PM',
-      '06:00 PM' => '06:00 PM',
-      '07:00 PM' => '07:00 PM',
-      '08:00 PM' => '08:00 PM',
-      '09:00 PM' => '09:00 PM',
-      '10:00 PM' => '10:00 PM',
-      '11:00 PM' => '11:00 PM',);
     $person = array(
       '1 People' => '1 People',
       '2 People' => '2 People',
@@ -86,18 +60,13 @@ class MyEventBookingForm extends FormBase {
       '#type' => 'hidden',
       '#value' => $event_name,
     );
-    $form['date'] = array(
-      '#type' => 'date',
-      '#title' => $this->t('Date'),
-      '#attributes' => array('type' => 'date', 'min' => 'now', 'max' => '+5 years'),
-      '#date_date_format' => 'd/m/Y',
-      '#required' => TRUE,
+    $form['event_date'] = array(
+      '#type' => 'hidden',
+      '#value' => $event_date,
     );
-    $form['arrival'] = array(
-      '#type' => 'select',
-      '#title' => $this->t('Arrival'),
-      '#options' => $arrival,
-      '#required' => TRUE,
+    $form['event_arrival'] = array(
+      '#type' => 'hidden',
+      '#value' => $event_time,
     );
     $form['person'] = array(
       '#type' => 'select',
@@ -130,8 +99,8 @@ class MyEventBookingForm extends FormBase {
     $username = $form_state->getValue('username');
 
     $bookingTitle = 'Event Booking by ' . $username;
-    $date = $form_state->getValue('date');
-    $arrival = $form_state->getValue('arrival');
+    $date = $form_state->getValue('event_date');
+    $arrival = $form_state->getValue('event_arrival');
     $person = $form_state->getValue('person');
     $nid = $form_state->getValue('nid');
 
