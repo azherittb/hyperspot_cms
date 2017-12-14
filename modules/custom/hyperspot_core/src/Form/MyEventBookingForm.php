@@ -32,10 +32,12 @@ class MyEventBookingForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state, $nid = NULL) {
     $node = \Drupal\node\Entity\Node::load($nid);
     $event_name = $node->getTitle();
+    $event_date = $node->get('field_date')->getString();
+    $event_time = $node->get('field_time')->getString();
     $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
     $username = $user->getUsername();
     $uid = $user->id();
-
+    dsm($event_date . $event_time);
     $arrival = array(
       '12:00 AM' => '12:00 AM',
       '01:00 AM' => '01:00 AM',
