@@ -17,10 +17,10 @@ use Drupal\Core\Url;
 class MyEventBookingController extends ControllerBase {
 
   public function myEventBook(NodeInterface $node) {
-    $url = \Drupal::request()->getHost();
-    dsm($url);
-    dsm($url.'/home');
-    $home_link = \Drupal::l(t("DONE"), $url);
+//    $url = \Drupal::request()->getHost();
+//    dsm($url);
+//    dsm($url.'/home');
+//    $home_link = \Drupal::l(t("DONE"), $url);
 
     $date = $node->get('field_date')->getString();
     $arrival = $node->get('field_time')->getString();
@@ -35,10 +35,10 @@ class MyEventBookingController extends ControllerBase {
     $reservation['persons'] = array(
       '#markup' => $this->t($persons),
     );
-    $reservation['done'] = array(
-      '#type' => 'markup',
-      '#markup' => '<div class=done>' . $home_link . '</div>',
-    );
+//    $reservation['done'] = array(
+//      '#type' => 'markup',
+//      '#markup' => '<div class=done>' . $home_link . '</div>',
+//    );
     $build = array(
       '#theme' => 'my_event_confirm',
       '#items' => $reservation,
