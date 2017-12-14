@@ -9,7 +9,6 @@ namespace Drupal\hyperspot_core\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\node\NodeInterface;
-use Drupal\Core\Url;
 
 /**
  * Provides route responses for the Example module.
@@ -17,9 +16,7 @@ use Drupal\Core\Url;
 class MyEventBookingController extends ControllerBase {
 
   public function myEventBook(NodeInterface $node) {
-    $host = \Drupal::request()->getHost();
-    $home_path = $host . '/home';
-    dsm($home_path);
+    $home_path = '/home';
 
     $date = $node->get('field_date')->getString();
     $arrival = $node->get('field_time')->getString();
