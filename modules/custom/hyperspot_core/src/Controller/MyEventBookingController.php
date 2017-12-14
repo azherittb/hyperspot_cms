@@ -20,10 +20,6 @@ class MyEventBookingController extends ControllerBase {
     $host = \Drupal::request()->getHost();
     $home_path = $host . '/home';
     dsm($home_path);
-    $url = Url::fromUri('http://www.example.com/');
-    dsm($url);
-    $home_link = \Drupal::l(t("DONE"), $url);
-    dsm($home_link);
 
     $date = $node->get('field_date')->getString();
     $arrival = $node->get('field_time')->getString();
@@ -40,7 +36,7 @@ class MyEventBookingController extends ControllerBase {
     );
     $reservation['done'] = array(
       '#type' => 'markup',
-      '#markup' => '<div class=done>' . $home_link . '</div>',
+      '#markup' => '<div class=done><a href="' . $home_path . '">Done</a></div>',
     );
     $build = array(
       '#theme' => 'my_event_confirm',
