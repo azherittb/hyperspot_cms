@@ -35,7 +35,7 @@ class MyEventBookingController extends ControllerBase {
 //      '#items' => $reservation,
 //    );
 
-    return $build;
+    return $reservation;
   }
 
 }
