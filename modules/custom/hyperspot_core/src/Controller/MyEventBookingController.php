@@ -17,10 +17,10 @@ use Drupal\Core\Url;
 class MyEventBookingController extends ControllerBase {
 
   public function myEventBook(NodeInterface $node) {
-//    $url = \Drupal::request()->getHost();
-//    dsm($url);
-//    dsm($url.'/home');
-//    $home_link = \Drupal::l(t("DONE"), $url);
+    $host = \Drupal::request()->getHost();
+    $home_path = $host . '/home';
+    $url = Url::fromUri($home_path);
+    $home_link = \Drupal::l(t("DONE"), $url);
 
     $date = $node->get('field_date')->getString();
     $arrival = $node->get('field_time')->getString();
