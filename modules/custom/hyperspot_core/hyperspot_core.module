@@ -27,5 +27,13 @@ function hyperspot_core_theme($existing, $type, $theme, $path) {
         'items' => array(),
       )
     ),
+    'my_event_form' => array(
+      'render element' => 'form',
+    ),
+    'my_event_confirm' => array(
+      'variables' => array(
+        'items' => array(),
+      )
+    ),
   );
 }

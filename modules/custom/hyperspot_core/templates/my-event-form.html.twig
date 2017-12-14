@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 profilereservation">
+            <h1> {{ form.event_name['#value'] }}</h1>
+            <p>Booking a table online is easy and takes just a couple of minutes.</p>
+        </div>
+        <div class="col-md-12 nameperson">          
+            {{ form.person }}
+        </div>
+        <div class="col-md-12 nameaction">          
+            {{ form.actions }}
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+{{ form|without( 'person', 'actions') }}
