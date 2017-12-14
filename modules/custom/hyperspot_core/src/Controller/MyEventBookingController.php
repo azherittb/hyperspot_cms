@@ -9,6 +9,7 @@ namespace Drupal\hyperspot_core\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\node\NodeInterface;
+use Drupal\Core\Url;
 
 /**
  * Provides route responses for the Example module.
