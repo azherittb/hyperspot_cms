@@ -19,7 +19,8 @@ class MyEventBookingController extends ControllerBase {
   public function myEventBook(NodeInterface $node) {
     $host = \Drupal::request()->getHost();
     $home_path = $host . '/home';
-    $url = Url::fromUri($home_path);
+    dsm($home_path);
+    $url = Url::fromUri('http://www.example.com/');
     $home_link = \Drupal::l(t("DONE"), $url);
 
     $date = $node->get('field_date')->getString();
