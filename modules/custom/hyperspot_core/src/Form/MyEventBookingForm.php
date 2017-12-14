@@ -30,8 +30,6 @@ class MyEventBookingForm extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state, $nid = NULL) {
-    $host = \Drupal::request()->getHost();
-    dsm($host);
     $node = \Drupal\node\Entity\Node::load($nid);
     $event_name = $node->getTitle();
     $event_date = $node->get('field_date')->getString();

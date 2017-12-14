@@ -8,9 +8,7 @@
 namespace Drupal\hyperspot_core\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\user\Entity\User;
 use Drupal\node\NodeInterface;
-use Drupal\Core\Url;
 
 /**
  * Provides route responses for the Example module.
@@ -18,8 +16,8 @@ use Drupal\Core\Url;
 class MyEventBookingController extends ControllerBase {
 
   public function myEventBook(NodeInterface $node) {
-//    $url = \Drupal::request()->getHost();
-//    $home_link = \Drupal::l(t("I'M Going"), $url.);
+    $url = \Drupal::request()->getHost();
+    $home_link = \Drupal::l(t("DONE"), $url . '/home');
 
     $date = $node->get('field_date')->getString();
     $arrival = $node->get('field_time')->getString();
@@ -36,7 +34,7 @@ class MyEventBookingController extends ControllerBase {
     );
     $reservation['done'] = array(
       '#type' => 'markup',
-      '#markup' => '<div class=book_my_event>' . $internal_link . '</div>',
+      '#markup' => '<div class=done>' . $home_link . '</div>',
     );
     $build = array(
       '#theme' => 'my_event_confirm',
