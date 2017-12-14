@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\hyperspot_core\Controller\MyReservationController.
+ * Contains \Drupal\hyperspot_core\Controller\MyEventBookingController.
  */
 
 namespace Drupal\hyperspot_core\Controller;
@@ -17,23 +17,26 @@ use Drupal\node\NodeInterface;
 class MyEventBookingController extends ControllerBase {
 
   public function myEventBook(NodeInterface $node) {
-    $date = $node->get('field_date')->getString();
-    $arrival = $node->get('field_time')->getString();
-    $persons = $node->get('field_persons')->getString();
-
-    $reservation['date'] = array(
-      '#markup' => $this->t($date),
-    );
-    $reservation['arrival'] = array(
-      '#markup' => $this->t($arrival),
-    );
-    $reservation['persons'] = array(
-      '#markup' => $this->t($persons),
-    );
+//    $date = $node->get('field_date')->getString();
+//    $arrival = $node->get('field_time')->getString();
+//    $persons = $node->get('field_persons')->getString();
+//
+//    $reservation['date'] = array(
+//      '#markup' => $this->t($date),
+//    );
+//    $reservation['arrival'] = array(
+//      '#markup' => $this->t($arrival),
+//    );
+//    $reservation['persons'] = array(
+//      '#markup' => $this->t($persons),
+//    );
 //    $build = array(
 //      '#theme' => 'my_reservation_confirm',
 //      '#items' => $reservation,
 //    );
+    $build = array(
+      '#markup' => 'my_reservation_confirm',
+    );
     return $build;
   }
 
