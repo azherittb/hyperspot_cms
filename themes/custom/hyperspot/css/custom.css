@@ -1849,3 +1849,9 @@ margin-top: 20px;
     color: #336699;
 }
 }
+
+/* Azher: Start */
+#block-views-block-event-block-1 .views-field-field-image img{
+	width: 100%;
+}
+/* Azher: End;
