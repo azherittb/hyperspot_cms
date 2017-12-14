@@ -14,8 +14,8 @@ use Drupal\Core\Url;
  * Provides a 'BookMyTableBlock' block.
  *
  * @Block(
- *   id = "bookmytable_block",
- *   admin_label = @Translation("Book My Table"),
+ *   id = "bookmyevent_block",
+ *   admin_label = @Translation("Book My Event"),
  *   category = @Translation("Custom")
  * )
  */
