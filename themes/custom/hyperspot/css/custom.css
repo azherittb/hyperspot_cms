@@ -24,6 +24,29 @@
 		.page-node-type-restaurant h2.block-title {
 			color: #336699;
 		}
+		.group-left h2.block-title, .group-right h2.block-title {
+			text-transform: uppercase;
+			font-size: 18px;
+		}
+		.group-two-sidebars .group-left {
+			border-right: 2px solid #ccc;
+		}
+		.group-two-sidebars .group-right {
+			position: relative;
+			left: 3%;
+		}
+		.group-two-sidebars .group-footer {
+			padding-top: 30px;
+		}
+		.group-two-sidebars .field--name-field-extra-facility .field--item::before {
+			font-family: FontAwesome;
+			content: "\f061";
+			margin-right: 10px;
+			color: #336699;
+		}
+		.group-two-sidebars .field--item {
+			line-height: 25px;
+		}
 		/*.page-node-type-restaurant .form-group {
 			margin: 30px auto;
 		}*/
@@ -371,6 +394,9 @@
 		.path-myreservation-form .form-required::after{
 			display:none;
 		}
+		.page-node-type-restaurant .group-two-sidebars .group-left, .page-node-type-restaurant .group-two-sidebars .group-right {
+    width: 50%;
+}
 		/***********************Form**********************/	
 			.page-header {
 			text-transform: uppercase;
