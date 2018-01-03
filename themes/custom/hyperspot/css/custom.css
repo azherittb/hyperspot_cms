@@ -770,7 +770,7 @@
 		  .page-node-type-restaurant .view-content .views-field-field-gallery-image:hover img{
 			 /*   border-radius:30%;	*/
 		  }
-		  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
+		  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content h3{
 			  position: relative;
 			  color: #fff;
 			  top: -200px;
@@ -780,7 +780,7 @@
 			  margin: 0 auto;
 			  display: block;
 		  }
-		  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p {
+		  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content p {
 			  position: relative;
 			  color: #ccc;
 			  top: -185px;
@@ -1721,11 +1721,11 @@
 				  .path-gallery .views-field-field-gallery-image img{
 				   margin: 10px auto;
 			  }
-			  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
+			  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content p{
 				 top: 0;
 				 margin-top: -100px; 
 			  }
-			  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
+			  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content h3{
 				  top: -115px;
 			  }
 			  .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
@@ -1801,11 +1801,11 @@
 		
 		  }
 		  @media screen and (min-width:1200px){
-			  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
+			  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content p{
 				 top: 0;
 				 margin-top: -150px; 
 			  }
-			  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
+			  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content h3{
 				  top: -165px;
 			  }
 			  #user-login-form .form-control {
