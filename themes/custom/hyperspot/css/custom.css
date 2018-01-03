@@ -18,7 +18,7 @@
 					ol, ul {
 			padding: 0;
 		}
-		.slick .slick-list .slick-track img{
+		.slick .slick-list .slick-track img, .slick img{
 			width:100%;
 		}
 		.page-node-type-restaurant h2.block-title {
