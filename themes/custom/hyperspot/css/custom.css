@@ -21,6 +21,9 @@
 		.slick .slick-list .slick-track img, .slick img{
 			width:100%;
 		}
+		.slick-arrow::before {
+            color: #fff;
+		}
 		.page-node-type-restaurant h2.block-title {
 			color: #336699;
 		}
@@ -169,7 +172,7 @@
 				display: block;
 				margin: 0 auto;
 			}
-			.reservation, .call, .chat, .location {
+			.reservation, .call, .chat, .location, .share {
 				border-right: 1px solid #336698;
 			}
 			.path-home .view.view-restaurant .views-field.views-field-title span a {
@@ -241,7 +244,7 @@
 		  .path-myeventbooking-confirm.page-node-type-event-booking .namearrival {
 			  margin: 10px 0px 10px 40px;
 		  }
-		  .path-myeventbooking-confirm.page-node-type-event-booking .done .done a {
+		  .path-myeventbooking-confirm.page-node-type-event-booking .done .done a, .done a {
 			  background-color: #336699;
 			  width: 100px;
 			  color: #fff;
@@ -250,12 +253,12 @@
 			  text-transform: uppercase;
 			  text-decoration: none;
 		  }
+		  .done {
+			  padding-top: 25px;
+			  padding-bottom: 30px;
+		  }
 		  .path-myeventbooking-confirm.page-node-type-event-booking .profilereservation h2, .path-myeventbooking-confirm.page-node-type-event-booking .seeyou h2 {
 			  text-transform: uppercase;
-		  }
-		  .path-myeventbooking-confirm.page-node-type-event-booking .done {
-			  margin-top: 15px;
-			  margin-bottom: 30px;
 		  }
 			/*.path-frontpage .views-view-grid.horizontal.cols-2.clearfix .views-row {
 				padding: 30px;
@@ -468,7 +471,7 @@
 		.path-myeventbooking-confirm.page-node-type-event-booking .namearrival {
 			margin: 10px 0px 10px 40px;
 		}
-		.path-myeventbooking-confirm.page-node-type-event-booking .profilereservation h2::after {
+		.path-myeventbooking-confirm.page-node-type-event-booking .profilereservation h2::after{
 			content: '';
 			height: 1px;
 			background: #336699;
@@ -1328,8 +1331,27 @@
 }		
 			  /***********************Media Queries**************************/
 			  @media (max-width: 320px){
-				  .logoheader img.logo1 {
+		.region-header .page-header {
+			border: 0px;
+			position: fixed;
+			top: 0;
+			transform: translate(35%, 40%);
+			left: 0;
+			overflow: hidden;
+			z-index: 99;
+			color: #fff;
+		}		  
+		.logoheader img.logo1 {
 			width: auto;
+		}
+		h2.block-title {
+			font-size: 18px;
+		}
+		.page-node-type-restaurant .views-field.views-field-title span a {
+			font-size: 13px;
+		}
+		.views-field.views-field-field-image img {
+			width: 90%;
 		}
 		.logo1.align-center {
 			width: 30%;
@@ -1343,6 +1365,10 @@
 		  position: relative;
           top: 20%;
 	  }
+	  .path-gallery .views-field-field-gallery-image img {
+		display: inline;
+		padding: 2px;
+	}
 	  #my-event-booking-form #edit-submit{
 		  position: relative;
 		  top: 25px;
@@ -1380,7 +1406,7 @@
 			font-size: 11px;
 		}
 		.path-home .view.view-restaurant .view-content .views-row .views-col {
-			padding: 30px;
+			padding: 15px;
 			min-height: auto;
 		}
 		.path-home .view.view-restaurant .br-theme-css-stars .br-widget a{
@@ -1421,10 +1447,10 @@
 				   margin-bottom: 5px; 
 				}
 				.logoheader img, .logos img{
-				width: 70%;
+				width: auto;
 			}
 			  .welcomeapp li.getstarted {
-				  width: 70% !important;
+				  width: auto !important;
 			  }
 			  .title2 {
 			  font-size: 18px !important;
@@ -1461,18 +1487,18 @@
 				  margin-top: 0px;
 				  padding-bottom: 0px;
 			  }
-			  .reservation, .call, .events, .location, .chat {
+			  .reservation, .call, .events, .location, .chat, .share, .feedback {
 				  font-size: 10px !important;
 		  } 
-		  .reservation::before, .call::before, .events::before, .location::before, .chat::before{
+		  .reservation::before, .call::before, .events::before, .location::before, .chat::before, .share::before, .feedback::before{
 			  font-size: 20px;
 		  }
-		  .reservation:hover a, .call:hover a, .events:hover a, .location:hover a, .chat:hover a{
+		  .reservation:hover a, .call:hover a, .events:hover a, .location:hover a, .chat:hover a, .share:hover a, .feedback:hover a{
 			color: #fff;
 			text-decoration: none;
 		}
 		  .more-link.form-group a{
-			  margin-top: -40%;
+			  margin-top: -60%;
 			  right: 30%;
 		  }
 		  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
@@ -1531,6 +1557,25 @@
 			overflow: hidden;
 			left: 25%;
 			border: none;
+		}
+		.region-header .page-header {
+			border: 0px;
+			position: fixed;
+			top: 0;
+			transform: translate(35%, 40%);
+			left: 0;
+			overflow: hidden;
+			z-index: 99;
+			color: #fff;
+		}
+		h2.block-title {
+			font-size: 18px;
+		}
+		.page-node-type-restaurant .views-field.views-field-title span a {
+			font-size: 13px;
+		}
+		.views-field.views-field-field-image img {
+			width: 90%;
 		}
 			  .path-home .view.view-restaurant .views-field.views-field-title span a{
 			font-size: 12px;
@@ -1678,10 +1723,10 @@
 				  margin-top: 0px;
 				  padding-bottom: 0px;
 			  }
-			  .reservation, .call, .events, .location, .chat {
+			  .reservation, .call, .events, .location, .chat, .share, .feedback {
 				  font-size: 10px !important;
 		  } 
-		  .reservation::before, .call::before, .events::before, .location::before, .chat::before{
+		  .reservation::before, .call::before, .events::before, .location::before, .chat::before, .share::before, .feedback::before{
 			  font-size: 20px;
 		  }
 		  .page-node-type-reservation .namedate::before, .page-node-type-reservation .namearrival::before, .page-node-type-reservation .nameperson::before{
@@ -1878,6 +1923,10 @@
 			}
 		  }
 		  @media (max-width: 767px) {
+			  .navbar-default .navbar-toggle:hover,
+			  .navbar-default .navbar-toggle:focus {
+				background-color: transparent;
+			  }
 		  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
 			color: #333333;
 			outline: 1px solid darkgray;
