@@ -197,6 +197,47 @@
 			   height: 265px;
 			   margin-bottom: 15px;
 			}
+			.event-time .block-region-left::before {
+			  font-family: FontAwesome;
+			  content: "\f007";
+			  color: #336699;
+			  font-size: 45px;
+			  position: absolute;
+		  }
+		  .event-location .block-region-right::before {
+			  font-family: FontAwesome;
+			  content: "\f041";
+			  font-size: 40px;
+			  color: #336699;
+			  position: absolute;
+		  }
+		  .page-node-type-event .block.block-hyperspot-core.block-bookmyevent-block.clearfix {
+			  margin-top: 5%;
+		  }
+		  .path-myeventbooking-confirm .container .row {
+			  text-align: center;
+		  }
+		  .namedate::before {
+			  font-family: FontAwesome;
+			  content: "\f073";
+			  position: relative;
+			  color: #336699;
+			  padding-right: 15px;
+		  }
+		  .nameperson::before {
+			  font-family: FontAwesome;
+			  content: "\f0c0";
+			  position: relative;
+			  color: #336699;
+			  padding-right: 15px;
+		  }
+		  .namearrival::before {
+			  font-family: FontAwesome;
+			  content: "\f017";
+			  position: relative;
+			  color: #336699;
+			  padding-right: 15px;
+		  }
 			/*.path-frontpage .views-view-grid.horizontal.cols-2.clearfix .views-row {
 				padding: 30px;
 			}*/
@@ -217,6 +258,9 @@
 				width: 52%;
 				margin: 0 auto;
 				border: 1px solid #336699;
+			}
+			.view-event .view-content .views-row .views-field-field-image img{
+				width: 100%;
 			}
 			#user-login-form .form-item-name::after, #user-register-form .form-item::after{
 			   font-family: FontAwesome;
@@ -385,18 +429,23 @@
 					display: none;
 			}
 		.path-myreservation-form .nameperson::before{
-			font-family: FontAwesome;
+			    font-family: FontAwesome;
 				content: "\f0c0";
 				position:absolute;
 				color:#336699;
-		   left: 8%;
+		        left: 8%;
 		}
 		.path-myreservation-form .form-required::after{
 			display:none;
 		}
 		.page-node-type-restaurant .group-two-sidebars .group-left, .page-node-type-restaurant .group-two-sidebars .group-right {
-    width: 50%;
-}
+			width: 50%;
+		}
+		.path-myeventbooking-confirm.page-node-type-event-booking .namedate, .path-myeventbooking-confirm.page-node-type-event-booking .namearrival, .path-myeventbooking-confirm.page-node-type-event-booking .nameperson {
+			position: relative;
+			font-size: 24px;
+			text-transform: uppercase;
+		}
 		/***********************Form**********************/	
 			.page-header {
 			text-transform: uppercase;
@@ -1185,9 +1234,11 @@
 		font-size: 24px;
 		font-weight: bold;
 		text-transform: uppercase;
+		margin-left: 40px;
 	   }
 	   .page-node-type-event .event-time .block-entity-fieldnodefield-time, .page-node-type-event .event-location .block-entity-fieldnodefield-location {
 		font-size: 18px;
+		margin-left: 40px;
 		}
 		 .page-node-type-event .col-sm-12.bs-region p{
 		margin: 10px auto;
@@ -1924,4 +1975,9 @@
 			right: 16%;
 			color: #336699;
 		}
+		}
+		@media screen and (min-width:992px){
+			.region-header h1.page-header {
+			  display: none;
+		  }
 		}
