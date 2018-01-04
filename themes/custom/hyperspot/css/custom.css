@@ -217,26 +217,45 @@
 		  .path-myeventbooking-confirm .container .row {
 			  text-align: center;
 		  }
-		  .namedate::before {
+		  .path-myeventbooking-confirm.page-node-type-event-booking .namedate::before {
 			  font-family: FontAwesome;
 			  content: "\f073";
 			  position: relative;
 			  color: #336699;
 			  padding-right: 15px;
 		  }
-		  .nameperson::before {
+		  .path-myeventbooking-confirm.page-node-type-event-booking .nameperson::before {
 			  font-family: FontAwesome;
 			  content: "\f0c0";
 			  position: relative;
 			  color: #336699;
 			  padding-right: 15px;
 		  }
-		  .namearrival::before {
+		  .path-myeventbooking-confirm.page-node-type-event-booking .namearrival::before {
 			  font-family: FontAwesome;
 			  content: "\f017";
 			  position: relative;
 			  color: #336699;
 			  padding-right: 15px;
+		  }
+		  .path-myeventbooking-confirm.page-node-type-event-booking .namearrival {
+			  margin: 10px 0px 10px 40px;
+		  }
+		  .path-myeventbooking-confirm.page-node-type-event-booking .done .done a {
+			  background-color: #336699;
+			  width: 100px;
+			  color: #fff;
+			  padding: 15px 50px;
+			  font-weight: bold;
+			  text-transform: uppercase;
+			  text-decoration: none;
+		  }
+		  .path-myeventbooking-confirm.page-node-type-event-booking .profilereservation h2, .path-myeventbooking-confirm.page-node-type-event-booking .seeyou h2 {
+			  text-transform: uppercase;
+		  }
+		  .path-myeventbooking-confirm.page-node-type-event-booking .done {
+			  margin-top: 15px;
+			  margin-bottom: 30px;
 		  }
 			/*.path-frontpage .views-view-grid.horizontal.cols-2.clearfix .views-row {
 				padding: 30px;
@@ -445,6 +464,9 @@
 			position: relative;
 			font-size: 24px;
 			text-transform: uppercase;
+		}
+		.path-myeventbooking-confirm.page-node-type-event-booking .namearrival {
+			margin: 10px 0px 10px 40px;
 		}
 		/***********************Form**********************/	
 			.page-header {
