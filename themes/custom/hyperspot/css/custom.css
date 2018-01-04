@@ -468,6 +468,26 @@
 		.path-myeventbooking-confirm.page-node-type-event-booking .namearrival {
 			margin: 10px 0px 10px 40px;
 		}
+		.path-myeventbooking-confirm.page-node-type-event-booking .profilereservation h2::after {
+			content: '';
+			height: 1px;
+			background: #336699;
+			width: 90px;
+			transform: translate(-115px, 40px );
+			position: absolute;
+		}
+		.path-myeventbooking-confirm.page-node-type-event-booking .profilereservation p {
+			position: relative;
+			top: 20px;
+		}
+		.path-myeventbooking-confirm.page-node-type-event-booking .namedate {
+			padding-top: 20px;
+			border-top: 1px solid #336699;
+		}
+		.path-myeventbooking-confirm.page-node-type-event-booking .nameperson {
+			padding-bottom: 20px;
+			border-bottom: 1px solid #336699;
+		}
 		/***********************Form**********************/	
 			.page-header {
 			text-transform: uppercase;
