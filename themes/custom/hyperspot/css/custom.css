@@ -37,7 +37,7 @@ ol, ul {
 .page-node-type-restaurant .views-field.views-field-body {
     color: #777;
 }
-.path-frontpage #navbar, .path-user nav.tabs, .path-user #navbar, .path-splash .navbar-default, .page-node-type-event {
+.path-frontpage #navbar, .path-user nav.tabs, .path-user #navbar, .path-splash .navbar-default {
     display: none;
 }
 .navbar-default {
