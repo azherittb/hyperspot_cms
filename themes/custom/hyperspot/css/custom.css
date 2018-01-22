@@ -1,2074 +1,1847 @@
-			/*
-			To change this license header, choose License Headers in Project Properties.
-			To change this template file, choose Tools | Templates
-			and open the template in the editor.
-			*/
-			/* 
-				Created on : 27 Nov, 2017, 12:40:35 PM
-				Author     : azher
-			*/
-			html body{
-				font-size: 14px;
-				overflow-x: hidden;
-			
-					}
-					.path-home{
-						background-color: #f6f6f6;	
-					}
-					ol, ul {
-			padding: 0;
-		}
-		.slick .slick-list .slick-track img, .slick img{
-			width:100%;
-		}
-		.slick-arrow::before {
-            color: #fff;
-		}
-		.page-node-type-restaurant h2.block-title {
-			color: #336699;
-		}
-		.group-left h2.block-title, .group-right h2.block-title {
-			text-transform: uppercase;
-			font-size: 18px;
-		}
-		.group-two-sidebars .group-left {
-			border-right: 2px solid #ccc;
-		}
-		.group-two-sidebars .group-right {
-			position: relative;
-			left: 3%;
-		}
-		.group-two-sidebars .group-footer {
-			padding-top: 30px;
-		}
-		.group-two-sidebars .field--name-field-extra-facility .field--item::before {
-			font-family: FontAwesome;
-			content: "\f061";
-			margin-right: 10px;
-			color: #336699;
-		}
-		.group-two-sidebars .field--item {
-			line-height: 25px;
-		}
-		/*.page-node-type-restaurant .form-group {
-			margin: 30px auto;
-		}*/
-		.page-node-type-restaurant .views-field.views-field-title {
-			margin-top: 30px;
-			margin-bottom: 10px;
-		}
-		.page-node-type-restaurant .views-field.views-field-title span a {
-			text-decoration: none;
-			color: #000;
-			font-size: 18px;
-			position: relative;
-		}
-		.page-node-type-restaurant .views-field.views-field-body {
-			color: #777;
-			margin-bottom: 15px;
-		}
-		.path-frontpage #navbar, .path-user nav.tabs, .path-user #navbar, .path-splash .navbar-default {
-			display: none;
-		}
-			.navbar-default {
-				background-color: #336699;
-				border-color: #336699;
-				border-radius: 0px;
-				z-index: 40;
-				position: relative;
-			}
-			.navbar-default .navbar-nav > li > a {
-				color: #fff;
-				text-transform: uppercase;
-				cursor: pointer;
-			}
-			.navbar-default .navbar-nav > li > a:hover {
-				background-color: #fff;
-			}
-			.menu.dropdown-menu {
-			background-color: rgba(242,242,242,.9);
-			text-align: center;
-			border: 2px solid #336699;
-		}
-			.menu.dropdown-menu li{
-			padding: 5px;
-		}
-		.dropdown-menu > li > a {
-			  padding: 5px;
-			outline: 1px solid darkgray;
-		}
-			.menu.dropdown-menu li a:hover {
-			background-color: #336699;
-			color: #fff;
-		}
-			.path-home .view-content .views-row .views-col {
-				padding: 15px;
-				min-height: 512px;
-				/*box-shadow: 0px 0px 0px 1px #a78b4d;*/
-			   /* box-shadow: 5px 5px #f4f4f4, -5px -5px #f4f4f4, 0px 0px 5px 5px #777;*/
-			  /* outline-offset: -15px;
-			   outline: 2px solid #a78d49;*/
-			   background-color: #fff;
-			   width: 49% !important;
-				margin-bottom: 20px;
-			}
-			.path-home .view-content .views-row .views-col.col-2 {
-			float: right;
-		}
-			.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
-				background-color: #336699;
-			}
-			.br-theme-css-stars .br-widget a.br-active::after, .br-theme-css-stars .br-widget a.br-selected::after {
-			color: #336699;
-		}
-		.path-home .view.view-restaurant .views-field.views-field-view-node span a::after {
-			font-family: fontawesome;
-			content: '\f061';
-			position: relative;
-			left: 3%;
-		}
-			.path-splash .slick-list .slick-track .slick__slide h3 {
-				text-transform: uppercase;
-				text-align: center;
-			}
-			.path-splash .slick-list .slick-track .slick__slide p {
-				 text-align: center;
-				 margin-top: 15px;
-			}
-			.path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content {
-				background-color: #336698;
-				color: #fff;
-				padding: 15px;
-				min-height: 150px;
-			}
-			.path-splash .slick-dots {
-				background-color: #fff;
-				padding: 10px;
-			}
-			.path-splash .slick__arrow{
-				top: 100%;
-				margin-top: 3px;
-			}
-			.path-splash .slick-arrow::before {
-				color: #336699;
-				font-size: 2.5rem;
-			}
-			.footer_block {
-			margin-top: 20px;
-		}
-			.footer_block ul {
-				list-style-type: none;
-				display: flex;
-				color: #336698;
-				width: auto;
-				margin: 0 auto;
-				text-align: center;
-			}
-			.footer_block ul li {
-				width: 100%;
-				text-align: center;
-				font-size: 18px;
-				font-weight: bold;
-				display: block;
-				margin: 0 auto;
-			}
-			.reservation, .call, .chat, .location, .share {
-				border-right: 1px solid #336698;
-			}
-			.path-home .view.view-restaurant .views-field.views-field-title span a {
-				text-transform: uppercase;
-				font-size: 18px;
-				color: #336699;
-				font: 100%/1.6 Arial,Helvetica,sans-serif;
-				font-size: 18px;
-				text-decoration: none;
-			}
-			.path-home .view.view-restaurant .views-field.views-field-field-restaurant-slogan {
-			text-transform: uppercase;
-		}
-			.path-home .view.view-restaurant .views-field-field-located-at .field-content {
-			color: #777;
-			margin: 10px auto;
-		}
-			.path-home .view.view-restaurant .views-field.views-field-view-node span a {
-			text-decoration: none;
-		}
-		.path-home.has-glyphicons .select-wrapper::after{
-			display:none;
-		}
-			.path-home .view.view-restaurant .views-field.views-field-field-image {
-			   height: 265px;
-			   margin-bottom: 15px;
-			}
-			.event-time .block-region-left::before {
-			  font-family: FontAwesome;
-			  content: "\f007";
-			  color: #336699;
-			  font-size: 45px;
-			  position: absolute;
-		  }
-		  .event-location .block-region-right::before {
-			  font-family: FontAwesome;
-			  content: "\f041";
-			  font-size: 40px;
-			  color: #336699;
-			  position: absolute;
-		  }
-		  .page-node-type-event .block.block-hyperspot-core.block-bookmyevent-block.clearfix {
-			  margin-top: 5%;
-		  }
-		  .path-myeventbooking-confirm .container .row {
-			  text-align: center;
-		  }
-		  .path-myeventbooking-confirm.page-node-type-event-booking .namedate::before {
-			  font-family: FontAwesome;
-			  content: "\f073";
-			  position: relative;
-			  color: #336699;
-			  padding-right: 15px;
-		  }
-		  .path-myeventbooking-confirm.page-node-type-event-booking .nameperson::before {
-			  font-family: FontAwesome;
-			  content: "\f0c0";
-			  position: relative;
-			  color: #336699;
-			  padding-right: 15px;
-		  }
-		  .path-myeventbooking-confirm.page-node-type-event-booking .namearrival::before {
-			  font-family: FontAwesome;
-			  content: "\f017";
-			  position: relative;
-			  color: #336699;
-			  padding-right: 15px;
-		  }
-		  .path-myeventbooking-confirm.page-node-type-event-booking .namearrival {
-			  margin: 10px 0px 10px 40px;
-		  }
-		  .path-myeventbooking-confirm.page-node-type-event-booking .done .done a, .done a {
-			  background-color: #336699;
-			  width: 100px;
-			  color: #fff;
-			  padding: 15px 50px;
-			  font-weight: bold;
-			  text-transform: uppercase;
-			  text-decoration: none;
-		  }
-		  .done {
-			  padding-top: 25px;
-			  padding-bottom: 30px;
-		  }
-		  .path-myeventbooking-confirm.page-node-type-event-booking .profilereservation h2, .path-myeventbooking-confirm.page-node-type-event-booking .seeyou h2 {
-			  text-transform: uppercase;
-		  }
-			/*.path-frontpage .views-view-grid.horizontal.cols-2.clearfix .views-row {
-				padding: 30px;
-			}*/
-			.path-home .view.view-restaurant .views-field.views-field-title, .logoheader a img{
-				margin-bottom: 10px;
-			}
-			form#user-login-form, form#user-register-form, form#user-pass {
-				width: 27%;
-				margin: 0 auto;
-			}
-			.path-user label.control-label.js-form-required.form-required, #block-logout h2.block-title {
-				display: none;
-			}
-			.form-control{
-				border-radius: 0;
-				webkit-box-shadow: none;
-				box-shadow: none;
-				width: 52%;
-				margin: 0 auto;
-				border: 1px solid #336699;
-			}
-			.view-event .view-content .views-row .views-field-field-image img{
-				width: 100%;
-			}
-			#user-login-form .form-item-name::after, #user-register-form .form-item::after{
-			   font-family: FontAwesome;
-				  content: "\f007";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			   left:60%;
-			   top:2%;
-		}
-			.form-item-pass::after{
-			   font-family: FontAwesome;
-				  content: "\f023";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			   left:60%;
-			   top:40%;
-		}
-		#user-pass .form-type-email::after{
-			 font-family: FontAwesome;
-				  content: "\f0e0";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			   left:60%;
-			   top:3%;
-		}
-		#user-register-form .form-item-mail::after{
-			 font-family: FontAwesome;
-				  content: "\f0e0";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			   left:60%;
-			   top:22%;
-		}
-		#user-register-form .form-item-pass::after{
-			 font-family: FontAwesome;
-				  content: "\f023";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			   left:60%;
-			   top:42%;
-		}
-		#user-register-form .form-item-pass .form-item::after{
-			 font-family: FontAwesome;
-				  content: "\f023";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			   left:60%;
-			   top:62%;
-		}
-			.path-user button#edit-submit {
-				width: 52%;
-				border-radius: 0px;
-				background-color: #336699;
-				border: 0px;
-				font-size: 18px;
-				text-transform: uppercase;
-				text-align: center;
-				color: #fff;
-				margin: 0 auto;
-				display: block;
-				height: 50px;
-			}
-			.path-user .footer h2.block-title, #block-welcomeappheader h2.block-title {
-				display: none;
-			}
-			.footer{
-				border-top: 0px solid #E5E5E5;
-				padding-top: 0;
-			}
-			.footersignin, p.footerdesc {
-				text-align: center;
-			}
-			.page-node-type-reservation .col-md-12 {
-			width: 100%;
-			display: block;
-			text-align: center;
-			
-		}
-		.page-node-type-reservation .profilereservation {
-			border-bottom: 1px solid #336699;
-			padding-bottom: 30px;
-			color:#336699;
-		}
-		.page-node-type-reservation .namedate, .page-node-type-reservation .namearrival, .page-node-type-reservation .nameperson {
-			padding: 20px;
-			font-size: 20px;
-		}
-		.page-node-type-reservation .namedate::before{
-			font-family: FontAwesome;
-				content: "\f073";
-				position:absolute;
-				color:#336699;
-		   left: 40%;
-		}
-		.path-myreservation-form .namedate::before{
-				font-family: FontAwesome;
-				content: "\f073";
-				position:absolute;
-				color:#336699;
-				left: 10%;
-		}
-		.page-node-type-reservation .namearrival::before{
-			font-family: FontAwesome;
-				content: "\f017";
-				position:absolute;
-				color:#336699;
-		   left: 40%;
-		}
-		.path-myreservation-form .namearrival::before{
-				font-family: FontAwesome;
-				content: "\f017";
-				position:absolute;
-				color:#336699;
-				left: 15%;
-		}
-		.page-node-type-reservation .nameperson::before{
-			font-family: FontAwesome;
-				content: "\f0c0";
-				position:absolute;
-				color:#336699;
-		   left: 40%;
-		}
-		.page-node-type-reservation .nameperson{
-				border-bottom: 1px solid #336699;
-		}
-		.page-node-type-reservation h2{
-			text-transform: uppercase;
-		}
-		#my-profile-edit .file.file--mime-image-jpeg.file--image.icon-before {
-			display: none;
-		}
-		.seeyou{
-			color:#336699;
-		}
-		 .footersignin ul li a {
-				width: 100%;
-				margin: 0px auto;
-				text-align: center;
-				border: 1px solid #336699;
-				height: 50px;
-				padding:14px 120px;
-				display: block;
-				position: relative;
-				color: #336699;
-				cursor: pointer;
-				text-decoration:none;
-			}
-			 .footersignin ul li a:hover{
-				background-color:#336699;
-				color:#fff;
-				text-decoration:none;
-			}
-			.path-user .btn.icon-before .glyphicon, .path-user h1.page-header, .user-register-form.user-form .form-item.form-type-textfield label.control-label, .path-node.page-node-type-restaurant .field--type-text-with-summary p img{
-					display: none;
-			}
-		.path-myreservation-form .nameperson::before{
-			    font-family: FontAwesome;
-				content: "\f0c0";
-				position:absolute;
-				color:#336699;
-		        left: 8%;
-		}
-		.path-myreservation-form .form-required::after{
-			display:none;
-		}
-		.page-node-type-restaurant .group-two-sidebars .group-left, .page-node-type-restaurant .group-two-sidebars .group-right {
-			width: 50%;
-		}
-		.path-myeventbooking-confirm.page-node-type-event-booking .namedate, .path-myeventbooking-confirm.page-node-type-event-booking .namearrival, .path-myeventbooking-confirm.page-node-type-event-booking .nameperson {
-			position: relative;
-			font-size: 24px;
-			text-transform: uppercase;
-		}
-		.path-myeventbooking-confirm.page-node-type-event-booking .namearrival {
-			margin: 10px 0px 10px 40px;
-		}
-		.path-myeventbooking-confirm.page-node-type-event-booking .profilereservation h2::after{
-			content: '';
-			height: 1px;
-			background: #336699;
-			width: 90px;
-			transform: translate(-115px, 40px );
-			position: absolute;
-		}
-		.path-myeventbooking-confirm.page-node-type-event-booking .profilereservation p {
-			position: relative;
-			top: 20px;
-		}
-		.path-myeventbooking-confirm.page-node-type-event-booking .namedate {
-			padding-top: 20px;
-			border-top: 1px solid #336699;
-		}
-		.path-myeventbooking-confirm.page-node-type-event-booking .nameperson {
-			padding-bottom: 20px;
-			border-bottom: 1px solid #336699;
-		}
-		/***********************Form**********************/	
-			.page-header {
-			text-transform: uppercase;
-			color: #336699;
-			font-size: 24px;
-		   }
-		   label{
-				color: #336699; 
-				width:auto;
-				text-transform: uppercase;
-		   }
-		   #my-profile-form{
-			   margin: 0 auto;
-			  display: block;
-			  text-align: center;
-		   }
-		   .path-myprofile-edit .form-group, .path-myprofile-edit .form-type-textarea{
-			text-align: left;
-			}
-			.profileedit .form-group img, .profileedit .form-group #edit-picture-upload {
-			text-align: center !important;
-			margin: 0 auto;
-			display: block;
-			color: #fff;
-		}
-		.profileedit .form-group .file{
-			margin: 0 auto;
-		width: 20%;
-		}
-		.profileedit .btn-danger{
-			margin: 10px auto;
-			text-align: center;
-			display: block;
-		}
-		.path-myprofile-edit .form-type-email{
-			position: relative;
-			top: -6px;
-			}
-		.path-myprofile-edit #edit-actions {
-			margin-bottom: 10%;
-		}
-			  .path-myprofile-edit .form-control{
-				  width: 100%;
-				  height: auto;
-			  }
-			  .path-myprofile-edit .btn-success, .path-myprofile-edit .btn-success:focus {
-				  color: #ffffff;
-				  background-color: #336699;
-				  border-color: #ccc;
-				  width: auto;
-				  margin: 0 auto;
-				  display: block;
-				  border-radius: 0px;
-				  margin-top: 30px;
-			  }
-			  .path-myprofile-edit .form-file.form-control{
-				  text-align: center;
-				  float: unset;
-			  }
-			  .btn-danger {
-			color: #336699;
-			background-color: #fff;
-			border-color: #fff;
-		}
-			  .path-myprofile-edit .form-control{
-			  color: #336699;
-			  background-color: transparent;
-			  float: right;
-			  margin-bottom: 20px;
-			  }
-			  .path-myprofile-edit .form-group.form-item.form-item-frist-name::after, .path-myprofile-edit .form-group.form-item.form-item-last-name::after{
-			   font-family: FontAwesome;
-				  content: "\f007";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			   right: 5%;
-			   top:40%;
-		}
-			  .path-myprofile-edit .form-group.form-item.form-item-phone-number::after {
-			   font-family: FontAwesome;
-				  content: "\f095";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			   right: 5%;
-			   top:40%;
-		}
-		.path-myprofile-edit .form-group.form-item.form-item-e-mail::after {
-			   font-family: FontAwesome;
-				  content: "\f0e0";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			   right: 2%;
-			   top:120%;
-		}
-		.path-myprofile-edit .js-form-item.form-item-address::after{
-			 font-family: FontAwesome;
-				  content: "\f007";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			   right:3%;
-			   top:40%;
-		}
-		.path-myprofile-edit .form-group.form-item-state::after{
-			   font-family: FontAwesome;
-				  content: "\f124";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			   right: 5%;
-			   top:40%;
-		}
-		.path-myprofile-edit .form-group.form-item-city::after{
-			   font-family: FontAwesome;
-				  content: "\f041";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			   right: 5%;
-			   top:40%;
-		}
-		.path-myprofile-edit .form-group.form-item-zipcode::after{
-			   font-family: FontAwesome;
-				  content: "\f1c6";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			   right: 5%;
-			   top:40%;
-		}
-		.path-myprofile-edit .form-group.form-item-country::after{
-			   font-family: FontAwesome;
-				  content: "\f024";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			   right: 5%;
-			   top:40%;
-		}
-			  .form-control:focus {
-				  border-color: #336699;
-				  outline: 0;
-				 box-shadow: unset;
-			  }
-			  #my-reservation-form .form-group .form-control::before, #my-reservation-all-form .form-group .form-control::before{
-			   font-family: FontAwesome;
-				  content: "\f073";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			  left: 3%;
-				top: 0%;	  
-		}
-		  #my-reservation-form .form-group.form-item-arrival::before, #my-reservation-all-form .form-group.form-item-arrival::before{
-			   font-family: FontAwesome;
-				  content: "\f017";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			  left: 3%;
-				top: 0%;
-			  
-		}
-		#my-reservation-form .form-group.form-item-person::before, #my-reservation-all-form .form-group.form-item-person::before{
-			   font-family: FontAwesome;
-				  content: "\f007";
-				  display: inherit;
-				  position:absolute;
-				  font-size: 15px;
-				  color:#336698;
-			  left: 2%;
-				top: 0%;
-			  
-		}
-		/***********************Form**********************/	
-			li.facebook::after {
-				font-family: FontAwesome;
-				content: "\f09a";
-				position:absolute;
-				color:#336699;
-				border:1px solid #336699;
-				padding:10px 15px;
-				text-align:center;
-				}
-				li.facebook:hover::after {
-				font-family: fontawesome;
-				content: "\f09a";
-				position: absolute;
-				background-color: #336699;
-				color: #fff;
-				border: 1px solid #fff;
-				padding: 10px 15px;
-				text-align: center;
-			}
-				li.twitter::after {
-				font-family: FontAwesome;
-				content: "\f099";
-				position:absolute;
-				color:#336699;
-				border:1px solid #336699;
-				padding:10px 15px;
-				text-align:center;
-				}
-				li.twitter:hover::after {
-				font-family: fontawesome;
-				content: "\f099";
-				position: absolute;
-				background-color: #336699;
-				color: #fff;
-				border: 1px solid #fff;
-				padding: 10px 15px;
-				text-align: center;
-			}
-				li.google::after {
-				font-family: FontAwesome;
-				content: "\f1a0";
-				position:absolute;
-				color:#336699;
-				border:1px solid #336699;
-				padding:10px 15px;
-				text-align:center;
-				}
-				li.google:hover::after {
-				font-family: fontawesome;
-				content: "\f1a0";
-				position: absolute;
-				background-color: #336699;
-				color: #fff;
-				border: 1px solid #fff;
-				padding: 10px 15px;
-				text-align: center;
-			}
-				.path-user .footer ul li {
-				width: auto;
-				display: inline-flex;
-				padding: 0px 25px;
-			}
-			  .footersocial ul {
-				  text-align: center;
-				  display: block;
-				  margin-right: 6%;
-			  }
-			  .footersocial {
-				  margin: 25px auto;
-			  }
-			  p.footerdesc, img.logo1.align-center{
-				  margin-bottom: 20px;
-			  }
-			  .path-user .logoheader {
-				  margin: 15px;
-				  margin-bottom: 30px;
-			  }
-			  #user-pass p, .forgotpwd p {
-				  font-size: 10px;
-				  text-align: center;
-					  width: 50%;
-			margin: 10px auto;
-			  }
-			  .path-user .forgotpwd h3 {
-				  text-transform: uppercase;
-				  font-size: 20px;
-			  font-weight: bold;
-			  text-align: center;
-			  }
-			  .path-user .forgotpwd {
-				  text-align: center;
-				  margin: 30px auto;
-			  }
-			  .reservation::before {
-				  font-family: FontAwesome;
-				  content: "\f0f5";
-				  display: inherit;
-				  position: relative;
-				  font-size: 45px;
-				  color:#336698;
-			  }
-			  .call::before {
-				  font-family: FontAwesome;
-				  content: "\f095";
-				  display: inherit;
-				  position: relative;
-				  font-size: 45px;
-				  color:#336698;
-			  }
-			  .events::before {
-				  font-family: FontAwesome;
-				  content: "\f19c";
-				  display: inherit;
-				  position: relative;
-				  font-size: 45px;
-				  color:#336698;
-			  }
-			  .location::before {
-				  font-family: FontAwesome;
-				  content: "\f041";
-				  display: inherit;
-				  position: relative;
-				  font-size: 45px;
-				  color:#336698;
-			  }
-			  .chat::before {
-				  font-family: FontAwesome;
-				  content: "\f0e5";
-				  display: inherit;
-				  position: relative;
-				  font-size: 45px;
-				  color:#336698;
-			  }
-			  .share::before {
-				  font-family: FontAwesome;
-				  content: "\f1e0";
-				  display: inherit;
-				  position: relative;
-				  font-size: 45px;
-				  color:#336698;
-			  }
-			   .feedback::before {
-				  font-family: FontAwesome;
-				  content: "\f118";
-				  display: inherit;
-				  position: relative;
-				  font-size: 45px;
-				  color:#336698;
-			  }
-			  .chat:hover::before, .location:hover::before, .events:hover::before, .call:hover::before, .reservation:hover::before, .share:hover::before, .feedback:hover::before, .chat:hover, .location:hover, .events:hover, .call:hover, .reservation:hover, .share:hover, .feedback:hover{
-				   color:#fff;
-				   background-color:#336698;
-			  }
-			  .title2 {
-			  margin-bottom: 20px;
-			  color: #336699;
-			  }
-			  .title {
-			  margin-top: 20px;
-			  color: #336699;
-			  }
-			  .welcomeapp ul li.getstarted {
-			border: 1px solid #336699 !important;
-			color: #336699;
-			cursor: pointer;
-		}
-			  .welcomeapp ul li.getstarted:hover {
-			  background-color: #336699;
-			  color: #fff; 
-		  }
-		   .welcomeapp ul li.getstarted a {
-		   color: #336699;
-			cursor: pointer;
-				display: block;
-				padding: 20px;
-				}
-			  .welcomeapp ul li.getstarted a:hover {
-			  background-color: #336699;
-			  color: #fff; 
-					display: block;
-					  }
-		  .forgot, p.need {
-			display: block;
-			margin: 0 auto;
-			text-align: center;
-			position: relative;
-			top: -30px;
-		}
-		.forgot a, p.need a{
-			text-decoration: none;
-		}
-		span.or::after {
-			content: '';
-			font-family: fontawesome;
-			width: 20px;
-			height: 1px;
-			color: #000;
-			position: absolute;
-		}
-		  .welcomeapp ul li.getstarted a:hover, .footersignin ul li a:hover, .welcomeapp ul li.getstarted a:hover {
-			   text-decoration: none;
-			   background-color: #336699;
-			  color: #fff;
-		  }
-		  .page-node-type-restaurant .view-content .views-field-field-gallery-image img {
-				display: inline;
-				margin-bottom: 5px;
-		  }
-		  .page-node-type-restaurant .view-content .views-field-field-gallery-image:hover img{
-			 /*   border-radius:30%;	*/
-		  }
-		  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content h3{
-			  position: relative;
-			  color: #fff;
-			  top: -200px;
-			  font-weight:bold;
-			  font-size:36px;
-			  text-align: center;
-			  margin: 0 auto;
-			  display: block;
-		  }
-		  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content p {
-			  position: relative;
-			  color: #ccc;
-			  top: -185px;
-			  font-size: 18px;
-			  text-align: center;
-			  margin: 0 auto;
-			  display: block;
-		  }
-		.book_my_table {
-			display: block;
-			margin: 30px auto;
-			text-align: center;
-			padding:0px;
-			background-color: #336699;
-			color: #fff;
-			width: 20%;
-			font-size: 16px;
-			text-transform: uppercase;
-		}
-		.book_my_table a{
-			color:#fff;
-			text-decoration:none;
-			padding: 20px;
-		display: block;
-		}
-		.book_my_table::before{
-			position: absolute;
-			font-family: FontAwesome;
-			content: "\f0f5";
-			left:43%;
-			color: #fff;
-			margin-top: 20px;
-		}
-		.group-header .slick-arrow{
-			width: 88px;
-		}
-		  .group-header .slick-arrow::before {
-			  color: #fff;
-			  font-size: 3.25rem;
-		  }
-		  .more-link.form-group a {
-			  float: right;
-			  position: relative;
-			  right: 8%;
-			  text-decoration: none;
-			  margin-top: -9%;
-			  color: #fff;
-			  font-weight: bold;
-			  font-size: 16px;
-			  border:2px solid #336699;
-			  padding: 5px;
-		  }
-		   .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
-			font-size: 16px;
-			text-transform: uppercase;
-			margin-bottom: 30px;
-			font-weight: bold;
-			color: #336699;
-			}
-		.slick-dots li button::before {
-			font-size: 1.5rem;
-			color: #336699;
-			opacity: unset;
-		}
-		.slick-dots li.slick-active button::before {
-			color: transparent;
-			border: 2px solid #336698;
-			border-radius: 50%;
-		}
-		.path-gallery .views-field-field-gallery-image img {
-			display: inline;
-			padding: 25px;
-		}
-		.path-gallery .views-field-field-gallery-image img:hover{
-			 -webkit-transform: scale(1);
-			-moz-transform: scale(1);
-			position: relative;
-			z-index: 5;
-			outline-style: none;
-			-webkit-transition: -webkit-transform .15s linear;
-			-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 5.25);
-			-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-		}
-		.path-gallery h1.page-header, .path-myreservation-form .profilereservation h1 {
-			text-transform: uppercase;
-			text-align: center;
-		}
-		#user-pass #edit-actions {
-			margin-bottom: 20px;
-		}
-		.path-mysettings .settingspage a, p.logout a{
-			text-decoration: none;
-		}
-		p.logout a{
-			padding: 10px;
-			display: block; 
-		}
-		#my-profile-edit {
-			display: block;
-			text-align: center;
-		}
-		p.logout a{
-			color: #336699;
-		}
-		.logout:hover, .logout:hover a, .logout:hover::before{
-			background-color: #336699;
-			color: #fff;
-		}
-		.path-mysettings .settingspage li {
-			list-style-type: none;
-			text-transform: uppercase;
-			font-size: 21px;
-			color:#336699;
-			border-bottom:1px solid #336699;
-			padding: 20px;
-			position: relative;
-			padding-left: 13%;
-		}
-		.rest::before {
-			font-family: FontAwesome;
-			content: "\f19c";
-			position: absolute;
-			color: #336699;
-			font-size: 30px;
-			left: 5%;
-		}
-		.mybook::before {
-			font-family: FontAwesome;
-			content: "\f0f5";
-			position: absolute;
-			color: #336699;
-			font-size: 30px;
-			left: 5%;
-		}
-		.myoffer::before {
-			font-family: FontAwesome;
-			content: "\f295";
-			position: absolute;
-			color: #336699;
-			font-size: 30px;
-			left: 5%;
-		}
-		.mymesg::before {
-			font-family: FontAwesome;
-			content: "\F0E0";
-			position: absolute;
-			color: #336699;
-			font-size: 30px;
-			left: 5%;
-		}
-		.setting::before {
-			font-family: FontAwesome;
-			content: "\F013";
-			position: absolute;
-			color: #336699;
-			font-size: 30px;
-			left: 5%;
-		}
-		.rest::after, .mybook::after, .myoffer::after, .mymesg::after, .setting::after {
-			font-family: FontAwesome;
-			content: "\f105";
-			position: absolute;
-			color: #336699;
-			font-size: 30px;
-			right: 5%;
-		}
-		.path-mysettings .profileblock {
-			background-color: #336699;
-			padding: 20px;
-			display: block;
-			margin: 0 auto 3%;
-		}
-		.profileblock h3 a {
-			text-decoration: none;
-			color: #fff;
-		}
-		.path-myprofile-edit .profileedit {
-			background-color: #336699;
-			display: block;
-			margin: 0 auto 3%;
-		}
-		.path-mysettings .profileblock img, .path-myprofile-edit .profileblock img{
-			width:10%;
-			border-radius: 50%;
-			border: 10px double #fff;
-		}
-		.path-mysettings .js-quickedit-page-title.page-header {
-			font-size: 0;
-		}
-		.profileblock h3{
-			margin-left: 10%;
-			font-weight: bold;
-			display: inline;
-			position: absolute;
-			top: 6%;
-			left: 12%;
-			color: #fff;
-		}
-		.profileedit h3, .profileedit p {
-			position: relative;
-			display: block;
-			color: #fff;
-		}
-		.path-myreservation-form .profilereservation h3, .path-myreservation-form .profilereservation p, .path-myreservation-form .profilereservation h1 {
-			position: relative;
-			display: block;
-			color: #336699;
-			text-align: center;
-		}
-		.path-myreservation-form .profilereservation, .welcomeapp .logos {
-			margin-bottom: 30px;
-		}
-		.profileblock p {
-			display: inline;
-			position: absolute;
-			top: 18%;
-			left: 23%;
-			overflow: hidden;
-			z-index: 2;
-			color: #fff;
-		}
-		.path-myprofile-edit .profileblock p{
-			top: 50%;
-		}
-		.path-myprofile-edit .profileblock h3{
-			top: 15%;
-		}
-		.footer .logout {
-			border: 2px solid #336699;
-			width: 15%;
-			text-align: center;
-			margin: 0 auto;
-			margin-bottom: 0px;
-			text-transform: uppercase;
-		}
-		.footer .logout::before {
-			font-family: FontAwesome;
-			content: "\f08b";
-			position: absolute;
-			color: grey;
-			left: 45%;
-			margin-top: 10px;
-		}
-		#my-reservation-form, #my-reservation-all-form {
-			display: block;
-			margin: 0 auto;
-			text-align: center;
-		}
-		#my-reservation-form .col-md-6.namearrival {
-			position: relative;
-			top: -5px;
-		}
-		.nameaction {
-			margin-top: 3%;
-		}
-		#my-reservation-form .select-wrapper select{
-			padding-right: 7em;
-		}
-		#my-reservation-form .form-control, #my-reservation-form .form-group, #my-reservation-form .form-select, #my-reservation-all-form .form-control, #my-reservation-all-form .form-group, #my-reservation-all-form .form-select{
-			margin-bottom: 15px;
-		display: inline-block;
-		float: unset;
-		width: 100%;
-		}
-		#my-reservation-form label, #my-reservation-all-form label{
-			float: left;
-			margin-left: 4%;
-		}
-		#my-reservation-form .form-item-person label, #my-reservation-all-form .form-item-person label{
-			margin-left: 2%;
-		}
-		#my-reservation-form .form-required::after, #my-reservation-all-form .form-required::after{
-			display:none;
-		}
-		#my-reservation-form .btn-primary{
-			border-radius: 0;
-			text-transform: uppercase;
-		}
-		.navbar-default .navbar-toggle .icon-bar {
-			background-color: #dddddd;
-		}
-		
-		  /****************************************/
-			  .vc_col-sm-6 {
-			width: 50%;
-			float: left;
-		}
-		.vc_custom_heading {
-			position: relative;
-			line-height: 30px;
-			font-size: 30px;
-			letter-spacing: 0em;
-		}
-		.vc_custom_heading.style-1::after {
-			width: 40px;
-			height: 2px;
-			background-color: #d6cfb2;
-			left: 0;
-		}
-		.vc_custom_heading::after {
-			position: absolute;
-			content: '';
-			bottom: 0;
-		}
-		wpb_wrapper h2 {
-			font-family: Oswald;
-			font-weight: 400;
-			font-style: normal;
-			color: #000000;
-			font-size: 30px;
-		}
-		.vc_custom_heading .sub-title {
-			color: #b2b2b2;
-			display: block;
-			font-size: 18px;
-			letter-spacing: 0;
-			line-height: 20px;
-			margin-top: 12px;
-			text-transform: uppercase;
-		}
-		.coffee-store p {
-			float: left;
-			padding: 0px 15px 0px 15px;
-			margin-bottom: 30px;
-			line-height: 24px;
-		}
-		.alfanar_wrapper p {
-			width: 50%;
-			text-align: justify;
-		}
-		.alfanar_wrapper img {
-			width: 50%;
-			float: right;
-		}
-		.sub-title {
-			color: #336699;
-			display: block;
-			font-size: 18px;
-			letter-spacing: 0;
-			line-height: 20px;
-			margin-top: 12px;
-			text-transform: uppercase;
-		}
-		h2 .sub-title::after {
-			width: 40px;
-			height: 2px;
-			background-color: #d6cfb2;
-			left: 0;
-			position: absolute;
-			content: '';
-			bottom: 0;
-		}
-		.alfanar {
-			position: relative;
-			line-height: 30px;
-			font-size: 30px;
-			letter-spacing: 0em;
-			color: #336699;
-		}
-		.border-box-shadow .vc_single_image-wrapper {
-			box-shadow: 0 0 0 10px #d1d3d4 !important;
-			width: auto !important;
-		}
-		#my-reservation-all-form .form-item-restaurant .control-label {
-			display: none;
-		}
-		.col-md-12.profilereservation {
-			color: #336699;
-			margin-bottom: 50px;
-		}
-	 /*********************************************/
-	   .page-node-type-event .event-time, .page-node-type-event .event-location {
-		margin: 2% auto;
-	   }
-	   .page-node-type-event .event-time .block-entity-fieldnodefield-date, .page-node-type-event .event-location .block-entity-fieldnodefield-located-at {
-		font-size: 24px;
-		font-weight: bold;
-		text-transform: uppercase;
-		margin-left: 40px;
-	   }
-	   .page-node-type-event .event-time .block-entity-fieldnodefield-time, .page-node-type-event .event-location .block-entity-fieldnodefield-location {
-		font-size: 18px;
-		margin-left: 40px;
-		}
-		 .page-node-type-event .col-sm-12.bs-region p{
-		margin: 10px auto;
-		font-size: 16px;
-		}
-		.book_my_event a {
-		background-color: #336699;
-		color: #fff;
-		margin: 0 auto;
-		display: block;
-		width: 25%;
-		text-align: center;
-		padding: 20px;
-		font-size: 18px;
-		text-transform: uppercase;
-		margin-bottom: 20px;
-		text-decoration: none;
-	}
-	#my-event-booking-form {
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+        Created on : 27 Nov, 2017, 12:40:35 PM
+        Author     : azher
+*/
+html body{
+    font-size: 14px;
+    overflow-x: hidden;
+    background-color: #f6f6f6;
+}
+ol, ul {
+    padding: 0;
+}
+.slick .slick-list .slick-track img{
+    width:100%;
+}
+.page-node-type-restaurant h2.block-title {
+    color: #336699;
+}
+.page-node-type-restaurant .form-group {
+    margin: 30px auto;
+}
+.page-node-type-restaurant .views-field.views-field-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.page-node-type-restaurant .views-field.views-field-title span a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    position: relative;
+}
+.page-node-type-restaurant .views-field.views-field-body {
+    color: #777;
+}
+.path-frontpage #navbar, .path-user nav.tabs, .path-user #navbar, .path-splash .navbar-default, .page-node-type-event {
+    display: none;
+}
+.navbar-default {
+    background-color: #336699;
+    border-color: #336699;
+    border-radius: 0px;
+    z-index: 40;
+    position: relative;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #fff;
+}
+.menu.dropdown-menu {
+    background-color: rgba(242,242,242,.9);
     text-align: center;
-	}
-	#my-event-booking-form .form-required::after{
-		display:none;
-	}
-	#my-event-booking-form .select-wrapper .form-control{
-		width: 100%;
-	}
-	#my-event-booking-form .form-item.form-item-person {
-    text-align: initial;
-	}
-	#my-event-booking-form .form-item.form-item-person::before {
-		font-family: fontawesome;
-		content: "\f007";
-		color: #336698;
-		position: relative;
-	}
-	#my-event-booking-form  #edit-submit {
+    border: 2px solid #336699;
+}
+.menu.dropdown-menu li{
+    padding: 5px;
+}
+.dropdown-menu > li > a {
+    padding: 5px;
+    outline: 1px solid darkgray;
+}
+.menu.dropdown-menu li a:hover {
+    background-color: #336699;
+    color: #fff;
+}
+.path-home .view-content .views-row .views-col {
+    padding: 15px;
+    min-height: 512px;
+    /*box-shadow: 0px 0px 0px 1px #a78b4d;*/
+    /* box-shadow: 5px 5px #f4f4f4, -5px -5px #f4f4f4, 0px 0px 5px 5px #777;*/
+    /* outline-offset: -15px;
+ outline: 2px solid #a78d49;*/
+    background-color: #fff;
+    width: 49% !important;
+    margin-bottom: 20px;
+}
+.path-home .view-content .views-row .views-col.col-2 {
+    float: right;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
+    background-color: #336699;
+}
+.br-theme-css-stars .br-widget a.br-active::after, .br-theme-css-stars .br-widget a.br-selected::after {
+    color: #336699;
+}
+.path-home .view.view-restaurant .views-field.views-field-view-node span a::after {
+    font-family: fontawesome;
+    content: '\f061';
+    position: relative;
+    left: 3%;
+}
+.path-splash .slick-list .slick-track .slick__slide h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+.path-splash .slick-list .slick-track .slick__slide p {
+    text-align: center;
+    margin-top: 15px;
+}
+.path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content {
+    background-color: #336698;
+    color: #fff;
+    padding: 15px;
+    min-height: 150px;
+}
+.path-splash .slick-dots {
+    background-color: #fff;
+    padding: 10px;
+}
+.path-splash .slick__arrow{
+    top: 100%;
+    margin-top: 3px;
+}
+.path-splash .slick-arrow::before {
+    color: #336699;
+    font-size: 2.5rem;
+}
+.footer_block {
+    margin-top: 20px;
+}
+.footer_block ul {
+    list-style-type: none;
+    display: flex;
+    color: #336698;
     width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer_block ul li {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+}
+.reservation, .call, .chat, .location {
+    border-right: 1px solid #336698;
+}
+.path-home .view.view-restaurant .views-field.views-field-title span a {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #336699;
+    font: 100%/1.6 Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+.path-home .view.view-restaurant .views-field.views-field-field-restaurant-slogan {
+    text-transform: uppercase;
+}
+.path-home .view.view-restaurant .views-field-field-located-at .field-content {
+    color: #777;
+    margin: 10px auto;
+}
+.path-home .view.view-restaurant .views-field.views-field-view-node span a {
+    text-decoration: none;
+}
+.path-home.has-glyphicons .select-wrapper::after{
+    display:none;
+}
+.path-home .view.view-restaurant .views-field.views-field-field-image {
+    height: 265px;
+    margin-bottom: 15px;
+}
+/*.path-frontpage .views-view-grid.horizontal.cols-2.clearfix .views-row {
+        padding: 30px;
+}*/
+.path-home .view.view-restaurant .views-field.views-field-title, .logoheader a img{
+    margin-bottom: 10px;
+}
+form#user-login-form, form#user-register-form, form#user-pass {
+    width: 27%;
+    margin: 0 auto;
+}
+.path-user label.control-label.js-form-required.form-required, #block-logout h2.block-title {
+    display: none;
+}
+.form-control{
+    border-radius: 0;
+    webkit-box-shadow: none;
+    box-shadow: none;
+    width: 52%;
+    margin: 0 auto;
+    border: 1px solid #336699;
+}
+#user-login-form .form-item-name::after, #user-register-form .form-item::after{
+    font-family: FontAwesome;
+    content: "\f007";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    left:60%;
+    top:2%;
+}
+.form-item-pass::after{
+    font-family: FontAwesome;
+    content: "\f023";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    left:60%;
+    top:40%;
+}
+#user-pass .form-type-email::after{
+    font-family: FontAwesome;
+    content: "\f0e0";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    left:60%;
+    top:3%;
+}
+#user-register-form .form-item-mail::after{
+    font-family: FontAwesome;
+    content: "\f0e0";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    left:60%;
+    top:22%;
+}
+#user-register-form .form-item-pass::after{
+    font-family: FontAwesome;
+    content: "\f023";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    left:60%;
+    top:42%;
+}
+#user-register-form .form-item-pass .form-item::after{
+    font-family: FontAwesome;
+    content: "\f023";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    left:60%;
+    top:62%;
+}
+.path-user button#edit-submit {
+    width: 52%;
+    border-radius: 0px;
+    background-color: #336699;
+    border: 0px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    height: 50px;
+}
+.path-user .footer h2.block-title, #block-welcomeappheader h2.block-title {
+    display: none;
+}
+.footer{
+    border-top: 0px solid #E5E5E5;
+    padding-top: 0;
+}
+.footersignin, p.footerdesc {
+    text-align: center;
+}
+.page-node-type-reservation .col-md-12 {
+    width: 100%;
+    display: block;
+    text-align: center;
+
+}
+.page-node-type-reservation .profilereservation {
+    border-bottom: 1px solid #336699;
+    padding-bottom: 30px;
+    color:#336699;
+}
+.page-node-type-reservation .namedate, .page-node-type-reservation .namearrival, .page-node-type-reservation .nameperson {
+    padding: 20px;
+    font-size: 20px;
+}
+.page-node-type-reservation .namedate::before{
+    font-family: FontAwesome;
+    content: "\f073";
+    position:absolute;
+    color:#336699;
+    left: 40%;
+}
+.path-myreservation-form .namedate::before{
+    font-family: FontAwesome;
+    content: "\f073";
+    position:absolute;
+    color:#336699;
+    left: 10%;
+}
+.page-node-type-reservation .namearrival::before{
+    font-family: FontAwesome;
+    content: "\f017";
+    position:absolute;
+    color:#336699;
+    left: 40%;
+}
+.path-myreservation-form .namearrival::before{
+    font-family: FontAwesome;
+    content: "\f017";
+    position:absolute;
+    color:#336699;
+    left: 15%;
+}
+.page-node-type-reservation .nameperson::before{
+    font-family: FontAwesome;
+    content: "\f0c0";
+    position:absolute;
+    color:#336699;
+    left: 40%;
+}
+.page-node-type-reservation .nameperson{
+    border-bottom: 1px solid #336699;
+}
+.page-node-type-reservation h2{
+    text-transform: uppercase;
+}
+#my-profile-edit .file.file--mime-image-jpeg.file--image.icon-before {
+    display: none;
+}
+.seeyou{
+    color:#336699;
+}
+.footersignin ul li a {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    border: 1px solid #336699;
+    height: 50px;
+    padding:14px 120px;
+    display: block;
+    position: relative;
+    color: #336699;
+    cursor: pointer;
+    text-decoration:none;
+}
+.footersignin ul li a:hover{
+    background-color:#336699;
+    color:#fff;
+    text-decoration:none;
+}
+.path-user .btn.icon-before .glyphicon, .path-user h1.page-header, .user-register-form.user-form .form-item.form-type-textfield label.control-label, .path-node.page-node-type-restaurant .field--type-text-with-summary p img{
+    display: none;
+}
+.path-myreservation-form .nameperson::before{
+    font-family: FontAwesome;
+    content: "\f0c0";
+    position:absolute;
+    color:#336699;
+    left: 8%;
+}
+.path-myreservation-form .form-required::after{
+    display:none;
+}
+/***********************Form**********************/	
+.page-header {
+    text-transform: uppercase;
+    color: #336699;
+    font-size: 24px;
+}
+label{
+    color: #336699; 
+    width:auto;
+    text-transform: uppercase;
+}
+#my-profile-form{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.path-myprofile-edit .form-group, .path-myprofile-edit .form-type-textarea{
+    text-align: left;
+}
+.profileedit .form-group img, .profileedit .form-group #edit-picture-upload {
+    text-align: center !important;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+}
+.profileedit .form-group .file{
+    margin: 0 auto;
+    width: 20%;
+}
+.profileedit .btn-danger{
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+}
+.path-myprofile-edit .form-type-email{
+    position: relative;
+    top: -6px;
+}
+.path-myprofile-edit #edit-actions {
+    margin-bottom: 10%;
+}
+.path-myprofile-edit .form-control{
+    width: 100%;
+    height: auto;
+}
+.path-myprofile-edit .btn-success, .path-myprofile-edit .btn-success:focus {
+    color: #ffffff;
+    background-color: #336699;
+    border-color: #ccc;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0px;
+    margin-top: 30px;
+}
+.path-myprofile-edit .form-file.form-control{
+    text-align: center;
+    float: unset;
+}
+.btn-danger {
+    color: #336699;
+    background-color: #fff;
+    border-color: #fff;
+}
+.path-myprofile-edit .form-control{
+    color: #336699;
+    background-color: transparent;
+    float: right;
+    margin-bottom: 20px;
+}
+.path-myprofile-edit .form-group.form-item.form-item-frist-name::after, .path-myprofile-edit .form-group.form-item.form-item-last-name::after{
+    font-family: FontAwesome;
+    content: "\f007";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    right: 5%;
+    top:40%;
+}
+.path-myprofile-edit .form-group.form-item.form-item-phone-number::after {
+    font-family: FontAwesome;
+    content: "\f095";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    right: 5%;
+    top:40%;
+}
+.path-myprofile-edit .form-group.form-item.form-item-e-mail::after {
+    font-family: FontAwesome;
+    content: "\f0e0";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    right: 2%;
+    top:120%;
+}
+.path-myprofile-edit .js-form-item.form-item-address::after{
+    font-family: FontAwesome;
+    content: "\f007";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    right:3%;
+    top:40%;
+}
+.path-myprofile-edit .form-group.form-item-state::after{
+    font-family: FontAwesome;
+    content: "\f124";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    right: 5%;
+    top:40%;
+}
+.path-myprofile-edit .form-group.form-item-city::after{
+    font-family: FontAwesome;
+    content: "\f041";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    right: 5%;
+    top:40%;
+}
+.path-myprofile-edit .form-group.form-item-zipcode::after{
+    font-family: FontAwesome;
+    content: "\f1c6";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    right: 5%;
+    top:40%;
+}
+.path-myprofile-edit .form-group.form-item-country::after{
+    font-family: FontAwesome;
+    content: "\f024";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    right: 5%;
+    top:40%;
+}
+.form-control:focus {
+    border-color: #336699;
+    outline: 0;
+    box-shadow: unset;
+}
+#my-reservation-form .form-group .form-control::before, #my-reservation-all-form .form-group .form-control::before{
+    font-family: FontAwesome;
+    content: "\f073";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    left: 3%;
+    top: 0%;	  
+}
+#my-reservation-form .form-group.form-item-arrival::before, #my-reservation-all-form .form-group.form-item-arrival::before{
+    font-family: FontAwesome;
+    content: "\f017";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    left: 3%;
+    top: 0%;
+
+}
+#my-reservation-form .form-group.form-item-person::before, #my-reservation-all-form .form-group.form-item-person::before{
+    font-family: FontAwesome;
+    content: "\f007";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    left: 2%;
+    top: 0%;
+
+}
+/***********************Form**********************/	
+li.facebook::after {
+    font-family: FontAwesome;
+    content: "\f09a";
+    position:absolute;
+    color:#336699;
+    border:1px solid #336699;
+    padding:10px 15px;
+    text-align:center;
+}
+li.facebook:hover::after {
+    font-family: fontawesome;
+    content: "\f09a";
+    position: absolute;
+    background-color: #336699;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    text-align: center;
+}
+li.twitter::after {
+    font-family: FontAwesome;
+    content: "\f099";
+    position:absolute;
+    color:#336699;
+    border:1px solid #336699;
+    padding:10px 15px;
+    text-align:center;
+}
+li.twitter:hover::after {
+    font-family: fontawesome;
+    content: "\f099";
+    position: absolute;
+    background-color: #336699;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    text-align: center;
+}
+li.google::after {
+    font-family: FontAwesome;
+    content: "\f1a0";
+    position:absolute;
+    color:#336699;
+    border:1px solid #336699;
+    padding:10px 15px;
+    text-align:center;
+}
+li.google:hover::after {
+    font-family: fontawesome;
+    content: "\f1a0";
+    position: absolute;
+    background-color: #336699;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    text-align: center;
+}
+.path-user .footer ul li {
+    width: auto;
+    display: inline-flex;
+    padding: 0px 25px;
+}
+.footersocial ul {
+    text-align: center;
+    display: block;
+    margin-right: 6%;
+}
+.footersocial {
+    margin: 25px auto;
+}
+p.footerdesc, img.logo1.align-center{
+    margin-bottom: 20px;
+}
+.path-user .logoheader {
+    margin: 15px;
+    margin-bottom: 30px;
+}
+#user-pass p, .forgotpwd p {
+    font-size: 10px;
+    text-align: center;
+    width: 50%;
+    margin: 10px auto;
+}
+.path-user .forgotpwd h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.path-user .forgotpwd {
+    text-align: center;
+    margin: 30px auto;
+}
+.reservation::before {
+    font-family: FontAwesome;
+    content: "\f0f5";
+    display: inherit;
+    position: relative;
+    font-size: 45px;
+    color:#336698;
+}
+.call::before {
+    font-family: FontAwesome;
+    content: "\f095";
+    display: inherit;
+    position: relative;
+    font-size: 45px;
+    color:#336698;
+}
+.events::before {
+    font-family: FontAwesome;
+    content: "\f19c";
+    display: inherit;
+    position: relative;
+    font-size: 45px;
+    color:#336698;
+}
+.location::before {
+    font-family: FontAwesome;
+    content: "\f041";
+    display: inherit;
+    position: relative;
+    font-size: 45px;
+    color:#336698;
+}
+.chat::before {
+    font-family: FontAwesome;
+    content: "\f0e5";
+    display: inherit;
+    position: relative;
+    font-size: 45px;
+    color:#336698;
+}
+.share::before {
+    font-family: FontAwesome;
+    content: "\f1e0";
+    display: inherit;
+    position: relative;
+    font-size: 45px;
+    color:#336698;
+}
+.feedback::before {
+    font-family: FontAwesome;
+    content: "\f118";
+    display: inherit;
+    position: relative;
+    font-size: 45px;
+    color:#336698;
+}
+.chat:hover::before, .location:hover::before, .events:hover::before, .call:hover::before, .reservation:hover::before, .share:hover::before, .feedback:hover::before, .chat:hover, .location:hover, .events:hover, .call:hover, .reservation:hover, .share:hover, .feedback:hover{
+    color:#fff;
+    background-color:#336698;
+}
+.title2 {
+    margin-bottom: 20px;
+    color: #336699;
+}
+.title {
+    margin-top: 20px;
+    color: #336699;
+}
+.welcomeapp ul li.getstarted {
+    border: 1px solid #336699 !important;
+    color: #336699;
+    cursor: pointer;
+}
+.welcomeapp ul li.getstarted:hover {
+    background-color: #336699;
+    color: #fff; 
+}
+.welcomeapp ul li.getstarted a {
+    color: #336699;
+    cursor: pointer;
+    display: block;
+    padding: 20px;
+}
+.welcomeapp ul li.getstarted a:hover {
+    background-color: #336699;
+    color: #fff; 
+    display: block;
+}
+.forgot, p.need {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+.forgot a, p.need a{
+    text-decoration: none;
+}
+span.or::after {
+    content: '';
+    font-family: fontawesome;
+    width: 20px;
+    height: 1px;
+    color: #000;
+    position: absolute;
+}
+.welcomeapp ul li.getstarted a:hover, .footersignin ul li a:hover, .welcomeapp ul li.getstarted a:hover {
+    text-decoration: none;
+    background-color: #336699;
+    color: #fff;
+}
+.page-node-type-restaurant .view-content .views-field-field-gallery-image img {
+    display: inline;
+    margin-bottom: 5px;
+}
+.page-node-type-restaurant .view-content .views-field-field-gallery-image:hover img{
+    /*   border-radius:30%;	*/
+}
+.page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
+    position: relative;
+    color: #fff;
+    top: -200px;
+    font-weight:bold;
+    font-size:36px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p {
+    position: relative;
+    color: #ccc;
+    top: -185px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+/*.edge-edge {
+    width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}*/
+.book_my_table {
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    padding:0px;
+    background-color: #336699;
+    color: #fff;
+    width: 20%;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.book_my_table a{
+    color:#fff;
+    text-decoration:none;
+    padding: 20px;
+    display: block;
+}
+.book_my_table::before{
+    position: absolute;
+    font-family: FontAwesome;
+    content: "\f0f5";
+    left:43%;
+    color: #fff;
+    margin-top: 20px;
+}
+.group-header .slick-arrow{
+    width: 88px;
+}
+.group-header .slick-arrow::before {
+    color: #fff;
+    font-size: 3.25rem;
+}
+.more-link.form-group a {
+    float: right;
+    position: relative;
+    right: 8%;
+    text-decoration: none;
+    margin-top: -9%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border:2px solid #336699;
+    padding: 5px;
+}
+.path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #336699;
+}
+.slick-dots li button::before {
+    font-size: 1.5rem;
+    color: #336699;
+    opacity: unset;
+}
+.slick-dots li.slick-active button::before {
+    color: transparent;
+    border: 2px solid #336698;
+    border-radius: 50%;
+}
+.path-gallery .views-field-field-gallery-image img {
+    display: inline;
+    padding: 25px;
+    /*text-align: center;
+position: relative;
+margin-bottom: 10px;
+margin-right: 15px;
+    outline-style: none;
+    -webkit-transition: -webkit-transform .15s linear;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);*/
+}
+.path-gallery .views-field-field-gallery-image img:hover{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    position: relative;
+    z-index: 5;
+    outline-style: none;
+    -webkit-transition: -webkit-transform .15s linear;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 5.25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+.path-gallery h1.page-header, .path-myreservation-form .profilereservation h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+#user-pass #edit-actions {
+    margin-bottom: 20px;
+}
+.path-mysettings .settingspage a, p.logout a{
+    text-decoration: none;
+}
+p.logout a{
+    padding: 10px;
+    display: block; 
+}
+#my-profile-edit {
+    display: block;
+    text-align: center;
+}
+p.logout a{
+    color: #336699;
+}
+.logout:hover, .logout:hover a, .logout:hover::before{
+    background-color: #336699;
+    color: #fff;
+}
+.path-mysettings .settingspage li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 21px;
+    color:#336699;
+    border-bottom:1px solid #336699;
+    padding: 20px;
+    position: relative;
+    padding-left: 13%;
+}
+.rest::before {
+    font-family: FontAwesome;
+    content: "\f19c";
+    position: absolute;
+    color: #336699;
+    font-size: 30px;
+    left: 5%;
+}
+.mybook::before {
+    font-family: FontAwesome;
+    content: "\f0f5";
+    position: absolute;
+    color: #336699;
+    font-size: 30px;
+    left: 5%;
+}
+.myoffer::before {
+    font-family: FontAwesome;
+    content: "\f295";
+    position: absolute;
+    color: #336699;
+    font-size: 30px;
+    left: 5%;
+}
+.mymesg::before {
+    font-family: FontAwesome;
+    content: "\F0E0";
+    position: absolute;
+    color: #336699;
+    font-size: 30px;
+    left: 5%;
+}
+.setting::before {
+    font-family: FontAwesome;
+    content: "\F013";
+    position: absolute;
+    color: #336699;
+    font-size: 30px;
+    left: 5%;
+}
+.rest::after, .mybook::after, .myoffer::after, .mymesg::after, .setting::after {
+    font-family: FontAwesome;
+    content: "\f105";
+    position: absolute;
+    color: #336699;
+    font-size: 30px;
+    right: 5%;
+}
+.path-mysettings .profileblock {
+    background-color: #336699;
+    padding: 20px;
+    display: block;
+    margin: 0 auto 3%;
+}
+.profileblock h3 a {
+    text-decoration: none;
+    color: #fff;
+}
+.path-myprofile-edit .profileedit {
+    background-color: #336699;
+    display: block;
+    margin: 0 auto 3%;
+}
+.path-mysettings .profileblock img, .path-myprofile-edit .profileblock img{
+    width:10%;
+    border-radius: 50%;
+    border: 10px double #fff;
+}
+.path-mysettings .js-quickedit-page-title.page-header {
+    font-size: 0;
+}
+.profileblock h3{
+    margin-left: 10%;
+    font-weight: bold;
+    display: inline;
+    position: absolute;
+    top: 6%;
+    left: 12%;
+    color: #fff;
+}
+.profileedit h3, .profileedit p {
+    position: relative;
+    display: block;
+    color: #fff;
+}
+.path-myreservation-form .profilereservation h3, .path-myreservation-form .profilereservation p, .path-myreservation-form .profilereservation h1 {
+    position: relative;
+    display: block;
+    color: #336699;
+    text-align: center;
+}
+.path-myreservation-form .profilereservation, .welcomeapp .logos {
+    margin-bottom: 30px;
+}
+.profileblock p {
+    display: inline;
+    position: absolute;
+    top: 18%;
+    left: 23%;
+    overflow: hidden;
+    z-index: 2;
+    color: #fff;
+}
+.path-myprofile-edit .profileblock p{
+    top: 50%;
+}
+.path-myprofile-edit .profileblock h3{
+    top: 15%;
+}
+.footer .logout {
+    border: 2px solid #336699;
+    width: 15%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+.footer .logout::before {
+    font-family: FontAwesome;
+    content: "\f08b";
+    position: absolute;
+    color: grey;
+    left: 45%;
+    margin-top: 10px;
+}
+#my-reservation-form, #my-reservation-all-form {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+#my-reservation-form .col-md-6.namearrival {
+    position: relative;
+    top: -5px;
+}
+.nameaction {
+    margin-top: 3%;
+}
+#my-reservation-form .select-wrapper select{
+    padding-right: 7em;
+}
+#my-reservation-form .form-control, #my-reservation-form .form-group, #my-reservation-form .form-select, #my-reservation-all-form .form-control, #my-reservation-all-form .form-group, #my-reservation-all-form .form-select{
+    margin-bottom: 15px;
+    display: inline-block;
+    float: unset;
+    width: 100%;
+}
+#my-reservation-form label, #my-reservation-all-form label{
+    float: left;
+    margin-left: 4%;
+}
+#my-reservation-form .form-item-person label, #my-reservation-all-form .form-item-person label{
+    margin-left: 2%;
+}
+#my-reservation-form .form-required::after, #my-reservation-all-form .form-required::after{
+    display:none;
+}
+#my-reservation-form .btn-primary{
     border-radius: 0;
     text-transform: uppercase;
-    margin-bottom: 3%;
 }
-.path-myeventbooking .page-header {
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #dddddd;
+}
+
+/****************************************/
+.vc_col-sm-6 {
+    width: 50%;
+    float: left;
+}
+.vc_custom_heading {
+    position: relative;
+    line-height: 30px;
+    font-size: 30px;
+    letter-spacing: 0em;
+}
+.vc_custom_heading.style-1::after {
+    width: 40px;
+    height: 2px;
+    background-color: #d6cfb2;
+    left: 0;
+}
+.vc_custom_heading::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+}
+wpb_wrapper h2 {
+    font-family: Oswald;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    font-size: 30px;
+}
+.vc_custom_heading .sub-title {
+    color: #b2b2b2;
+    display: block;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+.coffee-store p {
+    float: left;
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+.alfanar_wrapper p {
+    width: 50%;
+    text-align: justify;
+}
+.alfanar_wrapper img {
+    width: 50%;
+    float: right;
+}
+.sub-title {
+    color: #336699;
+    display: block;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+h2 .sub-title::after {
+    width: 40px;
+    height: 2px;
+    background-color: #d6cfb2;
+    left: 0;
+    position: absolute;
+    content: '';
+    bottom: 0;
+}
+.alfanar {
+    position: relative;
+    line-height: 30px;
+    font-size: 30px;
+    letter-spacing: 0em;
+    color: #336699;
+}
+.border-box-shadow .vc_single_image-wrapper {
+    box-shadow: 0 0 0 10px #d1d3d4 !important;
+    width: auto !important;
+}
+#my-reservation-all-form .form-item-restaurant .control-label {
     display: none;
-}		
-			  /***********************Media Queries**************************/
-			  @media (max-width: 320px){
-		.region-header .page-header {
-			border: 0px;
-			position: fixed;
-			top: 0;
-			transform: translate(35%, 40%);
-			left: 0;
-			overflow: hidden;
-			z-index: 99;
-			color: #fff;
-		}		  
-		.logoheader img.logo1 {
-			width: auto;
-		}
-		h2.block-title {
-			font-size: 18px;
-		}
-		.page-node-type-restaurant .views-field.views-field-title span a {
-			font-size: 13px;
-		}
-		.views-field.views-field-field-image img {
-			width: 90%;
-		}
-		.logo1.align-center {
-			width: 30%;
-			margin-top: 10px;
-		}
-		#my-event-booking-form .col-md-12.profilereservation h1 {
-		  font-size: 22px;
-	  }
-	  #my-event-booking-form .col-md-12.profilereservation p {
-		  font-size: 12px;
-		  position: relative;
-          top: 20%;
-	  }
-	  .path-gallery .views-field-field-gallery-image img {
-		display: inline;
-		padding: 2px;
-	}
-	  #my-event-booking-form #edit-submit{
-		  position: relative;
-		  top: 25px;
-	  }
-		.forgot, p.need{
-			top: 0px;
-		margin-top: 15px;
-		}
-		.footer .logout::before {
-			left:35%;
-		}
-		.footersignin ul li a{
-			height: 40px;
-			padding: 5% 0 0;
-			margin-top: 40px;
-		}
-		.path-mysettings .page-header {
-			position: absolute;
-			top: -55px;
-			z-index: 999;
-			color: #fff;
-			overflow: hidden;
-			left: 25%;
-		}
-		.book_my_table{
-			width: auto;
-		}
-		.book_my_table::before{
-				left: 20%;
-		}
-		.path-home .view.view-restaurant .views-field.views-field-title span a{
-			font-size: 12px;
-		}
-		.path-home .view.view-restaurant .views-field.views-field-field-restaurant-slogan, .path-home .view.view-restaurant .views-label.views-label-field-located-at, .path-home .view.view-restaurant .views-field.views-field-view-node {
-			font-size: 11px;
-		}
-		.path-home .view.view-restaurant .view-content .views-row .views-col {
-			padding: 15px;
-			min-height: auto;
-		}
-		.path-home .view.view-restaurant .br-theme-css-stars .br-widget a{
-			width: 8px;
-		   font-size: 12px;
-		}
-		.path-home .view.view-restaurant .views-field.views-field-field-located-at p {
-			font-size: 10px;
-		}
-		.path-home .view.view-restaurant .has-glyphicons .select-wrapper::after{
-			display:none;
-		}
-		#user-login-form .form-item-name::after, #user-register-form .form-item::after, #user-login-form .form-item-pass::after, #user-pass .form-type-email::after{
-			left: 70% !important;
-		}
-		.path-splash .slick-list .slick-track .slick__slide h3{
-			font-size: 18px;
-		}
-		 .path-user button#edit-submit {
-			width: 100%;
-			height: 40px;
-		  }
-		  .path-mysettings .settingspage li{
-			  font-size: 14px;
-		  }
-		  .rest::before, .mybook::before, .myoffer::before, .mymesg::before, .setting::before {
-			font-size: 18px;
-			left: 0;
-			top: 25%;
-		}
-		.rest::after, .mybook::after, .myoffer::after, .mymesg::after, .setting::after{
-			font-size: 20px;
-		}
-				.path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content{
-					min-height: 250px;
-				}
-				.slick-slider .slick-track, .slick-slider .slick-list{
-				   margin-bottom: 5px; 
-				}
-				.logoheader img, .logos img{
-				width: auto;
-			}
-			  .welcomeapp li.getstarted {
-				  width: auto !important;
-			  }
-			  .title2 {
-			  font-size: 18px !important;
-			  }
-			  .title {
-				  font-size: 14px !important;
-			  }
-			  form#user-login-form, form#user-register-form, form#user-pass {
-				  width: 60%;
-				  margin: 0 auto;
-			  }
-			  .footersignin ul li{
-				  width: auto;
-				  margin-top: 20px;
-			  }
-			  .footersocial ul{
-				  margin-right: 20%;
-			  }
-			  .tabs .nav > li > a{
-				  padding: 3px;
-				  font-size: 12px;
-				  color: #000;
-			  }
-			  .path-user .forgotpwd h3, .path-frontpage .view.view-restaurant .views-field.views-field-title span a{
-				 font-size:14px;	
-			  }
-			  .path-home .view.view-restaurant .views-field.views-field-field-image{
-				  height: auto;
-			  }
-			  .path-home .view.view-restaurant .views-field.views-field-body {
-				  font-size: 10px;
-			  }
-			  .footer{
-				  margin-top: 0px;
-				  padding-bottom: 0px;
-			  }
-			  .reservation, .call, .events, .location, .chat, .share, .feedback {
-				  font-size: 10px !important;
-		  } 
-		  .reservation::before, .call::before, .events::before, .location::before, .chat::before, .share::before, .feedback::before{
-			  font-size: 20px;
-		  }
-		  .reservation:hover a, .call:hover a, .events:hover a, .location:hover a, .chat:hover a, .share:hover a, .feedback:hover a{
-			color: #fff;
-			text-decoration: none;
-		}
-		  .more-link.form-group a{
-			  margin-top: -60%;
-			  right: 30%;
-		  }
-		  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
-			  top: 0px;
-			  font-size: 10px;
-		  }
-		  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
-			  top: 0px;
-			  font-size: 21px;
-			  margin-top: -75px;
-		  }
-		   .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
-			display:none;
-		  }
-		  .form-control{
-			  width: 100%;
-		  }
-		  .footersignin ul li {
-			width: 75% !important;
-			margin-top: 20px;
-			display: block !important;
-			text-align: center;
-			margin: 15px auto;
-			cursor: pointer;
-			position: relative;
-			}
-		.page-node-type-reservation .namedate::before, .page-node-type-reservation .namearrival::before, .page-node-type-reservation .nameperson::before{
-			left: 20%;
-		}
-		.path-myreservation-form .namedate::before, .path-myreservation-form .namearrival::before, .path-myreservation-form .nameperson::before{
-			left: 30%;
-		}
-		.path-myreservation-form .select-wrapper::after {
-			right: 0;
-		}
-		.footersocial li {
-			position: relative;
-			left: 5%;
-		}
-		.path-myprofile-edit .form-group.form-item.form-item-frist-name::after, .path-myprofile-edit .form-group.form-item.form-item-last-name::after,  .path-myprofile-edit .form-group.form-item.form-item-phone-number::after, .path-myprofile-edit .js-form-item.form-item-address::after, .path-myprofile-edit .form-group.form-item-state::after, .path-myprofile-edit .form-group.form-item-city::after, .path-myprofile-edit .form-group.form-item-zipcode::after, .path-myprofile-edit .form-group.form-item-country::after{
-			   right: 10%;
-			   top:110%;
-		}
-		 .path-myprofile-edit .form-group.form-item.form-item-e-mail::after{
-			  right: 5%;
-			   top:110%;
-		 }
-			  }
-			  
-		  @media screen and (min-width:321px) and (max-width: 500px ){
-			  .path-mysettings .page-header {
-			position: absolute;
-			top: -60px;
-			z-index: 999;
-			color: #fff;
-			overflow: hidden;
-			left: 25%;
-			border: none;
-		}
-		.region-header .page-header {
-			border: 0px;
-			position: fixed;
-			top: 0;
-			transform: translate(35%, 40%);
-			left: 0;
-			overflow: hidden;
-			z-index: 99;
-			color: #fff;
-		}
-		h2.block-title {
-			font-size: 18px;
-		}
-		.page-node-type-restaurant .views-field.views-field-title span a {
-			font-size: 13px;
-		}
-		.views-field.views-field-field-image img {
-			width: 90%;
-		}
-			  .path-home .view.view-restaurant .views-field.views-field-title span a{
-			font-size: 12px;
-		}
-		.footer .logout::before {
-			left:36%;
-		}
-		.path-home .view.view-restaurant .views-field.views-field-field-restaurant-slogan, .path-home .view.view-restaurant .views-label.views-label-field-located-at, .path-home .view.view-restaurant .views-field.views-field-view-node {
-			font-size: 11px;
-		}
-		.path-home .view.view-restaurant .view-content .views-row .views-col {
-			padding: 30px;
-			min-height: auto;
-		}
-		.path-home .view.view-restaurant .br-theme-css-stars .br-widget a{
-			width: 8px;
-		   font-size: 12px;
-		}
-		.path-home .view.view-restaurant .views-field.views-field-field-located-at p {
-			font-size: 10px;
-		}
-		 .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
-			display:none;
-		  }
-		.path-home .view.view-restaurant .has-glyphicons .select-wrapper::after{
-			display:none;
-		}
-		.path-home .view.view-restaurant .view-content .views-row .views-col {
-			min-height: 300px;
-		}
-		
-		
-			  .title2{
-				  font-size: 24px !important;
-			  }
-			  .title {
-			font-size: 18px !important;
-		}
-			  .logo1.align-center {
-			width: 30%;
-			margin-top: 10px;
-		}
-			  .logoheader img.logo1 {
-			width: auto;
-		}
-			  .form-control{
-			  width: 85%;
-		  }
-		  .book_my_table{
-			width: 60%;
-		}
-		.book_my_table::before{
-				left: 25%;
-		}
-		  #user-login-form .form-item-name::after, #user-register-form .form-item::after, #user-login-form .form-item-pass::after, #user-pass .form-type-email::after{
-			  left: 70% !important;
-		  }
-		  .forgot, p.need{
-			top: 10px;
-		margin-top: 15px;
-		}
-		.footersocial li {
-			left: 5% !important;
-			position: relative;
-		}
-		.footersignin ul li a{
-			height: 40px;
-			padding-top: 8px !important;
-			padding: 0;
-			width: 100%;
-			margin-top: 30px;
-		}
-		  .path-user button#edit-submit {
-			width: 85%;
-			height: 40px;
-		  }
-		  .path-mysettings .settingspage li{
-			  font-size: 16px;
-		  }
-		  .rest::before, .mybook::before, .myoffer::before, .mymesg::before, .setting::before {
-			font-size: 16px;
-			left: 5px;
-		}
-		.rest::after, .mybook::after, .myoffer::after, .mymesg::after, .setting::after{
-			font-size: 20px;
-		}
-			  .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
-					display:none;
-			  }
-			  .page-node-type-restaurant .view-content .views-field-field-gallery-image img, .path-gallery .views-field-field-gallery-image img{
-				  display: block;
-				  margin: 10px auto;
-			  }
-			  .path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content{
-					min-height: 250px;
-				}
-			  .slick-slider .slick-track, .slick-slider .slick-list{
-					 margin-bottom: 5px; 
-				  }
-				  .logoheader img, .logos img{
-				  width: 70%;
-			  }
-			  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p {
-			top: 0px;
-			font-size: 10px;
-		}
-		.page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3 {
-			top: 0px;
-			font-size: 21px;
-			margin-top: -75px;
-		}
-		.more-link.form-group a {
-			margin-top: -30%;
-			right: 35%;
-		}
-			   .welcomeapp li.getstarted {
-				  width: 70% !important;
-			  }
-			  form#user-login-form, form#user-register-form, form#user-pass {
-				  width: 75%;
-				  margin: 0 auto;
-			  }
-			  .footersignin ul li{
-				 width: 80% !important;
-				margin-top: 20px;
-					  }
-			  .footersocial ul{
-				  margin-right: 20%;
-			  }
-			  .tabs .nav > li > a{
-				  padding: 3px;
-				  font-size: 12px;
-				  color: #000;
-			  }
-			  .path-home .view.view-restaurant .views-field.views-field-field-image{
-				  height: auto;
-			  }
-			  .path-user .forgotpwd h3, .path-frontpage .view.view-restaurant .views-field.views-field-title span a{
-				 font-size:16px;	
-			  }
-			  .path-home .view.view-restaurant .views-field.views-field-body {
-				  font-size: 12px;
-			  }
-				  .footer{
-				  margin-top: 0px;
-				  padding-bottom: 0px;
-			  }
-			  .reservation, .call, .events, .location, .chat, .share, .feedback {
-				  font-size: 10px !important;
-		  } 
-		  .reservation::before, .call::before, .events::before, .location::before, .chat::before, .share::before, .feedback::before{
-			  font-size: 20px;
-		  }
-		  .page-node-type-reservation .namedate::before, .page-node-type-reservation .namearrival::before, .page-node-type-reservation .nameperson::before{
-			left: 20%;
-		}
-		.path-myreservation-form .namedate::before, .path-myreservation-form .namearrival::before, .path-myreservation-form .nameperson::before{
-			left: 30%;
-		}
-		.path-myreservation-form .select-wrapper::after {
-			right: 0;
-		}
-		.path-myprofile-edit .form-group.form-item.form-item-frist-name::after, .path-myprofile-edit .form-group.form-item.form-item-last-name::after,  .path-myprofile-edit .form-group.form-item.form-item-phone-number::after, .path-myprofile-edit .js-form-item.form-item-address::after, .path-myprofile-edit .form-group.form-item-state::after, .path-myprofile-edit .form-group.form-item-city::after, .path-myprofile-edit .form-group.form-item-zipcode::after, .path-myprofile-edit .form-group.form-item-country::after{
-			   right: 10%;
-			   top:110%;
-		}
-		 .path-myprofile-edit .form-group.form-item.form-item-e-mail::after{
-			  right: 5%;
-			   top:110%;
-		 }
-		  }
-		  @media screen and (min-width:501px) and (max-width: 767px ){
-				  .path-mysettings .page-header {
-			position: absolute;
-			top: -60px;
-			z-index: 999;
-			color: #fff;
-			overflow: hidden;
-			left: 35%;
-			border: none;
-		}
-		.footer .logout::before {
-			left:41%;
-		}
-			  .path-home .view.view-restaurant .views-field.views-field-title span a{
-				  font-size: 16px;
-			  }
-			 .logoheader img.logo1.align-center {
-			width: auto;
-		}
-		.logoheader img.align-center {
-			width: 55%;
-		}
-		.forgot, p.need{
-			top: 0;
-		margin-top: 20px;
-		}
-		 #user-login-form .form-item-name::after, #user-register-form .form-item::after, #user-login-form .form-item-pass::after, #user-pass .form-type-email::after{
-			  left: 70% !important;
-		  }
-			  .form-control{
-				 width: 100%; 
-			  }
-			   .path-user button#edit-submit {
-			width: 100%;
-		  }
-			.book_my_table{
-			width: 50%;
-		}
-		.book_my_table::before{
-				left: 30%;
-		}
-			.page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p {
-				top: -30px;
-				font-size: 10px;
-			}
-			.page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3 {
-				top: -40px;
-				font-size: 21px;
-				margin-top: -75px;
-			}
-				.path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
-				   display: none;
-			}
-			.page-node-type-restaurant .view-content .views-field-field-gallery-image img, .path-gallery .views-field-field-gallery-image img{
-				  display: block;
-				  margin: 10px auto;
-			}
-			.more-link.form-group a{
-				right: 35%;
-				margin-top: -15%;
-			}
-			  .path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content{
-					min-height: 250px;
-				}
-			  .slick-slider .slick-track, .slick-slider .slick-list{
-					 margin-bottom: 5px; 
-				  }
-			  .footersignin ul li{
-				  margin: 15px auto;
-				  width: 60% !important;
-				  right: 2%;
-			  }
-			  .footersignin ul li a{
-				 padding-top: 14px !important;
-				 padding: 0;
-				 margin-top: 30px;
-			  }
-			  form#user-login-form, form#user-register-form, form#user-pass {
-				  width: 50%;
-				  margin: 0 auto;
-			  }
-			  .path-home .view.view-restaurant .views-field.views-field-field-image{
-				  height: auto;
-			  }
-			  .path-user .forgotpwd h3, .path-frontpage .view.view-restaurant .views-field.views-field-title span a{
-				 font-size:16px;	
-			  }
-			  .path-home .view.view-restaurant .views-field.views-field-body {
-				  font-size: 12px;
-			  }
-				  .footer{
-				  margin-top: 0px;
-				  padding-bottom: 0px;
-			  }
-			  .reservation, .call, .events, .location, .chat {
-				  font-size: 10px !important;
-		  } 
-		  .reservation::before, .call::before, .events::before, .location::before, .chat::before{
-			  font-size: 20px;
-		  }
-		  .welcomeapp li.getstarted {
-				  width: 60% !important;
-			  }
-			  .page-node-type-reservation .namedate::before, .page-node-type-reservation .namearrival::before, .page-node-type-reservation .nameperson::before{
-			left: 30%;
-		}
-		.path-myreservation-form .namedate::before, .path-myreservation-form .namearrival::before, .path-myreservation-form .nameperson::before{
-			left: 20%;
-		}
-		.path-myreservation-form .select-wrapper::after {
-			right: 0;
-		}
-		.path-myprofile-edit .form-group.form-item.form-item-frist-name::after, .path-myprofile-edit .form-group.form-item.form-item-last-name::after,  .path-myprofile-edit .form-group.form-item.form-item-phone-number::after, .path-myprofile-edit .js-form-item.form-item-address::after, .path-myprofile-edit .form-group.form-item-state::after, .path-myprofile-edit .form-group.form-item-city::after, .path-myprofile-edit .form-group.form-item-zipcode::after, .path-myprofile-edit .form-group.form-item-country::after{
-			   right: 10%;
-			   top:110%;
-		}
-		 .path-myprofile-edit .form-group.form-item.form-item-e-mail::after{
-			  right:7%;
-			   top:110%;
-		 }
-		  }
-		  @media screen and (min-width:768px){
-			 #user-login-form .form-control{
-				width: 80%;  
-			  }
-			  .path-user button#edit-submit{
-				  width: 80%;
-				  height: 40px;
-			  }
-			  .forgot, p.need{
-				  top: -15px;
-			  }
-			  .footer .logout::before {
-			left:44%;
-		}
-				  .path-gallery .views-field-field-gallery-image img{
-				   margin: 10px auto;
-			  }
-			  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content p{
-				 top: 0;
-				 margin-top: -100px; 
-			  }
-			  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content h3{
-				  top: -115px;
-			  }
-			  .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
-				display:none;
-			  }
-			  .more-link.form-group a{
-				 right: 6%;
-				 color: #fff; 
-			  }
-			  .welcomeapp li.getstarted {
-				  width: 45%;
-			  }
-			  .slick-slider .slick-track, .slick-slider .slick-list{
-					 margin-bottom: 5px; 
-				  }
-			  .footersignin ul li{
-				  margin: 0 auto;
-			  }
-			  form#user-login-form, form#user-register-form, form#user-pass {
-				  width: 50%;
-				  margin: 0 auto;
-			  }
-			  .path-home .view.view-restaurant .views-field.views-field-field-image{
-				  height: auto;
-			  }
-		.profileblock h3{
-				top:0px;
-			}
-			.profileblock p{
-				top: 12%;
-			}
-		  }
-		  @media (max-width: 767px) {
-			  .navbar-default .navbar-toggle:hover,
-			  .navbar-default .navbar-toggle:focus {
-				background-color: transparent;
-			  }
-		  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-			color: #333333;
-			outline: 1px solid darkgray;
-		  }
-		  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-		  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-			 color: #000;
-			background-color: #e7e7e7;
-		  }
-		  .path-myprofile-edit .profileblock h3 {
-			top: 0;
-		}
-		
-		.path-myprofile-edit .form-type-email {
-			position: relative;
-			top: 0;
-		}
-		
-		  .profileblock h3{
-			  top: 0;
-			  left: 15%;
-			  font-size: 16px;
-		  }
-		  .profileblock p{
-			  top: 10%;
-			  left: 25%;
-			  font-size: 10px;
-		  }
-		.rest::before, .mybook::before, .myoffer::before, .mymesg::before, .setting::before{
-			font-size: 20px;
-			left: 0;
-		}
-		.footer .logout{
-			width: 35%;
-			margin-top: 30px;
-		}
-		#edit-picture {
-			width: auto;
-		}
-		
-		  }
-		  @media screen and (min-width:1200px){
-			  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content p{
-				 top: 0;
-				 margin-top: -150px; 
-			  }
-			  .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content h3{
-				  top: -165px;
-			  }
-			  #user-login-form .form-control {
-			width: 52%;
-		}
-		.path-user button#edit-submit {
-			width: 52%;
-			height: 40px;
-		}
-		#user-login-form .form-item-name::after, #user-register-form .form-item::after, .form-item-pass::after {
-			left: 60%;
-		}
-		.profileblock h3 {
-			top: 5%;
-		}
-		.profileblock p {
-			top: 16%;
-		}
-		  }
-		@media screen and (min-width:768px) and (max-width: 991px ){
-			.welcomeapp li.getstarted {
-			width: 40% !important;
-		}
-			  #user-register-form .form-control{
-			width: 80% !important;
-		}
-		.more-link.form-group a{
-			right: 30%;
-		}
-		 #user-login-form .form-item-name::after, #user-register-form .form-item::after, .form-item-pass::after, #user-pass .form-type-email::after{
-				  left: 65% !important;
-			  }
-				#user-pass .form-control{
-				width: 80%;
-			}
-			.path-myreservation-form .nameperson::before{
-				  left: 14%;
-			  }
-			.path-myreservation-form .namedate::before{
-				  left: 14%;
-			  }
-			  .path-myprofile-edit .form-group.form-item.form-item-frist-name::after, .path-myprofile-edit .form-group.form-item.form-item-last-name::after,  .path-myprofile-edit .form-group.form-item.form-item-phone-number::after, .path-myprofile-edit .js-form-item.form-item-address::after, .path-myprofile-edit .form-group.form-item-state::after, .path-myprofile-edit .form-group.form-item-city::after, .path-myprofile-edit .form-group.form-item-zipcode::after, .path-myprofile-edit .form-group.form-item-country::after{
-			   right: 10%;
-			   top:110%;
-		}
-		 .path-myprofile-edit .form-group.form-item.form-item-e-mail::after{
-			  right:7%;
-			   top:110%;
-		 }
-			.book_my_table{
-			width: 40%;
-		}
-		.book_my_table::before{
-				left: 38%;
-		}	
-		}
-		@media screen and (min-width:992px) and (max-width: 1199px ){
-			.welcomeapp li.getstarted {
-			width: 30% !important;
-		}
-		#user-login-form .form-control {
-			width: 65%;
-		}
-		.path-user button#edit-submit {
-			width: 65%;
-			height: 40px;
-		}
-		#user-login-form .form-item-name::after, #user-register-form .form-item::after, .form-item-pass::after {
-			left: 62% !important;
-		}
-			  #user-register-form .form-control, #user-pass .form-control{
-			width: 65% !important;
-		}
-		.footersignin ul li a{
-			padding: 14px 125px;
-		}
-		.path-myreservation-form .nameperson::before{
-				  left: 10%;
-			  }
-			.path-myreservation-form .namedate::before{
-				  left: 14%;
-			  }
-				 .book_my_table{
-			width: 30%;
-		}
-		.book_my_table::before{
-				left: 40%;
-		}	
-		.more-link.form-group a {
-			right: 16%;
-			color: #336699;
-		}
-		}
-		@media screen and (min-width:992px){
-			.region-header h1.page-header {
-			  display: none;
-		  }
-		}
+}
+.col-md-12.profilereservation {
+    color: #336699;
+    margin-bottom: 50px;
+}
+/*********************************************/
+
+/***********************Media Queries**************************/
+@media (max-width: 320px){
+    .logoheader img.logo1 {
+        width: auto;
+    }
+    .logo1.align-center {
+        width: 30%;
+        margin-top: 10px;
+    }
+    .forgot, p.need{
+        top: 0px;
+        margin-top: 15px;
+    }
+    .footer .logout::before {
+        left:35%;
+    }
+    .footersignin ul li a{
+        height: 40px;
+        padding: 5% 0 0;
+        margin-top: 40px;
+    }
+    .path-mysettings .page-header {
+        position: absolute;
+        top: -55px;
+        z-index: 999;
+        color: #fff;
+        overflow: hidden;
+        left: 25%;
+    }
+    .book_my_table{
+        width: auto;
+    }
+    .book_my_table::before{
+        left: 20%;
+    }
+    .path-home .view.view-restaurant .views-field.views-field-title span a{
+        font-size: 12px;
+    }
+    .path-home .view.view-restaurant .views-field.views-field-field-restaurant-slogan, .path-home .view.view-restaurant .views-label.views-label-field-located-at, .path-home .view.view-restaurant .views-field.views-field-view-node {
+        font-size: 11px;
+    }
+    .path-home .view.view-restaurant .view-content .views-row .views-col {
+        padding: 30px;
+        min-height: auto;
+    }
+    .path-home .view.view-restaurant .br-theme-css-stars .br-widget a{
+        width: 8px;
+        font-size: 12px;
+    }
+    .path-home .view.view-restaurant .views-field.views-field-field-located-at p {
+        font-size: 10px;
+    }
+    .path-home .view.view-restaurant .has-glyphicons .select-wrapper::after{
+        display:none;
+    }
+    #user-login-form .form-item-name::after, #user-register-form .form-item::after, #user-login-form .form-item-pass::after, #user-pass .form-type-email::after{
+        left: 70% !important;
+    }
+    .path-splash .slick-list .slick-track .slick__slide h3{
+        font-size: 18px;
+    }
+    .path-user button#edit-submit {
+        width: 100%;
+        height: 40px;
+    }
+    .path-mysettings .settingspage li{
+        font-size: 14px;
+    }
+    .rest::before, .mybook::before, .myoffer::before, .mymesg::before, .setting::before {
+        font-size: 18px;
+        left: 0;
+        top: 25%;
+    }
+    .rest::after, .mybook::after, .myoffer::after, .mymesg::after, .setting::after{
+        font-size: 20px;
+    }
+    .path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content{
+        min-height: 250px;
+    }
+    .slick-slider .slick-track, .slick-slider .slick-list{
+        margin-bottom: 5px; 
+    }
+    .logoheader img, .logos img{
+        width: 70%;
+    }
+    .welcomeapp li.getstarted {
+        width: 70% !important;
+    }
+    .title2 {
+        font-size: 18px !important;
+    }
+    .title {
+        font-size: 14px !important;
+    }
+    form#user-login-form, form#user-register-form, form#user-pass {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .footersignin ul li{
+        width: auto;
+        margin-top: 20px;
+    }
+    .footersocial ul{
+        margin-right: 20%;
+    }
+    .tabs .nav > li > a{
+        padding: 3px;
+        font-size: 12px;
+        color: #000;
+    }
+    .path-user .forgotpwd h3, .path-frontpage .view.view-restaurant .views-field.views-field-title span a{
+        font-size:14px;	
+    }
+    .path-home .view.view-restaurant .views-field.views-field-field-image{
+        height: auto;
+    }
+    .path-home .view.view-restaurant .views-field.views-field-body {
+        font-size: 10px;
+    }
+    .footer{
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+    .reservation, .call, .events, .location, .chat {
+        font-size: 10px !important;
+    } 
+    .reservation::before, .call::before, .events::before, .location::before, .chat::before{
+        font-size: 20px;
+    }
+    .reservation:hover a, .call:hover a, .events:hover a, .location:hover a, .chat:hover a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .more-link.form-group a{
+        margin-top: -40%;
+        right: 30%;
+    }
+    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
+        top: 0px;
+        font-size: 10px;
+    }
+    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
+        top: 0px;
+        font-size: 21px;
+        margin-top: -75px;
+    }
+    .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
+        display:none;
+    }
+    .form-control{
+        width: 100%;
+    }
+    .footersignin ul li {
+        width: 75% !important;
+        margin-top: 20px;
+        display: block !important;
+        text-align: center;
+        margin: 15px auto;
+        cursor: pointer;
+        position: relative;
+    }
+    .page-node-type-reservation .namedate::before, .page-node-type-reservation .namearrival::before, .page-node-type-reservation .nameperson::before{
+        left: 20%;
+    }
+    .path-myreservation-form .namedate::before, .path-myreservation-form .namearrival::before, .path-myreservation-form .nameperson::before{
+        left: 30%;
+    }
+    .path-myreservation-form .select-wrapper::after {
+        right: 0;
+    }
+    .footersocial li {
+        position: relative;
+        left: 5%;
+    }
+    .path-myprofile-edit .form-group.form-item.form-item-frist-name::after, .path-myprofile-edit .form-group.form-item.form-item-last-name::after,  .path-myprofile-edit .form-group.form-item.form-item-phone-number::after, .path-myprofile-edit .js-form-item.form-item-address::after, .path-myprofile-edit .form-group.form-item-state::after, .path-myprofile-edit .form-group.form-item-city::after, .path-myprofile-edit .form-group.form-item-zipcode::after, .path-myprofile-edit .form-group.form-item-country::after{
+        right: 10%;
+        top:110%;
+    }
+    .path-myprofile-edit .form-group.form-item.form-item-e-mail::after{
+        right: 5%;
+        top:110%;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width: 500px ){
+    .path-mysettings .page-header {
+        position: absolute;
+        top: -60px;
+        z-index: 999;
+        color: #fff;
+        overflow: hidden;
+        left: 25%;
+        border: none;
+    }
+    .path-home .view.view-restaurant .views-field.views-field-title span a{
+        font-size: 12px;
+    }
+    .footer .logout::before {
+        left:36%;
+    }
+    .path-home .view.view-restaurant .views-field.views-field-field-restaurant-slogan, .path-home .view.view-restaurant .views-label.views-label-field-located-at, .path-home .view.view-restaurant .views-field.views-field-view-node {
+        font-size: 11px;
+    }
+    .path-home .view.view-restaurant .view-content .views-row .views-col {
+        padding: 30px;
+        min-height: auto;
+    }
+    .path-home .view.view-restaurant .br-theme-css-stars .br-widget a{
+        width: 8px;
+        font-size: 12px;
+    }
+    .path-home .view.view-restaurant .views-field.views-field-field-located-at p {
+        font-size: 10px;
+    }
+    .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
+        display:none;
+    }
+    .path-home .view.view-restaurant .has-glyphicons .select-wrapper::after{
+        display:none;
+    }
+    .path-home .view.view-restaurant .view-content .views-row .views-col {
+        min-height: 300px;
+    }
+
+
+    .title2{
+        font-size: 24px !important;
+    }
+    .title {
+        font-size: 18px !important;
+    }
+    .logo1.align-center {
+        width: 30%;
+        margin-top: 10px;
+    }
+    .logoheader img.logo1 {
+        width: auto;
+    }
+    .form-control{
+        width: 85%;
+    }
+    .book_my_table{
+        width: 60%;
+    }
+    .book_my_table::before{
+        left: 25%;
+    }
+    #user-login-form .form-item-name::after, #user-register-form .form-item::after, #user-login-form .form-item-pass::after, #user-pass .form-type-email::after{
+        left: 70% !important;
+    }
+    .forgot, p.need{
+        top: 10px;
+        margin-top: 15px;
+    }
+    .footersocial li {
+        left: 5% !important;
+        position: relative;
+    }
+    .footersignin ul li a{
+        height: 40px;
+        padding-top: 8px !important;
+        padding: 0;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .path-user button#edit-submit {
+        width: 85%;
+        height: 40px;
+    }
+    .path-mysettings .settingspage li{
+        font-size: 16px;
+    }
+    .rest::before, .mybook::before, .myoffer::before, .mymesg::before, .setting::before {
+        font-size: 16px;
+        left: 5px;
+    }
+    .rest::after, .mybook::after, .myoffer::after, .mymesg::after, .setting::after{
+        font-size: 20px;
+    }
+    .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
+        display:none;
+    }
+    .page-node-type-restaurant .view-content .views-field-field-gallery-image img, .path-gallery .views-field-field-gallery-image img{
+        display: block;
+        margin: 10px auto;
+    }
+    .path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content{
+        min-height: 250px;
+    }
+    .slick-slider .slick-track, .slick-slider .slick-list{
+        margin-bottom: 5px; 
+    }
+    .logoheader img, .logos img{
+        width: 70%;
+    }
+    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p {
+        top: 0px;
+        font-size: 10px;
+    }
+    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3 {
+        top: 0px;
+        font-size: 21px;
+        margin-top: -75px;
+    }
+    .more-link.form-group a {
+        margin-top: -30%;
+        right: 35%;
+    }
+    .welcomeapp li.getstarted {
+        width: 70% !important;
+    }
+    form#user-login-form, form#user-register-form, form#user-pass {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .footersignin ul li{
+        width: 80% !important;
+        margin-top: 20px;
+    }
+    .footersocial ul{
+        margin-right: 20%;
+    }
+    .tabs .nav > li > a{
+        padding: 3px;
+        font-size: 12px;
+        color: #000;
+    }
+    .path-home .view.view-restaurant .views-field.views-field-field-image{
+        height: auto;
+    }
+    .path-user .forgotpwd h3, .path-frontpage .view.view-restaurant .views-field.views-field-title span a{
+        font-size:16px;	
+    }
+    .path-home .view.view-restaurant .views-field.views-field-body {
+        font-size: 12px;
+    }
+    .footer{
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+    .reservation, .call, .events, .location, .chat {
+        font-size: 10px !important;
+    } 
+    .reservation::before, .call::before, .events::before, .location::before, .chat::before{
+        font-size: 20px;
+    }
+    .page-node-type-reservation .namedate::before, .page-node-type-reservation .namearrival::before, .page-node-type-reservation .nameperson::before{
+        left: 20%;
+    }
+    .path-myreservation-form .namedate::before, .path-myreservation-form .namearrival::before, .path-myreservation-form .nameperson::before{
+        left: 30%;
+    }
+    .path-myreservation-form .select-wrapper::after {
+        right: 0;
+    }
+    .path-myprofile-edit .form-group.form-item.form-item-frist-name::after, .path-myprofile-edit .form-group.form-item.form-item-last-name::after,  .path-myprofile-edit .form-group.form-item.form-item-phone-number::after, .path-myprofile-edit .js-form-item.form-item-address::after, .path-myprofile-edit .form-group.form-item-state::after, .path-myprofile-edit .form-group.form-item-city::after, .path-myprofile-edit .form-group.form-item-zipcode::after, .path-myprofile-edit .form-group.form-item-country::after{
+        right: 10%;
+        top:110%;
+    }
+    .path-myprofile-edit .form-group.form-item.form-item-e-mail::after{
+        right: 5%;
+        top:110%;
+    }
+}
+@media screen and (min-width:501px) and (max-width: 767px ){
+    .path-mysettings .page-header {
+        position: absolute;
+        top: -60px;
+        z-index: 999;
+        color: #fff;
+        overflow: hidden;
+        left: 35%;
+        border: none;
+    }
+    .footer .logout::before {
+        left:41%;
+    }
+    .path-home .view.view-restaurant .views-field.views-field-title span a{
+        font-size: 16px;
+    }
+    .logoheader img.logo1.align-center {
+        width: auto;
+    }
+    .logoheader img.align-center {
+        width: 55%;
+    }
+    .forgot, p.need{
+        top: 0;
+        margin-top: 20px;
+    }
+    #user-login-form .form-item-name::after, #user-register-form .form-item::after, #user-login-form .form-item-pass::after, #user-pass .form-type-email::after{
+        left: 70% !important;
+    }
+    .form-control{
+        width: 100%; 
+    }
+    .path-user button#edit-submit {
+        width: 100%;
+    }
+    .book_my_table{
+        width: 50%;
+    }
+    .book_my_table::before{
+        left: 30%;
+    }
+    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p {
+        top: -30px;
+        font-size: 10px;
+    }
+    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3 {
+        top: -40px;
+        font-size: 21px;
+        margin-top: -75px;
+    }
+    .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
+        display: none;
+    }
+    .page-node-type-restaurant .view-content .views-field-field-gallery-image img, .path-gallery .views-field-field-gallery-image img{
+        display: block;
+        margin: 10px auto;
+    }
+    .more-link.form-group a{
+        right: 35%;
+        margin-top: -15%;
+    }
+    .path-splash .slick-list .slick-track .slick__slide .views-field.views-field-body .field-content{
+        min-height: 250px;
+    }
+    .slick-slider .slick-track, .slick-slider .slick-list{
+        margin-bottom: 5px; 
+    }
+    .footersignin ul li{
+        margin: 15px auto;
+        width: 60% !important;
+        right: 2%;
+    }
+    .footersignin ul li a{
+        padding-top: 14px !important;
+        padding: 0;
+        margin-top: 30px;
+    }
+    form#user-login-form, form#user-register-form, form#user-pass {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .path-home .view.view-restaurant .views-field.views-field-field-image{
+        height: auto;
+    }
+    .path-user .forgotpwd h3, .path-frontpage .view.view-restaurant .views-field.views-field-title span a{
+        font-size:16px;	
+    }
+    .path-home .view.view-restaurant .views-field.views-field-body {
+        font-size: 12px;
+    }
+    .footer{
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+    .reservation, .call, .events, .location, .chat {
+        font-size: 10px !important;
+    } 
+    .reservation::before, .call::before, .events::before, .location::before, .chat::before{
+        font-size: 20px;
+    }
+    .welcomeapp li.getstarted {
+        width: 60% !important;
+    }
+    .page-node-type-reservation .namedate::before, .page-node-type-reservation .namearrival::before, .page-node-type-reservation .nameperson::before{
+        left: 30%;
+    }
+    .path-myreservation-form .namedate::before, .path-myreservation-form .namearrival::before, .path-myreservation-form .nameperson::before{
+        left: 20%;
+    }
+    .path-myreservation-form .select-wrapper::after {
+        right: 0;
+    }
+    .path-myprofile-edit .form-group.form-item.form-item-frist-name::after, .path-myprofile-edit .form-group.form-item.form-item-last-name::after,  .path-myprofile-edit .form-group.form-item.form-item-phone-number::after, .path-myprofile-edit .js-form-item.form-item-address::after, .path-myprofile-edit .form-group.form-item-state::after, .path-myprofile-edit .form-group.form-item-city::after, .path-myprofile-edit .form-group.form-item-zipcode::after, .path-myprofile-edit .form-group.form-item-country::after{
+        right: 10%;
+        top:110%;
+    }
+    .path-myprofile-edit .form-group.form-item.form-item-e-mail::after{
+        right:7%;
+        top:110%;
+    }
+}
+@media screen and (min-width:768px){
+    #user-login-form .form-control{
+        width: 80%;  
+    }
+    .path-user button#edit-submit{
+        width: 80%;
+        height: 40px;
+    }
+    .forgot, p.need{
+        top: -15px;
+    }
+    .footer .logout::before {
+        left:44%;
+    }
+    .path-gallery .views-field-field-gallery-image img{
+        margin: 10px auto;
+    }
+    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
+        top: 0;
+        margin-top: -100px; 
+    }
+    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
+        top: -115px;
+    }
+    .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
+        display:none;
+    }
+    .more-link.form-group a{
+        right: 6%;
+        color: #fff; 
+    }
+    .welcomeapp li.getstarted {
+        width: 45%;
+    }
+    .slick-slider .slick-track, .slick-slider .slick-list{
+        margin-bottom: 5px; 
+    }
+    .footersignin ul li{
+        margin: 0 auto;
+    }
+    form#user-login-form, form#user-register-form, form#user-pass {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .path-home .view.view-restaurant .views-field.views-field-field-image{
+        height: auto;
+    }
+    .profileblock h3{
+        top:0px;
+    }
+    .profileblock p{
+        top: 12%;
+    }
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #333333;
+        outline: 1px solid darkgray;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #000;
+        background-color: #e7e7e7;
+    }
+    .path-myprofile-edit .profileblock h3 {
+        top: 0;
+    }
+
+    .path-myprofile-edit .form-type-email {
+        position: relative;
+        top: 0;
+    }
+
+    .profileblock h3{
+        top: 0;
+        left: 15%;
+        font-size: 16px;
+    }
+    .profileblock p{
+        top: 10%;
+        left: 25%;
+        font-size: 10px;
+    }
+    .rest::before, .mybook::before, .myoffer::before, .mymesg::before, .setting::before{
+        font-size: 20px;
+        left: 0;
+    }
+    .footer .logout{
+        width: 35%;
+        margin-top: 30px;
+    }
+    #edit-picture {
+        width: auto;
+    }
+
+}
+@media screen and (min-width:1200px){
+    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
+        top: 0;
+        margin-top: -150px; 
+    }
+    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
+        top: -165px;
+    }
+    #user-login-form .form-control {
+        width: 52%;
+    }
+    .path-user button#edit-submit {
+        width: 52%;
+        height: 40px;
+    }
+    #user-login-form .form-item-name::after, #user-register-form .form-item::after, .form-item-pass::after {
+        left: 60%;
+    }
+    .profileblock h3 {
+        top: 5%;
+    }
+    .profileblock p {
+        top: 16%;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 991px ){
+    .welcomeapp li.getstarted {
+        width: 40% !important;
+    }
+    #user-register-form .form-control{
+        width: 80% !important;
+    }
+    .more-link.form-group a{
+        right: 30%;
+    }
+    #user-login-form .form-item-name::after, #user-register-form .form-item::after, .form-item-pass::after, #user-pass .form-type-email::after{
+        left: 65% !important;
+    }
+    #user-pass .form-control{
+        width: 80%;
+    }
+    .path-myreservation-form .nameperson::before{
+        left: 14%;
+    }
+    .path-myreservation-form .namedate::before{
+        left: 14%;
+    }
+    .path-myprofile-edit .form-group.form-item.form-item-frist-name::after, .path-myprofile-edit .form-group.form-item.form-item-last-name::after,  .path-myprofile-edit .form-group.form-item.form-item-phone-number::after, .path-myprofile-edit .js-form-item.form-item-address::after, .path-myprofile-edit .form-group.form-item-state::after, .path-myprofile-edit .form-group.form-item-city::after, .path-myprofile-edit .form-group.form-item-zipcode::after, .path-myprofile-edit .form-group.form-item-country::after{
+        right: 10%;
+        top:110%;
+    }
+    .path-myprofile-edit .form-group.form-item.form-item-e-mail::after{
+        right:7%;
+        top:110%;
+    }
+    .book_my_table{
+        width: 40%;
+    }
+    .book_my_table::before{
+        left: 38%;
+    }	
+}
+@media screen and (min-width:992px) and (max-width: 1199px ){
+    .welcomeapp li.getstarted {
+        width: 30% !important;
+    }
+    #user-login-form .form-control {
+        width: 65%;
+    }
+    .path-user button#edit-submit {
+        width: 65%;
+        height: 40px;
+    }
+    #user-login-form .form-item-name::after, #user-register-form .form-item::after, .form-item-pass::after {
+        left: 62% !important;
+    }
+    #user-register-form .form-control, #user-pass .form-control{
+        width: 65% !important;
+    }
+    .footersignin ul li a{
+        padding: 14px 125px;
+    }
+    .path-myreservation-form .nameperson::before{
+        left: 10%;
+    }
+    .path-myreservation-form .namedate::before{
+        left: 14%;
+    }
+    .book_my_table{
+        width: 30%;
+    }
+    .book_my_table::before{
+        left: 40%;
+    }	
+    .more-link.form-group a {
+        right: 16%;
+        color: #336699;
+    }
+}
