@@ -1,7 +1,7 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+                        To change this license header, choose License Headers in Project Properties.
+                        To change this template file, choose Tools | Templates
+                        and open the template in the editor.
 */
 /* 
         Created on : 27 Nov, 2017, 12:40:35 PM
@@ -10,20 +10,49 @@ and open the template in the editor.
 html body{
     font-size: 14px;
     overflow-x: hidden;
-    background-color: #f6f6f6;
+
+}
+.path-home{
+    background-color: #f6f6f6;	
 }
 ol, ul {
     padding: 0;
 }
-.slick .slick-list .slick-track img{
+.slick .slick-list .slick-track img, .slick img{
     width:100%;
+}
+.slick-arrow::before {
+    color: #fff;
 }
 .page-node-type-restaurant h2.block-title {
     color: #336699;
 }
-.page-node-type-restaurant .form-group {
-    margin: 30px auto;
+.group-left h2.block-title, .group-right h2.block-title {
+    text-transform: uppercase;
+    font-size: 18px;
 }
+.group-two-sidebars .group-left {
+    border-right: 2px solid #ccc;
+}
+.group-two-sidebars .group-right {
+    position: relative;
+    left: 3%;
+}
+.group-two-sidebars .group-footer {
+    padding-top: 30px;
+}
+.group-two-sidebars .field--name-field-extra-facility .field--item::before {
+    font-family: FontAwesome;
+    content: "\f061";
+    margin-right: 10px;
+    color: #336699;
+}
+.group-two-sidebars .field--item {
+    line-height: 25px;
+}
+/*.page-node-type-restaurant .form-group {
+        margin: 30px auto;
+}*/
 .page-node-type-restaurant .views-field.views-field-title {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -36,6 +65,7 @@ ol, ul {
 }
 .page-node-type-restaurant .views-field.views-field-body {
     color: #777;
+    margin-bottom: 15px;
 }
 .path-frontpage #navbar, .path-user nav.tabs, .path-user #navbar, .path-splash .navbar-default {
     display: none;
@@ -77,7 +107,7 @@ ol, ul {
     /*box-shadow: 0px 0px 0px 1px #a78b4d;*/
     /* box-shadow: 5px 5px #f4f4f4, -5px -5px #f4f4f4, 0px 0px 5px 5px #777;*/
     /* outline-offset: -15px;
- outline: 2px solid #a78d49;*/
+     outline: 2px solid #a78d49;*/
     background-color: #fff;
     width: 49% !important;
     margin-bottom: 20px;
@@ -142,7 +172,7 @@ ol, ul {
     display: block;
     margin: 0 auto;
 }
-.reservation, .call, .chat, .location {
+.reservation, .call, .chat, .location, .share {
     border-right: 1px solid #336698;
 }
 .path-home .view.view-restaurant .views-field.views-field-title span a {
@@ -170,6 +200,66 @@ ol, ul {
     height: 265px;
     margin-bottom: 15px;
 }
+.event-time .block-region-left::before {
+    font-family: FontAwesome;
+    content: "\f007";
+    color: #336699;
+    font-size: 45px;
+    position: absolute;
+}
+.event-location .block-region-right::before {
+    font-family: FontAwesome;
+    content: "\f041";
+    font-size: 40px;
+    color: #336699;
+    position: absolute;
+}
+.page-node-type-event .block.block-hyperspot-core.block-bookmyevent-block.clearfix {
+    margin-top: 5%;
+}
+.path-myeventbooking-confirm .container .row {
+    text-align: center;
+}
+.path-myeventbooking-confirm.page-node-type-event-booking .namedate::before {
+    font-family: FontAwesome;
+    content: "\f073";
+    position: relative;
+    color: #336699;
+    padding-right: 15px;
+}
+.path-myeventbooking-confirm.page-node-type-event-booking .nameperson::before {
+    font-family: FontAwesome;
+    content: "\f0c0";
+    position: relative;
+    color: #336699;
+    padding-right: 15px;
+}
+.path-myeventbooking-confirm.page-node-type-event-booking .namearrival::before {
+    font-family: FontAwesome;
+    content: "\f017";
+    position: relative;
+    color: #336699;
+    padding-right: 15px;
+}
+.path-myeventbooking-confirm.page-node-type-event-booking .namearrival {
+    margin: 10px 0px 10px 40px;
+}
+.path-myeventbooking-confirm.page-node-type-event-booking .done .done a, .done a {
+    background-color: #336699;
+    width: 100px;
+    color: #fff;
+    padding: 15px 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.done {
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+.path-myeventbooking-confirm.page-node-type-event-booking .profilereservation h2, .path-myeventbooking-confirm.page-node-type-event-booking .seeyou h2 {
+    text-transform: uppercase;
+}
 /*.path-frontpage .views-view-grid.horizontal.cols-2.clearfix .views-row {
         padding: 30px;
 }*/
@@ -190,6 +280,9 @@ form#user-login-form, form#user-register-form, form#user-pass {
     width: 52%;
     margin: 0 auto;
     border: 1px solid #336699;
+}
+.view-event .view-content .views-row .views-field-field-image img{
+    width: 100%;
 }
 #user-login-form .form-item-name::after, #user-register-form .form-item::after{
     font-family: FontAwesome;
@@ -366,6 +459,37 @@ form#user-login-form, form#user-register-form, form#user-pass {
 }
 .path-myreservation-form .form-required::after{
     display:none;
+}
+.page-node-type-restaurant .group-two-sidebars .group-left, .page-node-type-restaurant .group-two-sidebars .group-right {
+    width: 50%;
+}
+.path-myeventbooking-confirm.page-node-type-event-booking .namedate, .path-myeventbooking-confirm.page-node-type-event-booking .namearrival, .path-myeventbooking-confirm.page-node-type-event-booking .nameperson {
+    position: relative;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.path-myeventbooking-confirm.page-node-type-event-booking .namearrival {
+    margin: 10px 0px 10px 40px;
+}
+.path-myeventbooking-confirm.page-node-type-event-booking .profilereservation h2::after{
+    content: '';
+    height: 1px;
+    background: #336699;
+    width: 90px;
+    transform: translate(-115px, 40px );
+    position: absolute;
+}
+.path-myeventbooking-confirm.page-node-type-event-booking .profilereservation p {
+    position: relative;
+    top: 20px;
+}
+.path-myeventbooking-confirm.page-node-type-event-booking .namedate {
+    padding-top: 20px;
+    border-top: 1px solid #336699;
+}
+.path-myeventbooking-confirm.page-node-type-event-booking .nameperson {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #336699;
 }
 /***********************Form**********************/	
 .page-header {
@@ -766,7 +890,7 @@ span.or::after {
 .page-node-type-restaurant .view-content .views-field-field-gallery-image:hover img{
     /*   border-radius:30%;	*/
 }
-.page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
+.page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content h3{
     position: relative;
     color: #fff;
     top: -200px;
@@ -776,7 +900,7 @@ span.or::after {
     margin: 0 auto;
     display: block;
 }
-.page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p {
+.page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content p {
     position: relative;
     color: #ccc;
     top: -185px;
@@ -785,14 +909,6 @@ span.or::after {
     margin: 0 auto;
     display: block;
 }
-/*.edge-edge {
-    width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}*/
 .book_my_table {
     display: block;
     margin: 30px auto;
@@ -857,14 +973,6 @@ span.or::after {
 .path-gallery .views-field-field-gallery-image img {
     display: inline;
     padding: 25px;
-    /*text-align: center;
-position: relative;
-margin-bottom: 10px;
-margin-right: 15px;
-    outline-style: none;
-    -webkit-transition: -webkit-transform .15s linear;
-    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);*/
 }
 .path-gallery .views-field-field-gallery-image img:hover{
     -webkit-transform: scale(1);
@@ -1164,15 +1272,106 @@ h2 .sub-title::after {
     margin-bottom: 50px;
 }
 /*********************************************/
-
+.page-node-type-event .event-time, .page-node-type-event .event-location {
+    margin: 2% auto;
+}
+.page-node-type-event .event-time .block-entity-fieldnodefield-date, .page-node-type-event .event-location .block-entity-fieldnodefield-located-at {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+.page-node-type-event .event-time .block-entity-fieldnodefield-time, .page-node-type-event .event-location .block-entity-fieldnodefield-location {
+    font-size: 18px;
+    margin-left: 40px;
+}
+.page-node-type-event .col-sm-12.bs-region p{
+    margin: 10px auto;
+    font-size: 16px;
+}
+.book_my_event a {
+    background-color: #336699;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+#my-event-booking-form {
+    text-align: center;
+}
+#my-event-booking-form .form-required::after{
+    display:none;
+}
+#my-event-booking-form .select-wrapper .form-control{
+    width: 100%;
+}
+#my-event-booking-form .form-item.form-item-person {
+    text-align: initial;
+}
+#my-event-booking-form .form-item.form-item-person::before {
+    font-family: fontawesome;
+    content: "\f007";
+    color: #336698;
+    position: relative;
+}
+#my-event-booking-form  #edit-submit {
+    width: auto;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+}
+.path-myeventbooking .page-header {
+    display: none;
+}		
 /***********************Media Queries**************************/
 @media (max-width: 320px){
+    .region-header .page-header {
+        border: 0px;
+        position: fixed;
+        top: 0;
+        transform: translate(35%, 40%);
+        left: 0;
+        overflow: hidden;
+        z-index: 99;
+        color: #fff;
+    }		  
     .logoheader img.logo1 {
         width: auto;
+    }
+    h2.block-title {
+        font-size: 18px;
+    }
+    .page-node-type-restaurant .views-field.views-field-title span a {
+        font-size: 13px;
+    }
+    .views-field.views-field-field-image img {
+        width: 90%;
     }
     .logo1.align-center {
         width: 30%;
         margin-top: 10px;
+    }
+    #my-event-booking-form .col-md-12.profilereservation h1 {
+        font-size: 22px;
+    }
+    #my-event-booking-form .col-md-12.profilereservation p {
+        font-size: 12px;
+        position: relative;
+        top: 20%;
+    }
+    .path-gallery .views-field-field-gallery-image img {
+        display: inline;
+        padding: 2px;
+    }
+    #my-event-booking-form #edit-submit{
+        position: relative;
+        top: 25px;
     }
     .forgot, p.need{
         top: 0px;
@@ -1207,7 +1406,7 @@ h2 .sub-title::after {
         font-size: 11px;
     }
     .path-home .view.view-restaurant .view-content .views-row .views-col {
-        padding: 30px;
+        padding: 15px;
         min-height: auto;
     }
     .path-home .view.view-restaurant .br-theme-css-stars .br-widget a{
@@ -1248,10 +1447,10 @@ h2 .sub-title::after {
         margin-bottom: 5px; 
     }
     .logoheader img, .logos img{
-        width: 70%;
+        width: auto;
     }
     .welcomeapp li.getstarted {
-        width: 70% !important;
+        width: auto !important;
     }
     .title2 {
         font-size: 18px !important;
@@ -1288,18 +1487,18 @@ h2 .sub-title::after {
         margin-top: 0px;
         padding-bottom: 0px;
     }
-    .reservation, .call, .events, .location, .chat {
+    .reservation, .call, .events, .location, .chat, .share, .feedback {
         font-size: 10px !important;
     } 
-    .reservation::before, .call::before, .events::before, .location::before, .chat::before{
+    .reservation::before, .call::before, .events::before, .location::before, .chat::before, .share::before, .feedback::before{
         font-size: 20px;
     }
-    .reservation:hover a, .call:hover a, .events:hover a, .location:hover a, .chat:hover a{
+    .reservation:hover a, .call:hover a, .events:hover a, .location:hover a, .chat:hover a, .share:hover a, .feedback:hover a{
         color: #fff;
         text-decoration: none;
     }
     .more-link.form-group a{
-        margin-top: -40%;
+        margin-top: -60%;
         right: 30%;
     }
     .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
@@ -1358,6 +1557,25 @@ h2 .sub-title::after {
         overflow: hidden;
         left: 25%;
         border: none;
+    }
+    .region-header .page-header {
+        border: 0px;
+        position: fixed;
+        top: 0;
+        transform: translate(35%, 40%);
+        left: 0;
+        overflow: hidden;
+        z-index: 99;
+        color: #fff;
+    }
+    h2.block-title {
+        font-size: 18px;
+    }
+    .page-node-type-restaurant .views-field.views-field-title span a {
+        font-size: 13px;
+    }
+    .views-field.views-field-field-image img {
+        width: 90%;
     }
     .path-home .view.view-restaurant .views-field.views-field-title span a{
         font-size: 12px;
@@ -1505,10 +1723,10 @@ h2 .sub-title::after {
         margin-top: 0px;
         padding-bottom: 0px;
     }
-    .reservation, .call, .events, .location, .chat {
+    .reservation, .call, .events, .location, .chat, .share, .feedback {
         font-size: 10px !important;
     } 
-    .reservation::before, .call::before, .events::before, .location::before, .chat::before{
+    .reservation::before, .call::before, .events::before, .location::before, .chat::before, .share::before, .feedback::before{
         font-size: 20px;
     }
     .page-node-type-reservation .namedate::before, .page-node-type-reservation .namearrival::before, .page-node-type-reservation .nameperson::before{
@@ -1667,11 +1885,11 @@ h2 .sub-title::after {
     .path-gallery .views-field-field-gallery-image img{
         margin: 10px auto;
     }
-    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
+    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content p{
         top: 0;
         margin-top: -100px; 
     }
-    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
+    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content h3{
         top: -115px;
     }
     .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
@@ -1705,6 +1923,10 @@ h2 .sub-title::after {
     }
 }
 @media (max-width: 767px) {
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: transparent;
+    }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #333333;
         outline: 1px solid darkgray;
@@ -1747,11 +1969,11 @@ h2 .sub-title::after {
 
 }
 @media screen and (min-width:1200px){
-    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p{
+    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content p{
         top: 0;
         margin-top: -150px; 
     }
-    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3{
+    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3, .page-node-type-restaurant .slick .slick__slide .views-field-body .field-content h3{
         top: -165px;
     }
     #user-login-form .form-control {
@@ -1843,5 +2065,10 @@ h2 .sub-title::after {
     .more-link.form-group a {
         right: 16%;
         color: #336699;
+    }
+}
+@media screen and (min-width:992px){
+    .region-header h1.page-header {
+        display: none;
     }
 }
