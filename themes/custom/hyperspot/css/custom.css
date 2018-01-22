@@ -72,7 +72,8 @@ ol, ul {
 .path-user #navbar, 
 .path-splash .navbar-default,
 .page-node-type-event #navbar,
-.path-location-map #navbar{
+.path-location-map #navbar,
+.path-restaurant-contact #navbar{
     display: none;
 }
 .navbar-default {
