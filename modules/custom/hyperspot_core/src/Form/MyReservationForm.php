@@ -152,6 +152,7 @@ class MyReservationForm extends FormBase {
     $my_reservation->set('field_arrival', $arrival);
     $my_reservation->set('field_persons', $person);
     $my_reservation->set('field_restaurant', $rid);
+    $my_reservation->set('field_restaurant_page', $nid);
     $my_reservation->set('field_customer', $uid);
     $my_reservation->enforceIsNew();
     $my_reservation->save();

@@ -35,6 +35,9 @@ use Drupal\votingapi\VoteInterface;
  *     "id" = "id",
  *     "uuid" = "uuid",
  *     "bundle" = "type",
+ *    },
+ *   links = {
+ *     "canonical" = "/entity/vote/{vote}",
  *   }
  * )
  */

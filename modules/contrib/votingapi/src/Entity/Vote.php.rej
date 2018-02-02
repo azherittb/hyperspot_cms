@@ -1,0 +1,7 @@
+--- src/Entity/Vote.php
++++ src/Entity/Vote.php
+@@ -291,4 +294,4 @@ class Vote extends ContentEntityBase implements VoteInterface {
+     }
+   }
+ 
+-}+}

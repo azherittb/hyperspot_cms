@@ -1,0 +1,12 @@
+vendor/asm89/stack-cors/src/Asm89/Stack/CorsService.php:80:        $response->headers->set('Access-Control-Allow-Origin', $request->headers->get('Origin'));
+vendor/asm89/stack-cors/src/Asm89/Stack/CorsService.php:89:            $response->headers->set('Access-Control-Allow-Credentials', 'true');
+vendor/asm89/stack-cors/src/Asm89/Stack/CorsService.php:113:            $response->headers->set('Access-Control-Allow-Credentials', 'true');
+vendor/asm89/stack-cors/src/Asm89/Stack/CorsService.php:116:        $response->headers->set('Access-Control-Allow-Origin', $request->headers->get('Origin'));
+vendor/asm89/stack-cors/src/Asm89/Stack/CorsService.php:125:        $response->headers->set('Access-Control-Allow-Methods', $allowMethods);
+vendor/asm89/stack-cors/src/Asm89/Stack/CorsService.php:130:        $response->headers->set('Access-Control-Allow-Headers', $allowHeaders);
+sites/default/services.yml:173:    # Sets the Access-Control-Allow-Credentials header.
+sites/default/default.services.yml:173:    # Sets the Access-Control-Allow-Credentials header.
+core/tests/Drupal/FunctionalTests/HttpKernel/CorsIntegrationTest.php:46:    $this->assertSession()->responseHeaderEquals('Access-Control-Allow-Origin', 'http://example.com');
+core/tests/Drupal/FunctionalTests/HttpKernel/CorsIntegrationTest.php:52:    $this->assertSession()->responseHeaderEquals('Access-Control-Allow-Origin', 'http://example.com');
+core/tests/Drupal/FunctionalTests/HttpKernel/CorsIntegrationTest.php:58:    $this->assertSession()->responseHeaderEquals('Access-Control-Allow-Origin', 'http://example.org');
+core/tests/Drupal/FunctionalTests/HttpKernel/CorsIntegrationTest.php:75:    $this->assertSession()->responseHeaderEquals('Access-Control-Allow-Origin', 'http://example.com');

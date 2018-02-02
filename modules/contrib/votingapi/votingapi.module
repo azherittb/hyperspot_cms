@@ -13,6 +13,9 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Access\AccessResult;
 
 /**
  * Implements hook_help().
@@ -69,4 +72,19 @@ function votingapi_cron() {
     }
     Drupal::state()->set('votingapi.last_cron', REQUEST_TIME);
   }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_access for allowing access over REST
+ */
+
+function votingapi_vote_access(EntityInterface $entity, $operation, AccountInterface $account) {
+  return AccessResult::allowed();
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_create_access for allowing access over REST
+ */
+function votingapi_vote_create_access(AccountInterface $account, array $context, $entity_bundle) {
+  return AccessResult::allowed();
 }
