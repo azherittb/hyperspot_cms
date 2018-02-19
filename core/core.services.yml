@@ -35,10 +35,10 @@ parameters:
     - rtsp
   cors.config:
     enabled: false
-    allowedHeaders: []
+    allowedHeaders: ['*']
     allowedMethods: []
     allowedOrigins: ['*']
-    exposedHeaders: false
+    exposedHeaders: tre
     maxAge: false
     supportsCredentials: false
 services:

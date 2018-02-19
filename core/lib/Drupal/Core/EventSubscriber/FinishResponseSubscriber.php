@@ -129,7 +129,14 @@ class FinishResponseSubscriber implements EventSubscriberInterface {
     // XSS and other vulnerabilities.
     // https://www.owasp.org/index.php/List_of_useful_HTTP_headers
     $response->headers->set('X-Content-Type-Options', 'nosniff', FALSE);
-    $response->headers->set('X-Frame-Options', 'SAMEORIGIN', FALSE);
+    //$response->headers->set('X-Frame-Options', 'SAMEORIGIN', FALSE);
+
+    $path = $request->getPathInfo();
+
+
+  	$response->headers->remove('X-Frame-Options');
+	//$response->headers->set('X-Frame-Options', 'ALLOW-FROM http://geohyperspot.geologon.com');
+
 
     // If the current response isn't an implementation of the
     // CacheableResponseInterface, we assume that a Response is either
