@@ -1275,7 +1275,7 @@ h2 .sub-title::after {
 }
 .col-md-12.profilereservation {
     color: #336699;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
 /*********************************************/
 .page-node-type-event .event-time, .page-node-type-event .event-location {
@@ -1902,7 +1902,7 @@ h2 .sub-title::after {
         display:none;
     }
     .more-link.form-group a{
-        right: 6%;
+        /*right: 6%;*/
         color: #fff; 
     }
     .welcomeapp li.getstarted {
