@@ -290,7 +290,7 @@ form#user-login-form, form#user-register-form, form#user-pass {
 .view-event .view-content .views-row .views-field-field-image img{
     width: 100%;
 }
-#user-login-form .form-item-name::after, #user-register-form .form-item::after{
+#user-login-form .form-item-name::after{
     font-family: FontAwesome;
     content: "\f007";
     display: inherit;
@@ -298,7 +298,17 @@ form#user-login-form, form#user-register-form, form#user-pass {
     font-size: 15px;
     color:#336698;
     left:60%;
-    top:2%;
+    top:10%;
+}
+#user-register-form .form-item::after{
+    font-family: FontAwesome;
+    content: "\f007";
+    display: inherit;
+    position:absolute;
+    font-size: 15px;
+    color:#336698;
+    left:60%;
+    top:6%;
 }
 .form-item-pass::after{
     font-family: FontAwesome;
@@ -308,7 +318,7 @@ form#user-login-form, form#user-register-form, form#user-pass {
     font-size: 15px;
     color:#336698;
     left:60%;
-    top:40%;
+    top:45%;
 }
 #user-pass .form-type-email::after{
     font-family: FontAwesome;
@@ -318,7 +328,7 @@ form#user-login-form, form#user-register-form, form#user-pass {
     font-size: 15px;
     color:#336698;
     left:60%;
-    top:3%;
+    top:10%;
 }
 #user-register-form .form-item-mail::after{
     font-family: FontAwesome;
@@ -328,7 +338,7 @@ form#user-login-form, form#user-register-form, form#user-pass {
     font-size: 15px;
     color:#336698;
     left:60%;
-    top:22%;
+    top:26%;
 }
 #user-register-form .form-item-pass::after{
     font-family: FontAwesome;
@@ -338,7 +348,7 @@ form#user-login-form, form#user-register-form, form#user-pass {
     font-size: 15px;
     color:#336698;
     left:60%;
-    top:42%;
+    top:46%;
 }
 #user-register-form .form-item-pass .form-item::after{
     font-family: FontAwesome;
@@ -348,7 +358,7 @@ form#user-login-form, form#user-register-form, form#user-pass {
     font-size: 15px;
     color:#336698;
     left:60%;
-    top:62%;
+    top:66%;
 }
 .path-user button#edit-submit {
     width: 52%;
@@ -749,8 +759,7 @@ li.google:hover::after {
 }
 .footersocial ul {
     text-align: center;
-    display: block;
-    margin-right: 6%;
+    margin-right: 3%;
 }
 .footersocial {
     margin: 25px auto;
@@ -1916,7 +1925,7 @@ h2 .sub-title::after {
     }
     form#user-login-form, form#user-register-form, form#user-pass {
         width: 50%;
-        margin: 0 auto;
+        margin: 1% auto 0;
     }
     .path-home .view.view-restaurant .views-field.views-field-field-image{
         height: auto;
