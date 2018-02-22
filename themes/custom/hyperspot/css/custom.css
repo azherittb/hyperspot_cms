@@ -2087,47 +2087,4 @@ h2 .sub-title::after {
         display: none;
     }
 }
-.path-event .views-row .views-field.views-field-title span.field-content a {
-color: #2051a3;
-font-size: 24px;
-}
-.path-event .views-row .views-field.views-field-field-location .field-content, 
-.path-event .views-row .views-field.views-field-field-date .field-content, 
-.path-event .views-row .views-field.views-field-field-time .field-content{
-color: #9a999f;
-}
-.path-event .views-row .views-field.views-field-field-date
-{
-border-top:2px solid #9a999f; 
-padding:10px 40px;
-margin-top: 2%;
-}
-.path-event .views-row .views-field.views-field-field-date .field-content::before{
-font-family: FontAwesome;
-content: "\f017";
-position: relative;
-font-size: 24px;
-color: #336698;
-left: -30px;
-top: 0px;
-}
-.path-event .views-row .views-field.views-field-field-time .field-content{
-border-bottom:2px solid #9a999f; 
-padding:10px 40px;
-margin-bottom: 2%;
-}
-.path-event .views-row .views-field.views-field-field-time .field-content::before{
-font-family: FontAwesome;
-content: "\f0ec";
-position: relative;
-font-size: 22px;
-color: #336698;
-left: -30px;
-top: 0px;
-}
-.path-event .views-row .views-field.views-field-body .field-content p{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 1500px; 
-}
+
