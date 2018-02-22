@@ -2087,4 +2087,32 @@ h2 .sub-title::after {
         display: none;
     }
 }
-
+.path-event .views-row .views-field.views-field-nothing .col-md-6 h5{
+   color: #9a999f;
+   font-style: italic;
+}
+.path-event .views-row .eventdatetime {
+    display: grid;
+}
+.path-event .views-row .eventdatetime span.eventdate::before{
+font-family: FontAwesome;
+content: "\f017";
+position: relative;
+font-size: 24px;
+color: #336698;
+margin:0px 10px;
+}
+.path-event .views-row .eventdatetime span.eventtime::before{
+font-family: FontAwesome;
+content: "\f0ec";
+position: relative;
+font-size: 24px;
+color: #336698;
+margin:0px 10px;
+}
+.path-event .views-row .eventdatetime{
+    border-top: 2px solid #9a999f; 
+    border-bottom: 2px solid #9a999f; 
+    padding:10px;
+    margin: 20px 0px;
+}
