@@ -850,6 +850,7 @@ p.footerdesc, img.logo1.align-center{
 .chat:hover::before, .location:hover::before, .events:hover::before, .call:hover::before, .reservation:hover::before, .share:hover::before, .feedback:hover::before, .chat:hover, .location:hover, .events:hover, .call:hover, .reservation:hover, .share:hover, .feedback:hover{
     color:#fff;
     background-color:#336698;
+  text-decoration:none;
 }
 .title2 {
     margin-bottom: 20px;
