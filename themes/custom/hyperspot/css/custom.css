@@ -2116,3 +2116,20 @@ margin:0px 10px;
     padding:10px;
     margin: 20px 0px;
 }
+.path-event .fa-check::before {
+    content: "\f00c";
+    color: #30ad25;
+    border: 2px solid #30ad25;
+    padding: 5px;
+    font-size: 24px;
+}
+.path-event .fa-thumbs-o-up::before {
+    content: "\f087";
+    color: #e84c3d;
+    border: 2px solid;
+    padding: 5px 10px;
+    font-size: 24px;
+}
+.path-event.thumbcheck {
+    padding: 10px;
+}
