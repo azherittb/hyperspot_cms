@@ -53,7 +53,7 @@ ol, ul {
 /*.page-node-type-restaurant .form-group {
         margin: 30px auto;
 }*/
-.footer_block .reservation {
+.footer_block .reservation, .footer_block .location {
     display: grid;
 }
 .page-node-type-restaurant .views-field.views-field-title {
