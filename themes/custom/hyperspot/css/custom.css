@@ -53,6 +53,9 @@ ol, ul {
 /*.page-node-type-restaurant .form-group {
         margin: 30px auto;
 }*/
+.footer_block .reservation {
+    display: grid;
+}
 .page-node-type-restaurant .views-field.views-field-title {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -208,10 +211,11 @@ ol, ul {
 }
 .event-time .block-region-left::before {
     font-family: FontAwesome;
-    content: "\f007";
+    content: "\f017";
     color: #336699;
     font-size: 45px;
     position: absolute;
+    left: 0;
 }
 .event-location .block-region-right::before {
     font-family: FontAwesome;
