@@ -2141,3 +2141,9 @@ margin:0px 10px;
 .path-event .thumbcheck {
     padding: 15px 10px;
 }
+.path-event .pullr.views-col.clearfix.col-2 .col-md-6:first-child {
+    left: 50%;
+}
+.path-event .pullr.views-col.clearfix.col-2 .col-md-6:last-child {
+    right: 50%;
+}
