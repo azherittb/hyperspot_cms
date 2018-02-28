@@ -255,13 +255,14 @@ ol, ul {
     margin: 10px 0px 10px 40px;
 }
 .path-myeventbooking-confirm.page-node-type-event-booking .done .done a, .done a {
-    background-color: #336699;
+    background-color: #fff;
     width: 100px;
-    color: #fff;
+    color: #336699;
     padding: 15px 50px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
+    outline: 5px solid #336699;
 }
 .done {
     padding-top: 25px;
