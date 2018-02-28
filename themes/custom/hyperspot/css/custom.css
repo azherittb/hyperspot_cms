@@ -264,11 +264,11 @@ ol, ul {
     text-decoration: none;
     outline: 5px solid #336699;
 }
-.path-myeventbooking-confirm.page-node-type-event-booking .gallery a, .path-myeventbooking-confirm.page-node-type-event-booking .spl_dish a, .path-myeventbooking-confirm.page-node-type-event-booking .banner a {
+.path-merchant .gallery a, .path-merchant .spl_dish a, .path-merchant .banner a {
     font-size: 16px;
     text-transform: uppercase;
 }
-.path-myeventbooking-confirm.page-node-type-event-booking .col-md-4.statcol, .path-myeventbooking-confirm.page-node-type-event-booking .col-md-4.dyncol {
+.path-merchant .col-md-4.statcol, .path-merchant .col-md-4.dyncol {
     margin-top: 3%;
 }
 .done {
