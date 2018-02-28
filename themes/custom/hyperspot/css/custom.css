@@ -255,21 +255,22 @@ ol, ul {
     margin: 10px 0px 10px 40px;
 }
 .path-myeventbooking-confirm.page-node-type-event-booking .done .done a, .done a {
-    background-color: #fff;
-    width: 100px;
-    color: #336699;
-    padding: 15px 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    outline: 5px solid #336699;
+background-color: #336699;
+width: auto;
+color: #fff;
+padding: 15px 50px;
+font-weight: bold;
+text-transform: uppercase;
+text-decoration: none;
+display: block;
 }
 .path-merchant .gallery a, .path-merchant .spl_dish a, .path-merchant .banner a {
     font-size: 16px;
     text-transform: uppercase;
 }
-.path-merchant .col-md-4.statcol, .path-merchant .col-md-4.dyncol {
-    margin-top: 3%;
+.path-merchant .col-md-4.statcol div, .path-merchant .col-md-4.dyncol div {
+    border: 1px solid #336699;
+    padding: 10px;
 }
 .page-node-type-restaurant #node-restaurant-edit-form .form-control{
    width: 100%;
