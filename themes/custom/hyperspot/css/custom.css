@@ -271,6 +271,9 @@ ol, ul {
 .path-merchant .col-md-4.statcol, .path-merchant .col-md-4.dyncol {
     margin-top: 3%;
 }
+.page-node-type-restaurant #node-restaurant-edit-form .form-control{
+   width: 100%;
+}
 .done {
     padding-top: 25px;
     padding-bottom: 30px;
