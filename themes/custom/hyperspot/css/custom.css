@@ -1959,10 +1959,10 @@ h2 .sub-title::after {
 }
 @media (max-width: 767px) {
 	.path-event .pullr.views-col.clearfix.col-2 .col-md-6:first-child {
-    left: 0;
+    left: 0px !important;
 	}
 	.path-event .pullr.views-col.clearfix.col-2 .col-md-6:last-child {
-		right: 0;
+		right: 0px !important;
 	}
     .navbar-default .navbar-toggle:hover,
     .navbar-default .navbar-toggle:focus {
