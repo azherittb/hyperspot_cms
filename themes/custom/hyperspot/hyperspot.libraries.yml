@@ -3,7 +3,9 @@ global-styling:
     theme:
       css/style.css: {}
       css/custom.css: {}
-
+hyperspot-event-scripts:
+  js:
+    bootstrap/js/hyperspot_event_core.js: {}
 bootstrap-scripts:
   js:
     bootstrap/js/affix.js: {}

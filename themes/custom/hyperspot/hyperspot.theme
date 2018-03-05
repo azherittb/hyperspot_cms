@@ -65,3 +65,10 @@ function hyperspot_preprocess_my_profile_edit_user_picture(&$variables) {
   );
   $variables['picuture'] = $picture;
 }
+/*Get the Js for View page*/
+function hyperspot_preprocess_views_view(&$vars) {
+  $vars['#cache']['contexts'][] = 'route';
+  if ($vars['view_array']['#name'] == 'event') {
+    $vars['#attached']['library'][] = 'hyperspot/hyperspot-event-scripts';
+  }
+}

@@ -14,3 +14,18 @@ merchant.merchant_view_page:
   requirements:
     _permission: 'access content'
 
+merchant.hllo:
+  path: '/merchant/pages/like_us/{nid}'
+  defaults:
+    _controller: '\Drupal\merchant\Controller\merchantController::merchantviewpage'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+
+merchant.hlo:
+  path: '/merchant/pages/may_be/{nid}'
+  defaults:
+    _controller: '\Drupal\merchant\Controller\merchantController::eventmaybe'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'

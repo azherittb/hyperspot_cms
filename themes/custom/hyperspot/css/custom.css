@@ -79,6 +79,10 @@ ol, ul {
 .path-restaurant-contact #navbar{
     display: none;
 }
+.not_active{
+	pointer-events: none;
+	cursor: default;
+}
 .navbar-default {
     background-color: #336699;
     border-color: #336699;
