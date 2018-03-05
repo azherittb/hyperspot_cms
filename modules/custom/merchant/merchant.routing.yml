@@ -1,0 +1,16 @@
+merchant.hello:
+  path: '/merchant/page'
+  defaults:
+    _controller: '\Drupal\merchant\Controller\merchantController::merchant_page'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+
+merchant.merchant_view_page:
+  path: '/merchant/'
+  defaults:
+    _controller: '\Drupal\merchant\Controller\merchantController::merchant_view_page'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+

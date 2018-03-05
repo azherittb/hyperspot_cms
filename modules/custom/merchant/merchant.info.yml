@@ -1,0 +1,7 @@
+name: merchant
+type: module
+description: say Hellow world
+
+package: Custom
+core: 8.x
+

@@ -268,7 +268,7 @@ class UserController extends ControllerBase {
    *   NULL.
    */
   public function userTitle(UserInterface $user = NULL) {
-    return $user ? ['#markup' => $user->getUsername(), '#allowed_tags' => Xss::getHtmlTagList()] : '';
+		  return $user ? ['#markup' => $user->getUsername(), '#allowed_tags' => Xss::getHtmlTagList()] : '';
   }
 
   /**
