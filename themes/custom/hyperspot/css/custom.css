@@ -1459,7 +1459,7 @@ h2 .sub-title::after {
         display:none;
     }
     #user-login-form .form-item-name::after, #user-register-form .form-item::after, #user-login-form .form-item-pass::after, #user-pass .form-type-email::after{
-        left: 70% !important;
+        left: 90% !important;
     }
     .path-splash .slick-list .slick-track .slick__slide h3{
         font-size: 18px;
@@ -1498,8 +1498,10 @@ h2 .sub-title::after {
         font-size: 14px !important;
     }
     form#user-login-form, form#user-register-form, form#user-pass {
-        width: 60%;
-        margin: 0 auto;
+        width: auto;
+		margin: 0 auto;
+		position: relative;
+		top: 20px;
     }
     .footersignin ul li{
         width: auto;
@@ -1670,7 +1672,7 @@ h2 .sub-title::after {
         left: 25%;
     }
     #user-login-form .form-item-name::after, #user-register-form .form-item::after, #user-login-form .form-item-pass::after, #user-pass .form-type-email::after{
-        left: 70% !important;
+        left: 80% !important;
     }
     .forgot, p.need{
         top: 10px;
@@ -1734,11 +1736,13 @@ h2 .sub-title::after {
         width: 70% !important;
     }
     form#user-login-form, form#user-register-form, form#user-pass {
-        width: 75%;
-        margin: 0 auto;
+        width: 90%;
+		margin: 0 auto;
+		position: relative;
+		top: 20px;
     }
     .footersignin ul li{
-        width: 80% !important;
+        width: 90% !important;
         margin-top: 20px;
     }
     .footersocial ul{
