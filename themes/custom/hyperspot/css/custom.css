@@ -1413,7 +1413,7 @@ h2 .sub-title::after {
         top: 25px;
     }
     .forgot, p.need{
-        top: 0px;
+        top: 20px;
         margin-top: 15px;
     }
     .footer .logout::before {
@@ -1675,7 +1675,7 @@ h2 .sub-title::after {
         left: 80% !important;
     }
     .forgot, p.need{
-        top: 10px;
+        top: 30px;
         margin-top: 15px;
     }
     .footersocial li {
@@ -1813,12 +1813,30 @@ h2 .sub-title::after {
         width: 55%;
     }
     .forgot, p.need{
-        top: 0;
+        top: 20px;
         margin-top: 20px;
     }
     #user-login-form .form-item-name::after, #user-register-form .form-item::after, #user-login-form .form-item-pass::after, #user-pass .form-type-email::after{
-        left: 70% !important;
+        left: 90% !important;
     }
+	.html #user-login-form .form-item-name::after{
+		top: 5%;
+	}
+	.html #user-register-form .form-item::after{
+		top: 3%;
+	}
+	.html #user-register-form .form-item-mail::after{
+		top: 23%;
+	}
+	.html #user-register-form .form-item-pass::after{
+		top: 43%;
+	}
+	.html #user-register-form .form-item-pass .form-item::after{
+		top: 63%;
+	}
+	.html .form-item-pass::after{
+		top: 40%;
+	}
     .form-control{
         width: 100%; 
     }
@@ -1868,8 +1886,10 @@ h2 .sub-title::after {
         margin-top: 30px;
     }
     form#user-login-form, form#user-register-form, form#user-pass {
-        width: 50%;
+        width: 55%;
         margin: 0 auto;
+		position: relative;
+        top: 20px;
     }
     .path-home .view.view-restaurant .views-field.views-field-field-image{
         height: auto;
