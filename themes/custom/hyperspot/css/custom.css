@@ -2170,21 +2170,21 @@ h2 .sub-title::after {
     padding:10px;
     margin: 20px 0px;
 }
-.path-event .fa-check::before {
+.fa-check::before {
     content: "\f00c";
     color: #30ad25;
     border: 2px solid #30ad25;
     padding: 5px;
     font-size: 24px;
 }
-.path-event .fa-thumbs-o-up::before {
+.fa-thumbs-o-up::before {
     content: "\f087";
     color: #e84c3d;
     border: 2px solid;
     padding: 5px 10px;
     font-size: 24px;
 }
-.path-event .thumbcheck {
+.thumbcheck {
     padding: 15px 10px 0 0;
 }
 .path-event .pullr.views-col.clearfix.col-2 .col-md-6:first-child {
@@ -2192,4 +2192,41 @@ h2 .sub-title::after {
 }
 .path-event .pullr.views-col.clearfix.col-2 .col-md-6:last-child {
     right: 50%;
+}
+.hotelnames {
+    font-size: 34px;
+    color: #336699;
+    text-transform: uppercase;
+    text-align: center;
+}
+.thumbcheck_values {
+    display: flex;
+}
+.count_going, .count_maybe {
+    font-size: 30px;
+    font-weight: bold;
+}
+.count_going {
+    color: #30ad21;
+}
+.count_maybe {
+    color: #e84c3d;
+}
+.thumbcheck_values .thumbsarrow {
+    position: absolute;
+    left: 59%;
+}
+.thumbcheck_values .checkarrow {
+    position: absolute;
+    left: 55%;
+}
+.count_going {
+    color: #30ad21;
+    position: relative;
+    left: 5%;
+}
+.count_maybe {
+    color: #e84c3d;
+    position: absolute;
+    left: 10%;
 }
