@@ -1375,6 +1375,12 @@ h2 .sub-title::after {
 }		
 /***********************Media Queries**************************/
 @media (max-width: 320px){
+  .path-home .group-middle .view-restaurant .views-field.views-field-field-restaurant-slogan .field-content {
+    min-height: 35px;
+}
+.path-home .view.view-restaurant .views-field.views-field-title {
+    min-height: 40px;
+}
     .region-header .page-header {
         border: 0px;
         position: fixed;
@@ -1595,6 +1601,12 @@ h2 .sub-title::after {
 }
 
 @media screen and (min-width:321px) and (max-width: 500px ){
+  .path-home .group-middle .view-restaurant .views-field.views-field-field-restaurant-slogan .field-content {
+    min-height: 35px;
+}
+.path-home .view.view-restaurant .views-field.views-field-title {
+    min-height: 40px;
+}
     .path-mysettings .page-header {
         position: absolute;
         top: -60px;
