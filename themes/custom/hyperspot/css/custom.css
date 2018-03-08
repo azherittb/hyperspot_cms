@@ -2269,3 +2269,12 @@ h2 .sub-title::after {
     position: absolute;
     left: 9%;
 }
+.path-event .pullf.views-row:nth-child(2n) {
+    transform: rotatey(180deg);
+}
+.path-event .pullf.views-row:nth-child(2n) .col-md-6.col-sm-6:nth-child(2n+1) {
+    transform: rotatey(180deg);
+}
+.path-event .pullf.views-row:nth-child(2n) .col-md-6.col-sm-6:nth-child(2n) {
+    transform: rotatey(180deg);
+}
