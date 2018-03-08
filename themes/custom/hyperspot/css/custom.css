@@ -2081,6 +2081,21 @@ h2 .sub-title::after {
     }
 }
 @media screen and (min-width:768px) and (max-width: 991px ){
+	.count_going{
+    left: 5%;
+	}
+	.count_maybe{
+		left: 12%;
+	}
+	.thumbcheck_values .checkarrow{
+		left: 57%;
+	}
+	.thumbcheck_values .thumbsarrow{
+		left: 64%;
+	}
+	.thumbcheck_values .thumbsarrow, .thumbcheck_values .checkarrow {
+		top: 10px;
+	}
     .welcomeapp li.getstarted {
         width: 40% !important;
     }
