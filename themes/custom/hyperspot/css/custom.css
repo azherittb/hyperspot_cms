@@ -2042,16 +2042,16 @@ h2 .sub-title::after {
 		font-size: 20px;
 	}
 	.count_maybe{
-	   left: 20%;
+	   left: 20% !important;
 	}
 	.thumbcheck_values .thumbsarrow{
-	   left: 70%;
+	   left: 70% !important;
 	}
 	.thumbcheck_values .thumbsarrow, .thumbcheck_values .checkarrow{
 		top: 8px;
 	}
 	.book_my_event a {
-		width: auto;
+		width: 50%;
 	}
 
 }
