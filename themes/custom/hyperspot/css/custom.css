@@ -1312,6 +1312,9 @@ h2 .sub-title::after {
     color: #336699;
     /*margin-bottom: 50px;*/
 }
+.path-myreservation #my-reservation-form .col-md-12.profilereservation {
+    margin-bottom: 50px;
+}
 .path-myeventbooking-confirm.page-node-type-event-booking .col-md-12.profilereservation{
   margin-bottom: 50px;
 }
