@@ -1375,6 +1375,10 @@ h2 .sub-title::after {
 }		
 /***********************Media Queries**************************/
 @media (max-width: 320px){
+ .page-node-type-restaurant .views-field.views-field-body {
+    font-size: x-small;
+    padding: 0 5px;
+}
   .path-home .group-middle .view-restaurant .views-field.views-field-field-restaurant-slogan .field-content {
     min-height: 35px;
 }
@@ -1601,6 +1605,10 @@ h2 .sub-title::after {
 }
 
 @media screen and (min-width:321px) and (max-width: 500px ){
+.page-node-type-restaurant .views-field.views-field-body {
+    font-size: x-small;
+    padding: 0 5px;
+}
   .path-home .group-middle .view-restaurant .views-field.views-field-field-restaurant-slogan .field-content {
     min-height: 35px;
 }
@@ -1921,10 +1929,10 @@ h2 .sub-title::after {
         margin-top: 0px;
         padding-bottom: 0px;
     }
-    .reservation, .call, .events, .location, .chat {
+    .reservation, .call, .events, .location, .chat, .share, .feedback {
         font-size: 10px !important;
     } 
-    .reservation::before, .call::before, .events::before, .location::before, .chat::before{
+    .reservation::before, .call::before, .events::before, .location::before, .chat::before, .feedback::before, .share::before{
         font-size: 20px;
     }
     .welcomeapp li.getstarted {
