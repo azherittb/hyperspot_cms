@@ -2082,19 +2082,19 @@ h2 .sub-title::after {
 }
 @media screen and (min-width:768px) and (max-width: 991px ){
 	.count_going{
-    left: 5%;
+    left: 5% !important;
 	}
 	.count_maybe{
-		left: 12%;
+		left: 12% !important;
 	}
 	.thumbcheck_values .checkarrow{
-		left: 57%;
+		left: 57% !important;
 	}
 	.thumbcheck_values .thumbsarrow{
-		left: 64%;
+		left: 64% !important;
 	}
 	.thumbcheck_values .thumbsarrow, .thumbcheck_values .checkarrow {
-		top: 10px;
+		top: 10px !important;
 	}
     .welcomeapp li.getstarted {
         width: 40% !important;
