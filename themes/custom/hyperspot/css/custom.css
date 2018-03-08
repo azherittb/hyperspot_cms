@@ -260,13 +260,12 @@ ol, ul {
 }
 .path-myeventbooking-confirm.page-node-type-event-booking .done .done a, .done a {
 background-color: #336699;
-width: auto;
+width: 100px;
 color: #fff;
 padding: 15px 50px;
 font-weight: bold;
 text-transform: uppercase;
 text-decoration: none;
-display: block;
 }
 .path-merchant .gallery a, .path-merchant .spl_dish a, .path-merchant .banner a {
     font-size: 16px;
@@ -399,6 +398,9 @@ form#user-login-form, form#user-register-form, form#user-pass {
 .path-event .pullf.views-row .col-md-6.col-sm-6 h3{
     margin-top: 10px;
 }
+.path-event #navbar {
+    display: none;
+}
 .footer{
     border-top: 0px solid #E5E5E5;
     padding-top: 0;
@@ -508,7 +510,7 @@ form#user-login-form, form#user-register-form, form#user-pass {
     text-transform: uppercase;
 }
 .path-myeventbooking-confirm.page-node-type-event-booking .namearrival {
-    margin: 10px 0px 10px 40px;
+    margin: 10px 0px 10px -30px;
 }
 .path-myeventbooking-confirm.page-node-type-event-booking .profilereservation h2::after{
     content: '';
