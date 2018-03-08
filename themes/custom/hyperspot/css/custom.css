@@ -2013,7 +2013,6 @@ h2 .sub-title::after {
         position: relative;
         top: 0;
     }
-
     .profileblock h3{
         top: 0;
         left: 15%;
@@ -2035,6 +2034,25 @@ h2 .sub-title::after {
     #edit-picture {
         width: auto;
     }
+	.event-time .block-region-left::before{
+    left: 10px;
+	font-size: 40px;
+	}
+	.page-node-type-event .event-time .block-entity-fieldnodefield-date, .page-node-type-event .event-location .block-entity-fieldnodefield-located-at{
+		font-size: 20px;
+	}
+	.count_maybe{
+	   left: 20%;
+	}
+	.thumbcheck_values .thumbsarrow{
+	   left: 70%;
+	}
+	.thumbcheck_values .thumbsarrow, .thumbcheck_values .checkarrow{
+		top: 8px;
+	}
+	.book_my_event a {
+		width: auto;
+	}
 
 }
 @media screen and (min-width:1200px){
@@ -2223,10 +2241,10 @@ h2 .sub-title::after {
 .count_going {
     color: #30ad21;
     position: relative;
-    left: 5%;
+    left: 4%;
 }
 .count_maybe {
     color: #e84c3d;
     position: absolute;
-    left: 10%;
+    left: 9%;
 }
