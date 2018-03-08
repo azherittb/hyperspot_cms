@@ -396,6 +396,9 @@ form#user-login-form, form#user-register-form, form#user-pass {
 .path-user .footer h2.block-title, #block-welcomeappheader h2.block-title {
     display: none;
 }
+.path-event .pullf.views-row .col-md-6.col-sm-6 h3{
+    margin-top: 10px;
+}
 .footer{
     border-top: 0px solid #E5E5E5;
     padding-top: 0;
@@ -2206,7 +2209,7 @@ h2 .sub-title::after {
 .path-event .views-row .eventdatetime{
     border-top: 2px solid #9a999f; 
     border-bottom: 2px solid #9a999f; 
-    padding:10px;
+    padding:10px 0;
     margin: 20px 0px;
 }
 .fa-check::before {
