@@ -2133,6 +2133,12 @@ h2 .sub-title::after {
     }	
 }
 @media screen and (min-width:992px) and (max-width: 1199px ){
+	.thumbcheck_values .thumbsarrow{
+        left: 61% !important;
+	}
+	.thumbcheck_values .thumbsarrow, .thumbcheck_values .checkarrow {
+		top: 10px !important;
+	}
     .welcomeapp li.getstarted {
         width: 30% !important;
     }
