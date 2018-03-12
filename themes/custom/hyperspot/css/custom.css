@@ -273,6 +273,7 @@ text-decoration: none;
 .path-merchant .gallery a, .path-merchant .spl_dish a, .path-merchant .banner a {
     font-size: 16px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 .path-merchant .col-md-4.statcol div, .path-merchant .col-md-4.dyncol div {
     border: 1px solid #336699;
