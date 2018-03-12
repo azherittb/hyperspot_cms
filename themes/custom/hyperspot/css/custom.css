@@ -471,6 +471,15 @@ form#user-login-form, form#user-register-form, form#user-pass {
 #my-profile-edit .file.file--mime-image-jpeg.file--image.icon-before {
     display: none;
 }
+html .btn-success, html .btn-success:focus, html .btn-success.focus {
+    color: #ffffff;
+    background-color: #336698;
+    border-color: #336698;
+}
+.path-banner-images .views-field.views-field-title .field-content a {
+    text-align: center;
+    display: block;
+}
 .seeyou{
     color:#336699;
 }
