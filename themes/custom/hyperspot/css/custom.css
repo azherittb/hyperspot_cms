@@ -1411,7 +1411,7 @@ h2 .sub-title::after {
         z-index: 99;
         color: #fff;
     }
-	    .path-node.page-node-type-banner .region-header .page-header span, .path-node.page-node-type-hero-banner .region-header .page-header span{
+	    .path-node.page-node-type-banner .region-header .page-header, .path-node.page-node-type-hero-banner .region-header .page-header {
 			position: relative;
 			transform: translate(0%, 20%);
 			color: #336699;
