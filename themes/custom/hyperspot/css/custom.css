@@ -25,10 +25,10 @@ ol, ul {
     color: #fff;
 }
 .slick .slick-prev::before, slick .slick-next::before{
-	opacity: 1;	
+	opacity: 1 !important;	
 }
 slick .slick-arrow::before{
-	font-size: 3.25rem;
+	font-size: 3.25rem !important;
 }
 .page-node-type-restaurant h2.block-title {
     color: #336699;
