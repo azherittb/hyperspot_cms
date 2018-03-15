@@ -1920,14 +1920,14 @@ h2 .sub-title::after {
     .book_my_table::before{
         left: 30%;
     }
-    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body p {
-        top: -30px;
-        font-size: 10px;
+    .page-node-type-restaurant .slick .views-field.views-field-body p {
+        top: -30px !important;
+        font-size: 10px !important;
     }
-    .page-node-type-restaurant .slick-list .slick-track .views-field.views-field-body h3 {
-        top: -40px;
-        font-size: 21px;
-        margin-top: -75px;
+    .page-node-type-restaurant .slick .views-field.views-field-body h3 {
+        top: -40px !important;
+        font-size: 21px !important;
+        margin-top: -75px !important;
     }
     .path-node.page-node-type-restaurant .group-footer .views-element-container h2.block-title::after{
         display: none;
