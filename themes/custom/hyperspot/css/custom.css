@@ -2184,6 +2184,7 @@ h2 .sub-title::after {
     }
     .more-link.form-group a{
         right: 30%;
+        margin-top: -20%;
     }
     #user-login-form .form-item-name::after, #user-register-form .form-item::after, .form-item-pass::after, #user-pass .form-type-email::after{
         left: 65% !important;
