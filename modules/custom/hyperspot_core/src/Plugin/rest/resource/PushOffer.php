@@ -5,6 +5,7 @@ use Drupal\rest\Plugin\ResourceBase;
 use Drupal\rest\ResourceResponse;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 use Psr\Log\LoggerInterface;
 use \Drupal\node\Entity\Node;
 /**
@@ -31,6 +32,8 @@ class PushOffer extends ResourceBase {
         $query_offer->condition('type', 'my_offer');
         $query_offer->condition('field_restaurants.target_id', $bregion);
         $query_offer->condition('field_type_msg', 'general');
+        $query_offer->accessCheck(false);   
+        $entity_ids_offer = $query_offer->execute();
         if(count($entity_ids_offer)>0){
             foreach($entity_ids_offer as $nid_offer){
                 $node_offer = Node::load($nid_offer);
@@ -75,6 +78,7 @@ class PushOffer extends ResourceBase {
         $query_new->condition('status', 1);
         $query_new->condition('type', $bundle);
         $query_new->condition('field_dev_id', $devid);
+        $query_new->accessCheck(false);  
         $entity_ids_new = $query_new->execute();
         if(count($entity_ids_new)>0){
         foreach($entity_ids_new as $nid_new){
@@ -86,7 +90,8 @@ class PushOffer extends ResourceBase {
         $query_offer->condition('type', 'my_offer');
         $query_offer->condition('field_restaurants.target_id', $bregion);
         $query_offer->condition('field_type_msg', 'offer');  
-        $query_offer->condition('field_event_text', $event);     
+        $query_offer->condition('field_event_text', $event);   
+        $query_offer->accessCheck(false);    
         $entity_ids_offer = $query_offer->execute();
         if(count($entity_ids_offer)>0){
             foreach($entity_ids_offer as $nid_offer){

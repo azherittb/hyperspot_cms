@@ -29,3 +29,52 @@ merchant.hlo:
     _title: 'Hello World'
   requirements:
     _permission: 'access content'
+
+merchant.count:
+  path: '/merchant/pages/event_count/{nid}'
+  defaults:
+    _controller: '\Drupal\merchant\Controller\merchantController::eventcountgoing'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+
+merchant.maybe:
+  path: '/merchant/pages/event_count_maybe/{nid}'
+  defaults:
+    _controller: '\Drupal\merchant\Controller\merchantController::eventcountmaybe'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+
+merchant.usereventcount:
+  path: '/merchant/pages/event_count_value/{nid}'
+  defaults:
+    _controller: '\Drupal\merchant\Controller\merchantController::event_count_value'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+
+merchant.usereventmaybe:
+  path: '/merchant/pages/event_maybeuser_count/{nid}'
+  defaults:
+    _controller: '\Drupal\merchant\Controller\merchantController::event_usermay_value'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+    
+merchant.usereventpagegoing:
+  path: '/merchant/pages/eventpage_going'
+  defaults:
+    _controller: '\Drupal\merchant\Controller\merchantController::eventpage_going'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+
+merchant.usereventpagemaybe:
+  path: '/merchant/pages/eventpage_maybe'
+  defaults:
+    _controller: '\Drupal\merchant\Controller\merchantController::eventpage_maybe'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+    

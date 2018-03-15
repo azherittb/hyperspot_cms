@@ -5,6 +5,7 @@ use Drupal\rest\Plugin\ResourceBase;
 use Drupal\rest\ResourceResponse;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 use Psr\Log\LoggerInterface;
 use \Drupal\node\Entity\Node;
 /**
@@ -27,8 +28,8 @@ class PushRegistration extends ResourceBase {
     $query->condition('status', 1);
     $query->condition('type', $bundle);
     $query->condition('field_dev_id', $devid);
+    $query->accessCheck(false);   
     $entity_ids = $query->execute();
-    
     if(count($entity_ids)>0){
         foreach($entity_ids as $nid){
             $node = Node::load($nid);
@@ -49,6 +50,7 @@ class PushRegistration extends ResourceBase {
         $msg = "Successfully registered";
     }
     $response = ['message' => $msg];
+    //print json_encode($response);
     return new ResourceResponse($response);
   }
 }
