@@ -24,10 +24,10 @@ ol, ul {
 .slick-arrow::before {
     color: #fff;
 }
-.slick .slick-prev::before, slick .slick-next::before{
+.slick .slick-prev::before, .slick .slick-next::before{
 	opacity: 1 !important;	
 }
-slick .slick-arrow::before{
+.slick .slick-arrow::before{
 	font-size: 3.25rem !important;
 }
 .page-node-type-restaurant h2.block-title {
