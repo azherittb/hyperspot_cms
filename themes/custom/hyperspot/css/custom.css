@@ -1410,7 +1410,11 @@ h2 .sub-title::after {
         overflow: hidden;
         z-index: 99;
         color: #fff;
-    }		  
+    }	
+	.path-myreservation .region-header .page-header{
+		position: static;
+		transform: translate(15%, -160%);
+	}
     .logoheader img.logo1 {
         width: auto;
     }
@@ -1650,6 +1654,12 @@ h2 .sub-title::after {
         z-index: 99;
         color: #fff;
     }
+	.path-myreservation .region-header .page-header{
+		position: absolute;
+		transform: translate(35%, -160%);
+		left: unset;
+		right: 50%;
+	}
     h2.block-title {
         font-size: 18px;
     }
@@ -1832,6 +1842,16 @@ h2 .sub-title::after {
     }
 }
 @media screen and (min-width:501px) and (max-width: 767px ){
+	.path-myreservation .region-header .page-header {
+    border: 0px;
+    position: absolute;
+    top: 0px;
+    transform: translate(35%, -160%);
+    overflow: hidden;
+    z-index: 99;
+    color: #fff;
+    right: 50%;
+    }
     .path-mysettings .page-header {
         position: absolute;
         top: -60px;
@@ -2125,9 +2145,12 @@ h2 .sub-title::after {
     }
 }
 @media screen and (min-width:768px) and (max-width: 991px ){
+	.region-header h1.page-header {
+    display: none;
+   }
   .path-myeventbooking-confirm.page-node-type-event-booking .namearrival {
     margin: 10px 0px 10px -65px !important;
-}
+   }
 	.count_going{
     left: 5% !important;
 	}
