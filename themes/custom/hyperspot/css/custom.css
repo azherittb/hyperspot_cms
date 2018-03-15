@@ -1391,6 +1391,16 @@ h2 .sub-title::after {
 }		
 /***********************Media Queries**************************/
 @media (max-width: 320px){
+  .path-merchant .col-md-4.statcol, .path-merchant .col-md-4.dyncol {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .path-merchant .region-header .page-header{
+     display:none;
+  }
+  .path-merchant .done{
+    padding-left: 30px;
+  }
  .page-node-type-restaurant .views-field.views-field-body {
     font-size: x-small;
     padding: 0 5px;
@@ -1639,6 +1649,16 @@ h2 .sub-title::after {
 }
 
 @media screen and (min-width:321px) and (max-width: 500px ){
+ .path-merchant .col-md-4.statcol, .path-merchant .col-md-4.dyncol {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .path-merchant .region-header .page-header{
+     display:none;
+  }
+  .path-merchant .done{
+    padding-left: 30px;
+  }
 	.path-node.page-node-type-banner .region-header .page-header, .path-node.page-node-type-hero-banner .region-header .page-header{
 		position: relative;
 		transform: translate(0%, 40%);
@@ -1870,6 +1890,16 @@ h2 .sub-title::after {
     }
 }
 @media screen and (min-width:501px) and (max-width: 767px ){
+  .path-merchant .col-md-4.statcol, .path-merchant .col-md-4.dyncol {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .path-merchant .region-header .page-header{
+     display:none;
+  }
+  .path-merchant .done{
+    padding-left: 30px;
+  }
 	.path-myreservation .region-header .page-header, .path-myreservation-confirm .region-header .page-header {
     border: 0px;
     position: absolute;
@@ -2182,6 +2212,13 @@ h2 .sub-title::after {
     }
 }
 @media screen and (min-width:768px) and (max-width: 991px ){
+  .path-merchant .col-md-4.statcol, .path-merchant .col-md-4.dyncol {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .path-merchant .done{
+    padding-left: 30px;
+  }
 	.region-header h1.page-header {
     display: none;
    }
@@ -2332,7 +2369,7 @@ h2 .sub-title::after {
     font-size: 24px;
 }
 .thumbcheck {
-    padding: 15px 10px 0 0;
+    padding: 15px 10px 20px 0;
 }
 .path-event .pullr.views-col.clearfix.col-2 .col-md-6:first-child {
     left: 50%;
