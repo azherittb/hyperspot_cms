@@ -2455,3 +2455,17 @@ h2 .sub-title::after {
 .geolocation-common-map-container {
     height: 550px !important;
 }
+.path-spl-dish .views-field.views-field-title .field-content a {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.path-spl-dish .view-merchant-page .view-footer p a {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.path-spl-dish .pager li > a, .path-spl-dish .pager li > span {
+    background-color: #337ab7;
+    border: 0px !important;
+    color: #fff;
+}
