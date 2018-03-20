@@ -2469,3 +2469,6 @@ h2 .sub-title::after {
     border: 0px !important;
     color: #fff;
 }
+.page-node-type-special-dish .content .field.field--name-field-image.field--type-image{
+    float: right;
+}
