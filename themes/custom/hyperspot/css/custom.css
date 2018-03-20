@@ -2444,3 +2444,11 @@ h2 .sub-title::after {
     text-decoration: none;
     font-weight: bold;
 }
+.path-location-map .view-header {
+    background-color: #336699;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 600;
+}
