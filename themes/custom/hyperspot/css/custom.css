@@ -2432,3 +2432,15 @@ h2 .sub-title::after {
 .path-event .pullf.views-row:nth-child(2n) .col-md-6.col-sm-6:nth-child(2n) {
     transform: rotatey(180deg);
 }
+.path-event .eventdate, .path-event .eventtime {
+    color: #9a999f;
+    font-size: initial;
+}
+.path-event .views-more-link {
+    color: #000;
+    font-weight: bold;
+}
+.path-event .pullf.views-row .col-md-6.col-sm-6 h3 a {
+    text-decoration: none;
+    font-weight: bold;
+}
