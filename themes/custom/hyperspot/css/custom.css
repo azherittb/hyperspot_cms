@@ -2452,3 +2452,6 @@ h2 .sub-title::after {
     text-align: center;
     font-weight: 600;
 }
+.geolocation-common-map-container {
+    height: 550px !important;
+}
