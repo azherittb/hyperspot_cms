@@ -2492,6 +2492,7 @@ h2 .sub-title::after {
     text-transform: uppercase;
     color: #fff;
     font-size: 30px;
+  text-align: center;
 }
 .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix {
     display: flex;
@@ -2500,7 +2501,7 @@ h2 .sub-title::after {
     transform: translate(-120%, 55% );
 }
 .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodetitle.clearfix {
-    transform: translate(50%, 0% );
+    transform: translate(10%, 0% );
     font-size: 40px;
     color: #fff;
     font-weight: bold;
