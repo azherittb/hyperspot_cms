@@ -177,19 +177,15 @@ ol, ul {
 }
 .footer_block ul {
     list-style-type: none;
-    display: flex;
     color: #336698;
     width: auto;
-    margin: 0 auto;
-    text-align: center;
 }
 .footer_block ul li {
-    width: 100%;
+    width: 20%;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    display: block;
-    margin: 0 auto;
+    float: left;
 }
 .reservation, .call, .chat, .location, .share {
     border-right: 1px solid #336698;
