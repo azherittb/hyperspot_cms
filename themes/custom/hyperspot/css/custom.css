@@ -2498,18 +2498,25 @@ h2 .sub-title::after {
     display: flex;
     color: #fff;
     font-style: italic;
-    transform: translate(-120%, 55% );
+    transform: translate(60%, 65% );
 }
 .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodetitle.clearfix {
-    transform: translate(10%, 0% );
+    transform: translate(60%, 0% );
     font-size: 40px;
     color: #fff;
     font-weight: bold;
+    position: absolute;
 }
 .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix span a {
    color: #fff;
    position: absolute;
-   top: 20px;
+   top: 18px;
    margin-left: 5px;
    font-size: 18px;
+}
+.page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2{
+   font-size: 18px;
+}
+.page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodefield-date.clearfix .field.field--name-field-date.field--type-datetime.field--label-hidden.field--item {
+    padding: 20px 5px;
 }
