@@ -60,7 +60,7 @@ ol, ul {
         margin: 30px auto;
 }*/
 .footer_block .reservation, .footer_block .location {
-    display: grid;
+    display: block;
 }
 .page-node-type-restaurant .views-field.views-field-title {
     margin-top: 30px;
