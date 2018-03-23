@@ -2472,3 +2472,8 @@ h2 .sub-title::after {
 .page-node-type-special-dish .content .field.field--name-field-image.field--type-image{
     float: right;
 }
+.path-location-map .location-content .views-field-field-address h2 {
+    color: #336699;
+    font-size: 18px;
+    text-transform: uppercase;
+}
