@@ -2120,7 +2120,7 @@ h2 .sub-title::after {
     }
 }
 @media (max-width: 767px) {
- .user-logged-in.path-node.page-node-type-restaurant .region-header h1.page-header{
+ .user-logged-in.path-node.page-node-type-restaurant .region-header h1.page-header, .path-location-map .region-header .page-header{
     display: none;
 }
   .path-myeventbooking-confirm.page-node-type-event-booking .namearrival {
