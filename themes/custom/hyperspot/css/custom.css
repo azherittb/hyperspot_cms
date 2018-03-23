@@ -2477,3 +2477,10 @@ h2 .sub-title::after {
     font-size: 18px;
     text-transform: uppercase;
 }
+.page-node-type-restaurant-contact .restaurant-contact  .content h2 {
+    color: #336699;
+    font-size: 18px;
+}
+.page-node-type-restaurant-contact #navbar {
+    display: none;
+}
