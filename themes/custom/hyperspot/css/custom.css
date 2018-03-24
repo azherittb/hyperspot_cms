@@ -1938,6 +1938,11 @@ html .page-node-type-event .block-region-top .field.field--name-field-date.field
     }
 }
 @media screen and (min-width:501px) and (max-width: 767px ){
+  html .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodetitle.clearfix{
+    left: 30%;
+    line-height: 30px;
+    font-size: 26px;
+  }
   .path-merchant .col-md-4.statcol, .path-merchant .col-md-4.dyncol {
     text-align: center;
     margin: 30px 0;
