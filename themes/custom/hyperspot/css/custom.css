@@ -2501,11 +2501,11 @@ h2 .sub-title::after {
     transform: translate(60%, 65% );
 }
 .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodetitle.clearfix {
-    transform: translate(60%, 0% );
     font-size: 40px;
     color: #fff;
     font-weight: bold;
     position: absolute;
+    left: 14%;
 }
 .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix span a {
    color: #fff;
