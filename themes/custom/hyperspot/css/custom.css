@@ -1393,17 +1393,17 @@ h2 .sub-title::after {
 }		
 /***********************Media Queries**************************/
 @media (max-width: 320px){
-.page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodetitle.clearfix {
+html .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodetitle.clearfix {
     font-size: 21px;
     left: 30%;
 }
-.page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2 {
+html .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2 {
     font-size: 14px;
 }
-.page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix{
+html .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix{
    transform: translate(25%, 40% );
 }
-.page-node-type-event .block-region-top .field.field--name-field-date.field--type-datetime.field--label-hidden.field--item{
+html .page-node-type-event .block-region-top .field.field--name-field-date.field--type-datetime.field--label-hidden.field--item{
    font-size:21px;
 }
 .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix span a, .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2{
@@ -1673,17 +1673,17 @@ h2 .sub-title::after {
 }
 
 @media screen and (min-width:321px) and (max-width: 500px ){
-.page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodetitle.clearfix {
+html .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodetitle.clearfix {
     font-size: 21px;
     left: 30%;
 }
-.page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2 {
+html .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2 {
     font-size: 14px;
 }
-.page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix{
+html .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix{
    transform: translate(25%, 40% );
 }
-.page-node-type-event .block-region-top .field.field--name-field-date.field--type-datetime.field--label-hidden.field--item{
+html .page-node-type-event .block-region-top .field.field--name-field-date.field--type-datetime.field--label-hidden.field--item{
    font-size:21px;
 }
 .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix span a, .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2{
