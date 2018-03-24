@@ -1393,14 +1393,18 @@ h2 .sub-title::after {
 }		
 /***********************Media Queries**************************/
 @media (max-width: 320px){
-.page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix span a, .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2{
-     font-size: 14px;
+.page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodetitle.clearfix {
+    font-size: 21px;
+    left: 30%;
+}
+.page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2 {
+    font-size: 14px;
 }
 .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix{
-     transform: translate(25%, 40% );
+   transform: translate(25%, 40% );
 }
 .page-node-type-event .block-region-top .field.field--name-field-date.field--type-datetime.field--label-hidden.field--item{
-     font-size: 21px;
+   font-size:21px;
 }
 .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix span a, .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2{
      font-size: 14px;
@@ -1669,14 +1673,18 @@ h2 .sub-title::after {
 }
 
 @media screen and (min-width:321px) and (max-width: 500px ){
-.page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix span a, .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2{
-     font-size: 14px;
+.page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodetitle.clearfix {
+    font-size: 21px;
+    left: 30%;
+}
+.page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2 {
+    font-size: 14px;
 }
 .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix{
-     transform: translate(25%, 40% );
+   transform: translate(25%, 40% );
 }
 .page-node-type-event .block-region-top .field.field--name-field-date.field--type-datetime.field--label-hidden.field--item{
-     font-size: 21px;
+   font-size:21px;
 }
 .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix span a, .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2{
      font-size: 14px;
