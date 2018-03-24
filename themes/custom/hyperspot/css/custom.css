@@ -1396,12 +1396,13 @@ h2 .sub-title::after {
 html .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodetitle.clearfix {
     font-size: 21px;
     left: 30%;
+   line-height: 20px;
 }
 html .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2 {
     font-size: 14px;
 }
 html .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix{
-   transform: translate(25%, 40% );
+   transform: translate(25%, 65% );
 }
 html .page-node-type-event .block-region-top .field.field--name-field-date.field--type-datetime.field--label-hidden.field--item{
    font-size:21px;
@@ -1676,12 +1677,13 @@ html .page-node-type-event .block-region-top .field.field--name-field-date.field
 html .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodetitle.clearfix {
     font-size: 21px;
     left: 30%;
+   line-height: 20px;
 }
 html .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix h2 {
     font-size: 14px;
 }
 html .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix{
-   transform: translate(25%, 40% );
+   transform: translate(25%, 65% );
 }
 html .page-node-type-event .block-region-top .field.field--name-field-date.field--type-datetime.field--label-hidden.field--item{
    font-size:21px;
