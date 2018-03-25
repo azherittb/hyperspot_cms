@@ -1939,7 +1939,7 @@ html .page-node-type-event .block-region-top .field.field--name-field-date.field
 }
 @media screen and (min-width:501px) and (max-width: 767px ){
   html .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodetitle.clearfix{
-    left: 30%;
+    left: 25%;
     line-height: 30px;
     font-size: 26px;
   }
@@ -2268,6 +2268,14 @@ html .page-node-type-event .block-region-top .field.field--name-field-date.field
     }
 }
 @media screen and (min-width:768px) and (max-width: 991px ){
+  .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodetitle.clearfix{
+    left: 18%;
+    line-height: 35px;
+    font-size: 35px;
+  }
+  .page-node-type-event .block-region-top .block.block-ctools-block.block-entity-fieldnodeuid.clearfix{
+    transform: translate(20%, 65% );
+  }
   .path-merchant .col-md-4.statcol, .path-merchant .col-md-4.dyncol {
     text-align: center;
     margin: 30px 0;
